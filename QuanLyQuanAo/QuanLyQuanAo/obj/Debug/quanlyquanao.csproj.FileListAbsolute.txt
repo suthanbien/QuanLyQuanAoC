@@ -1,0 +1,10 @@
+D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\bin\Debug\quanlyquanao.exe.config
+D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\bin\Debug\quanlyquanao.exe
+D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\bin\Debug\quanlyquanao.pdb
+D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.csprojAssemblyReference.cache
+D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.frmDangNhap.resources
+D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.Properties.Resources.resources
+D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.csproj.GenerateResource.cache
+D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.csproj.CoreCompileInputs.cache
+D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.exe
+D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.pdb
