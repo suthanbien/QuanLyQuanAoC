@@ -8,14 +8,4 @@ D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.cspr
 D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.csproj.CoreCompileInputs.cache
 D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.exe
 D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.pdb
-D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\bin\Debug\quanlyquanao.exe.config
-D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\bin\Debug\quanlyquanao.exe
-D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\bin\Debug\quanlyquanao.pdb
-D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\QuanLyQuanAo.csprojAssemblyReference.cache
-D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.frmDangNhap.resources
-D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.frmQuenMatKhau.resources
-D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.Properties.Resources.resources
-D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\QuanLyQuanAo.csproj.GenerateResource.cache
-D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\QuanLyQuanAo.csproj.CoreCompileInputs.cache
-D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.exe
-D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.pdb
+D:\laptrinhmttq\doancuoiky\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.frmQuenMatKhau.resources
