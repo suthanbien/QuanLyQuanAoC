@@ -8,3 +8,12 @@ D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.cspr
 D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.csproj.CoreCompileInputs.cache
 D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.exe
 D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.pdb
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\bin\Debug\quanlyquanao.exe.config
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\bin\Debug\quanlyquanao.exe
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\bin\Debug\quanlyquanao.pdb
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\QuanLyQuanAo.csprojAssemblyReference.cache
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.frmDangNhap.resources
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.Properties.Resources.resources
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\QuanLyQuanAo.csproj.GenerateResource.cache
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.exe
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.pdb
