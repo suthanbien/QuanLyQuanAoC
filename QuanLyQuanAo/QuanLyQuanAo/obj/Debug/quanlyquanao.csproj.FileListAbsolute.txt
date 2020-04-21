@@ -8,6 +8,7 @@ D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.cspr
 D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.csproj.CoreCompileInputs.cache
 D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.exe
 D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.pdb
+<<<<<<< HEAD
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\bin\Debug\quanlyquanao.exe.config
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\bin\Debug\quanlyquanao.exe
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\bin\Debug\quanlyquanao.pdb
@@ -17,3 +18,16 @@ E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.Properties
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\QuanLyQuanAo.csproj.GenerateResource.cache
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.exe
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.pdb
+=======
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\bin\Debug\quanlyquanao.exe.config
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\bin\Debug\quanlyquanao.exe
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\bin\Debug\quanlyquanao.pdb
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\QuanLyQuanAo.csprojAssemblyReference.cache
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.frmDangNhap.resources
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.frmQuenMatKhau.resources
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.Properties.Resources.resources
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\QuanLyQuanAo.csproj.GenerateResource.cache
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\QuanLyQuanAo.csproj.CoreCompileInputs.cache
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.exe
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.pdb
+>>>>>>> 33f7d9def7876e87ff61839a100db6b9dbf6ffbd
