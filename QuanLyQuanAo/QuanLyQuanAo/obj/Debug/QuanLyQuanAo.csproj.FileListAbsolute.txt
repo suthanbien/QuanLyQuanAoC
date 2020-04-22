@@ -10,3 +10,16 @@ E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\bin\Debug\QuanLyQuanAo.pdb
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.exe
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.pdb
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.csprojAssemblyReference.cache
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\bin\Debug\QuanLyQuanAo.exe.config
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\bin\Debug\QuanLyQuanAo.exe
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\bin\Debug\QuanLyQuanAo.pdb
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.csprojAssemblyReference.cache
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\quanlyquanao.frmDangNhap.resources
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\quanlyquanao.GUI.frmDoiMatKhau.resources
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\quanlyquanao.frmNhapma6so.resources
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\quanlyquanao.frmQuenMatKhau.resources
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.Properties.Resources.resources
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.csproj.GenerateResource.cache
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.csproj.CoreCompileInputs.cache
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.exe
+D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.pdb
