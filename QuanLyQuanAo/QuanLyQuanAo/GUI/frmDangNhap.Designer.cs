@@ -84,6 +84,7 @@
             this.txtMatKhau.Location = new System.Drawing.Point(201, 127);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
             this.txtMatKhau.Size = new System.Drawing.Size(185, 27);
             this.txtMatKhau.TabIndex = 4;
             // 
@@ -131,6 +132,7 @@
             this.btnDangNhap.TabIndex = 10;
             this.btnDangNhap.Text = "Đăng Nhập";
             this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // llblQuenMatKhau
             // 
@@ -145,6 +147,7 @@
             this.llblQuenMatKhau.TabIndex = 11;
             this.llblQuenMatKhau.TabStop = true;
             this.llblQuenMatKhau.Text = "Quên mật khẩu?";
+            this.llblQuenMatKhau.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblQuenMatKhau_LinkClicked);
             // 
             // llblDoiMatKhau
             // 
@@ -211,6 +214,7 @@
             this.lblDangNhap.TabIndex = 15;
             this.lblDangNhap.Text = "ĐĂNG NHẬP";
             this.lblDangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDangNhap.Click += new System.EventHandler(this.lblDangNhap_Click);
             // 
             // frmDangNhap
             // 
