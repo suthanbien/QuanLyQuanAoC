@@ -39,7 +39,6 @@
             // 
             this.lblThongBao.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblThongBao.AutoSize = true;
-            this.lblThongBao.BackColor = System.Drawing.Color.White;
             this.lblThongBao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblThongBao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblThongBao.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -57,7 +56,6 @@
             // 
             this.lblEmailSdt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblEmailSdt.AutoSize = true;
-            this.lblEmailSdt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblEmailSdt.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblEmailSdt.ForeColor = System.Drawing.Color.Black;
             this.lblEmailSdt.Location = new System.Drawing.Point(36, 113);
@@ -117,7 +115,7 @@
 
         private System.Windows.Forms.Label lblThongBao;
         private System.Windows.Forms.Label lblEmailSdt;
-        private System.Windows.Forms.Button btnXacNhan;
         private System.Windows.Forms.TextBox txtEmailSdt;
+        private System.Windows.Forms.Button btnXacNhan;
     }
 }

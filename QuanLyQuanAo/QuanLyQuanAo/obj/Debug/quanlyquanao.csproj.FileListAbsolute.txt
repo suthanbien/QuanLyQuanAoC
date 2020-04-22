@@ -9,6 +9,10 @@ D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.cspr
 D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.exe
 D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.pdb
 <<<<<<< HEAD
+D:\laptrinhmttq\doancuoiky\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.frmQuenMatKhau.resources
+D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.frmNhapma6so.resources
+=======
+<<<<<<< HEAD
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\bin\Debug\quanlyquanao.exe.config
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\bin\Debug\quanlyquanao.exe
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\bin\Debug\quanlyquanao.pdb
@@ -32,3 +36,4 @@ D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.exe
 D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.pdb
 >>>>>>> 33f7d9def7876e87ff61839a100db6b9dbf6ffbd
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.frmQuenMatKhau.resources
+>>>>>>> 70baf879186e4ca7852b94f0cd345fe812031520
