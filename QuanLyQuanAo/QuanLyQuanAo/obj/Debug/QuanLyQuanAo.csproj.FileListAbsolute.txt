@@ -10,3 +10,4 @@ E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\bin\Debug\QuanLyQuanAo.pdb
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.exe
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.pdb
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.csprojAssemblyReference.cache
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.csproj.CoreCompileInputs.cache
