@@ -78,6 +78,7 @@
             // 
             this.btnXacNhan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnXacNhan.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnXacNhan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXacNhan.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnXacNhan.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnXacNhan.ForeColor = System.Drawing.Color.White;

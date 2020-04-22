@@ -9,3 +9,4 @@ D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.cspr
 D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.exe
 D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.pdb
 D:\laptrinhmttq\doancuoiky\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.frmQuenMatKhau.resources
+D:\laptrinhmttq\doancuoiky\quanlyquanao\quanlyquanao\obj\Debug\quanlyquanao.frmNhapma6so.resources
