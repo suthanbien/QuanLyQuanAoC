@@ -139,12 +139,13 @@
             this.llblQuenMatKhau.Cursor = System.Windows.Forms.Cursors.Hand;
             this.llblQuenMatKhau.Font = new System.Drawing.Font("Times New Roman", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.llblQuenMatKhau.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.llblQuenMatKhau.Location = new System.Drawing.Point(171, 384);
+            this.llblQuenMatKhau.Location = new System.Drawing.Point(172, 378);
             this.llblQuenMatKhau.Name = "llblQuenMatKhau";
             this.llblQuenMatKhau.Size = new System.Drawing.Size(127, 20);
             this.llblQuenMatKhau.TabIndex = 11;
             this.llblQuenMatKhau.TabStop = true;
             this.llblQuenMatKhau.Text = "Quên mật khẩu?";
+            this.llblQuenMatKhau.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblQuenMatKhau_LinkClicked);
             // 
             // llblDoiMatKhau
             // 
@@ -211,6 +212,7 @@
             this.lblDangNhap.TabIndex = 15;
             this.lblDangNhap.Text = "ĐĂNG NHẬP";
             this.lblDangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDangNhap.Click += new System.EventHandler(this.lblDangNhap_Click);
             // 
             // frmDangNhap
             // 

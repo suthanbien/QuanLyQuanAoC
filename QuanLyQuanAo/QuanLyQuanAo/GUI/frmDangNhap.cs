@@ -16,5 +16,16 @@ namespace quanlyquanao
         {
             InitializeComponent();
         }
+
+        private void lblDangNhap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void llblQuenMatKhau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmQuenMatKhau frm = new frmQuenMatKhau();
+            frm.ShowDialog();
+        }
     }
 }
