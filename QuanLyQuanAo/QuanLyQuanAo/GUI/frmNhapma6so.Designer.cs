@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhapma6so));
             this.lblNhapMa6So = new System.Windows.Forms.Label();
             this.txtNhapMa6So = new System.Windows.Forms.TextBox();
             this.btnXacNhan2 = new System.Windows.Forms.Button();
             this.lblChuaNhanDuocMa = new System.Windows.Forms.Label();
             this.btnGuiLai = new System.Windows.Forms.Button();
+            this.ttNhapMa6So = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // lblNhapMa6So
@@ -58,6 +60,7 @@
             this.txtNhapMa6So.Name = "txtNhapMa6So";
             this.txtNhapMa6So.Size = new System.Drawing.Size(243, 30);
             this.txtNhapMa6So.TabIndex = 1;
+            this.ttNhapMa6So.SetToolTip(this.txtNhapMa6So, "Nhập Mã 6 Số");
             // 
             // btnXacNhan2
             // 
@@ -72,6 +75,7 @@
             this.btnXacNhan2.Size = new System.Drawing.Size(156, 45);
             this.btnXacNhan2.TabIndex = 2;
             this.btnXacNhan2.Text = "Xác Nhận";
+            this.ttNhapMa6So.SetToolTip(this.btnXacNhan2, "Xác Nhận ");
             this.btnXacNhan2.UseVisualStyleBackColor = false;
             // 
             // lblChuaNhanDuocMa
@@ -99,7 +103,12 @@
             this.btnGuiLai.Size = new System.Drawing.Size(113, 35);
             this.btnGuiLai.TabIndex = 4;
             this.btnGuiLai.Text = "Gửi lại";
+            this.ttNhapMa6So.SetToolTip(this.btnGuiLai, "Gửi Lại Biểu Mẫu");
             this.btnGuiLai.UseVisualStyleBackColor = false;
+            // 
+            // ttNhapMa6So
+            // 
+            this.ttNhapMa6So.ForeColor = System.Drawing.Color.Black;
             // 
             // frmNhapma6so
             // 
@@ -128,5 +137,6 @@
         private System.Windows.Forms.Button btnXacNhan2;
         private System.Windows.Forms.Label lblChuaNhanDuocMa;
         private System.Windows.Forms.Button btnGuiLai;
+        private System.Windows.Forms.ToolTip ttNhapMa6So;
     }
 }

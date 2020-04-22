@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDangNhap));
             this.lblTenTaiKhoan = new System.Windows.Forms.Label();
             this.lblMatKhau = new System.Windows.Forms.Label();
@@ -41,6 +42,7 @@
             this.grbTuCach = new System.Windows.Forms.GroupBox();
             this.pnlDangNhap = new System.Windows.Forms.Panel();
             this.lblDangNhap = new System.Windows.Forms.Label();
+            this.ttDangNhap = new System.Windows.Forms.ToolTip(this.components);
             this.grbTuCach.SuspendLayout();
             this.pnlDangNhap.SuspendLayout();
             this.SuspendLayout();
@@ -80,6 +82,7 @@
             this.txtTenTaiKhoan.Name = "txtTenTaiKhoan";
             this.txtTenTaiKhoan.Size = new System.Drawing.Size(208, 30);
             this.txtTenTaiKhoan.TabIndex = 3;
+            this.ttDangNhap.SetToolTip(this.txtTenTaiKhoan, "Nhập Tên Tài Khoản");
             // 
             // txtMatKhau
             // 
@@ -92,6 +95,7 @@
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(208, 30);
             this.txtMatKhau.TabIndex = 4;
+            this.ttDangNhap.SetToolTip(this.txtMatKhau, "Nhập Mật Khẩu");
             // 
             // rbQuanLy
             // 
@@ -136,6 +140,7 @@
             this.btnDangNhap.Size = new System.Drawing.Size(341, 50);
             this.btnDangNhap.TabIndex = 10;
             this.btnDangNhap.Text = "Đăng Nhập";
+            this.ttDangNhap.SetToolTip(this.btnDangNhap, "Đăng Nhập Vào Hệ Thống!");
             this.btnDangNhap.UseVisualStyleBackColor = false;
             // 
             // llblQuenMatKhau
@@ -221,6 +226,10 @@
             this.lblDangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblDangNhap.Click += new System.EventHandler(this.lblDangNhap_Click);
             // 
+            // ttDangNhap
+            // 
+            this.ttDangNhap.ForeColor = System.Drawing.Color.Black;
+            // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -258,6 +267,7 @@
         private System.Windows.Forms.GroupBox grbTuCach;
         private System.Windows.Forms.Panel pnlDangNhap;
         private System.Windows.Forms.Label lblDangNhap;
+        private System.Windows.Forms.ToolTip ttDangNhap;
     }
 }
 

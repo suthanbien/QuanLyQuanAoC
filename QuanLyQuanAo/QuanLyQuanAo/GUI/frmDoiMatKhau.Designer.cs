@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDoiMatKhau));
             this.lblMatKhauHienTai = new System.Windows.Forms.Label();
             this.lblMatKhauMoi = new System.Windows.Forms.Label();
@@ -36,6 +37,7 @@
             this.txtMatKhauMoi = new System.Windows.Forms.TextBox();
             this.txtNhapLaiMatKhauMoi = new System.Windows.Forms.TextBox();
             this.btnXacNhan3 = new System.Windows.Forms.Button();
+            this.ttDoiMatKhau = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // lblMatKhauHienTai
@@ -81,6 +83,7 @@
             this.txtMatKhauHienTai.Name = "txtMatKhauHienTai";
             this.txtMatKhauHienTai.Size = new System.Drawing.Size(266, 30);
             this.txtMatKhauHienTai.TabIndex = 3;
+            this.ttDoiMatKhau.SetToolTip(this.txtMatKhauHienTai, "Nhập Mật Khẩu Hiện Tại");
             // 
             // txtMatKhauMoi
             // 
@@ -92,6 +95,7 @@
             this.txtMatKhauMoi.Name = "txtMatKhauMoi";
             this.txtMatKhauMoi.Size = new System.Drawing.Size(266, 30);
             this.txtMatKhauMoi.TabIndex = 4;
+            this.ttDoiMatKhau.SetToolTip(this.txtMatKhauMoi, "Nhập Mật Khẩu Mới");
             // 
             // txtNhapLaiMatKhauMoi
             // 
@@ -103,6 +107,7 @@
             this.txtNhapLaiMatKhauMoi.Name = "txtNhapLaiMatKhauMoi";
             this.txtNhapLaiMatKhauMoi.Size = new System.Drawing.Size(266, 30);
             this.txtNhapLaiMatKhauMoi.TabIndex = 5;
+            this.ttDoiMatKhau.SetToolTip(this.txtNhapLaiMatKhauMoi, "Xác Nhận Mật Khẩu Mới");
             // 
             // btnXacNhan3
             // 
@@ -117,7 +122,12 @@
             this.btnXacNhan3.Size = new System.Drawing.Size(156, 45);
             this.btnXacNhan3.TabIndex = 6;
             this.btnXacNhan3.Text = "Xác Nhận";
+            this.ttDoiMatKhau.SetToolTip(this.btnXacNhan3, "Xác Nhận Đổi Mật Khẩu");
             this.btnXacNhan3.UseVisualStyleBackColor = false;
+            // 
+            // ttDoiMatKhau
+            // 
+            this.ttDoiMatKhau.ForeColor = System.Drawing.Color.Black;
             // 
             // frmDoiMatKhau
             // 
@@ -151,5 +161,6 @@
         private System.Windows.Forms.TextBox txtMatKhauMoi;
         private System.Windows.Forms.TextBox txtNhapLaiMatKhauMoi;
         private System.Windows.Forms.Button btnXacNhan3;
+        private System.Windows.Forms.ToolTip ttDoiMatKhau;
     }
 }

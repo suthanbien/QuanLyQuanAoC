@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuenMatKhau));
             this.lblThongBao = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnXacNhan = new System.Windows.Forms.Button();
+            this.ttQuenMatKhau = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // lblThongBao
@@ -73,6 +75,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(415, 30);
             this.txtEmail.TabIndex = 2;
+            this.ttQuenMatKhau.SetToolTip(this.txtEmail, "Nhập Email Đã Đăng Ký Từ Trước");
             // 
             // btnXacNhan
             // 
@@ -87,7 +90,12 @@
             this.btnXacNhan.Size = new System.Drawing.Size(156, 45);
             this.btnXacNhan.TabIndex = 3;
             this.btnXacNhan.Text = "Xác Nhận";
+            this.ttQuenMatKhau.SetToolTip(this.btnXacNhan, "Xác Nhận ");
             this.btnXacNhan.UseVisualStyleBackColor = false;
+            // 
+            // ttQuenMatKhau
+            // 
+            this.ttQuenMatKhau.ForeColor = System.Drawing.Color.Black;
             // 
             // frmQuenMatKhau
             // 
@@ -114,5 +122,6 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button btnXacNhan;
+        private System.Windows.Forms.ToolTip ttQuenMatKhau;
     }
 }
