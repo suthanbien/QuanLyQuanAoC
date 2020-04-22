@@ -1,0 +1,12 @@
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\quanlyquanao.frmDangNhap.resources
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\quanlyquanao.GUI.frmDoiMatKhau.resources
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\quanlyquanao.frmNhapma6so.resources
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\quanlyquanao.frmQuenMatKhau.resources
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.Properties.Resources.resources
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.csproj.GenerateResource.cache
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\bin\Debug\QuanLyQuanAo.exe.config
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\bin\Debug\QuanLyQuanAo.exe
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\bin\Debug\QuanLyQuanAo.pdb
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.exe
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.pdb
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.csprojAssemblyReference.cache
