@@ -1,4 +1,5 @@
-﻿using System;
+﻿using quanlyquanao.GUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -47,6 +48,12 @@ namespace quanlyquanao
                 tuCach = "1";
             }
             BUSDangNhap.Instance.KiemTraDangNhap(taiKhoan, matKhau, tuCach, dataGridView1);
+        }
+
+        private void llblDoiMatKhau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmDoiMatKhau frm = new frmDoiMatKhau();
+            frm.ShowDialog();
         }
     }
 }

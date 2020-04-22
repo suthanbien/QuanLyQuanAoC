@@ -10,6 +10,9 @@ E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\bin\Debug\QuanLyQuanAo.pdb
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.exe
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.pdb
 E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.csprojAssemblyReference.cache
+<<<<<<< HEAD
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.csproj.CoreCompileInputs.cache
+=======
 D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\bin\Debug\QuanLyQuanAo.exe.config
 D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\bin\Debug\QuanLyQuanAo.exe
 D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\bin\Debug\QuanLyQuanAo.pdb
@@ -23,3 +26,4 @@ D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.csproj.Gen
 D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.csproj.CoreCompileInputs.cache
 D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.exe
 D:\git\QuanLyQuanAoC\QuanLyQuanAo\QuanLyQuanAo\obj\Debug\QuanLyQuanAo.pdb
+>>>>>>> ec6648f263bf9efe5604c2af5dae5f77ca1c64e8
