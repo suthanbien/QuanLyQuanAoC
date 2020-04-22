@@ -31,3 +31,4 @@ D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\QuanLyQuanAo.csproj.Cor
 D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.exe
 D:\git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.pdb
 >>>>>>> 33f7d9def7876e87ff61839a100db6b9dbf6ffbd
+E:\Git\QuanLyQuanAoC\QuanLyQuanAo\quanlyquanao\obj\Debug\quanlyquanao.frmQuenMatKhau.resources
