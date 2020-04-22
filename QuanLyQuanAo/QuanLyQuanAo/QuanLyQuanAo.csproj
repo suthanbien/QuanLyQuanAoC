@@ -78,6 +78,12 @@
     <Compile Include="GUI\frmQuenMatKhau.Designer.cs">
       <DependentUpon>frmQuenMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmTest.Designer.cs">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\frmDangNhap.resx">
