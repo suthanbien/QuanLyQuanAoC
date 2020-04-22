@@ -111,5 +111,6 @@
   <ItemGroup>
     <None Include="Resources\sounds-aura-hp2.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
