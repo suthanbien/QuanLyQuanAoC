@@ -84,6 +84,12 @@
     <Compile Include="GUI\hung.Designer.cs">
       <DependentUpon>hung.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\hunglan2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\hunglan2.Designer.cs">
+      <DependentUpon>hunglan2.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Quy2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\hung.resx">
       <DependentUpon>hung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\hunglan2.resx">
+      <DependentUpon>hunglan2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Quy2.resx">
       <DependentUpon>Quy2.cs</DependentUpon>
