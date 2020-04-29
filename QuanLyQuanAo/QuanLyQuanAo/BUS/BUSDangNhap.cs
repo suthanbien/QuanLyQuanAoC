@@ -31,7 +31,7 @@ namespace quanlyquanao
 
         public void KiemTraDangNhap(string taiKhoan,string matKhau,string tuCach, DataGridView dataGridView1)
         {
-         
+            dataGridView1.DataSource = DAODangNhap.Instance.KiemTra();
             
         }
     }
