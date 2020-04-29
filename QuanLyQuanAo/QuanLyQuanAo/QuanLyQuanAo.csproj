@@ -96,6 +96,12 @@
     <Compile Include="GUI\hunglan2.Designer.cs">
       <DependentUpon>hunglan2.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\lan4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\lan4.Designer.cs">
+      <DependentUpon>lan4.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Quy2.cs">
       <SubType>Form</SubType>
     </Compile>
