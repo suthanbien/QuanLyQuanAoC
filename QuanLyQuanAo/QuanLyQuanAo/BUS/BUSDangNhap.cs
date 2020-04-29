@@ -1,6 +1,7 @@
 ﻿using quanlyquanao.DAO;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,7 @@ namespace quanlyquanao
         public void KiemTraDangNhap(string taiKhoan,string matKhau,string tuCach, DataGridView dataGridView1)
         {
             dataGridView1.DataSource = DAODangNhap.Instance.KiemTra();
+            
         }
     }
 }
