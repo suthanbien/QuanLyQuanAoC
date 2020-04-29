@@ -78,6 +78,12 @@
     <Compile Include="GUI\frmQuenMatKhau.Designer.cs">
       <DependentUpon>frmQuenMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmTuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmTuan.Designer.cs">
+      <DependentUpon>frmTuan.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\hung.cs">
       <SubType>Form</SubType>
     </Compile>
