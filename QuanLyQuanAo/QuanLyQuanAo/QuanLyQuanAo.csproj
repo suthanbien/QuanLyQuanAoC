@@ -78,48 +78,6 @@
     <Compile Include="GUI\frmQuenMatKhau.Designer.cs">
       <DependentUpon>frmQuenMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmTuan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmTuan.Designer.cs">
-      <DependentUpon>frmTuan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\hung.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\hung.Designer.cs">
-      <DependentUpon>hung.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\hung4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\hung4.Designer.cs">
-      <DependentUpon>hung4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\hunglan2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\hunglan2.Designer.cs">
-      <DependentUpon>hunglan2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\lan4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\lan4.Designer.cs">
-      <DependentUpon>lan4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Quy2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Quy2.Designer.cs">
-      <DependentUpon>Quy2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmQuyRua.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmQuyRua.Designer.cs">
-      <DependentUpon>frmQuyRua.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\frmDangNhap.resx">
@@ -133,15 +91,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmQuenMatKhau.resx">
       <DependentUpon>frmQuenMatKhau.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\hung.resx">
-      <DependentUpon>hung.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\hunglan2.resx">
-      <DependentUpon>hunglan2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Quy2.resx">
-      <DependentUpon>Quy2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
