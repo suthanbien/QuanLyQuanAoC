@@ -9,7 +9,12 @@ namespace quanlyquanao.DAO
 {
     class DAODangNhap
     {
+      
+        #region các khai báo
         private static DAODangNhap instance;
+        #endregion
+
+        #region các phương thức
 
         public static DAODangNhap Instance
         {
@@ -22,14 +27,23 @@ namespace quanlyquanao.DAO
                 return instance;
             }
         }
+
         private DAODangNhap() { }
 
-        public  List<DangNhap> KiemTra()
+        public List<User> KiemTraKetNoi()
         {
-            List<DangNhap> accout = new List<DangNhap>();
-            CSLDQuanLyQuanAoDataContext db = new CSLDQuanLyQuanAoDataContext();
-            accout = db.DangNhaps.Select(p => p).ToList();
-            return accout;
+            using (CSDLQuanLyQuanAoDataContext db = new CSDLQuanLyQuanAoDataContext())
+            {
+                List<User> accout = new List<User>();
+                accout = db.Users.Select(p => p).ToList();
+                return accout;
+            }
+                
         }
+
+        #endregion
+
+        #region các xử lý
+        #endregion
     }
 }

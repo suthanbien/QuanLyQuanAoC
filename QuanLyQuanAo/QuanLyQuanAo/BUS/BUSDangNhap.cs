@@ -11,12 +11,23 @@ namespace quanlyquanao
 {
     class BUSDangNhap
     {
+
+        #region các khai báo
+
         private static BUSDangNhap instance;
 
-        public static BUSDangNhap Instance {
+        #endregion
+
+
+        #region các phương thức
+
+
+
+        public static BUSDangNhap Instance
+        {
             get
             {
-                if (instance==null)
+                if (instance == null)
                 {
                     instance = new BUSDangNhap();
                 }
@@ -26,13 +37,34 @@ namespace quanlyquanao
 
         private BUSDangNhap()
         {
-            
+
         }
 
-        public void KiemTraDangNhap(string taiKhoan,string matKhau,string tuCach, DataGridView dataGridView1)
+        public bool KiemTraKetNoi()
         {
-            dataGridView1.DataSource = DAODangNhap.Instance.KiemTra();
-            
+            bool KetNoi = false;
+
+            if (DAODangNhap.Instance.KiemTraKetNoi().Count>0)
+            {
+                KetNoi = true;
+            }
+
+            return KetNoi;
         }
+
+        public void KiemTraD(string taiKhoan, string matKhau, string tuCach, DataGridView dataGridView1)
+        {
+
+             dataGridView1.DataSource = DAODangNhap.Instance.KiemTraKetNoi();
+            // MessageBox.Show(DAODangNhap.Instance.KiemTraKetNoi()[1].MaNhanVien+"");
+        }
+
+        #endregion
+
+
+
+        #region các xử lý
+        #endregion
+
     }
 }

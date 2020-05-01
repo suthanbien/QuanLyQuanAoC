@@ -48,10 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\BUSDangNhap.cs" />
-    <Compile Include="DAO\CSLDQuanLyQuanAo.designer.cs">
+    <Compile Include="DAO\CSDLQuanLyQuanAo.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CSLDQuanLyQuanAo.dbml</DependentUpon>
+      <DependentUpon>CSDLQuanLyQuanAo.dbml</DependentUpon>
     </Compile>
     <Compile Include="DAO\DAODangNhap.cs" />
     <Compile Include="GUI\frmDangNhap.cs">
@@ -102,13 +102,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="DAO\CSLDQuanLyQuanAo.dbml">
+    <None Include="DAO\CSDLQuanLyQuanAo.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>CSLDQuanLyQuanAo.designer.cs</LastGenOutput>
+      <LastGenOutput>CSDLQuanLyQuanAo.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DAO\CSLDQuanLyQuanAo.dbml.layout">
-      <DependentUpon>CSLDQuanLyQuanAo.dbml</DependentUpon>
+    <None Include="DAO\CSDLQuanLyQuanAo.dbml.layout">
+      <DependentUpon>CSDLQuanLyQuanAo.dbml</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -41,10 +41,9 @@
             this.grbTuCach = new System.Windows.Forms.GroupBox();
             this.pnlDangNhap = new System.Windows.Forms.Panel();
             this.lblDangNhap = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.llblKiemTraKetNoi = new System.Windows.Forms.LinkLabel();
             this.grbTuCach.SuspendLayout();
             this.pnlDangNhap.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTenTaiKhoan
@@ -192,6 +191,7 @@
             this.pnlDangNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlDangNhap.BackColor = System.Drawing.Color.White;
             this.pnlDangNhap.Controls.Add(this.lblDangNhap);
+            this.pnlDangNhap.Controls.Add(this.llblKiemTraKetNoi);
             this.pnlDangNhap.Controls.Add(this.llblDoiMatKhau);
             this.pnlDangNhap.Controls.Add(this.grbTuCach);
             this.pnlDangNhap.Controls.Add(this.llblQuenMatKhau);
@@ -224,15 +224,20 @@
             this.lblDangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblDangNhap.Click += new System.EventHandler(this.lblDangNhap_Click);
             // 
-            // dataGridView1
+            // llblKiemTraKetNoi
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(147, 177);
-            this.dataGridView1.TabIndex = 17;
+            this.llblKiemTraKetNoi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.llblKiemTraKetNoi.AutoSize = true;
+            this.llblKiemTraKetNoi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.llblKiemTraKetNoi.Font = new System.Drawing.Font("Times New Roman", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.llblKiemTraKetNoi.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.llblKiemTraKetNoi.Location = new System.Drawing.Point(322, 49);
+            this.llblKiemTraKetNoi.Name = "llblKiemTraKetNoi";
+            this.llblKiemTraKetNoi.Size = new System.Drawing.Size(132, 20);
+            this.llblKiemTraKetNoi.TabIndex = 11;
+            this.llblKiemTraKetNoi.TabStop = true;
+            this.llblKiemTraKetNoi.Text = "Kiểm Tra Kết Nối";
+            this.llblKiemTraKetNoi.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblKiemTraKetNoi_LinkClicked);
             // 
             // frmDangNhap
             // 
@@ -242,7 +247,6 @@
             this.BackgroundImage = global::QuanLyQuanAo.Properties.Resources.sounds_aura_hp2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(810, 565);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pnlDangNhap);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.ForeColor = System.Drawing.SystemColors.MenuText;
@@ -251,11 +255,11 @@
             this.Name = "frmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quần Áo Sỉ Lẻ Baby Milo";
+            this.Load += new System.EventHandler(this.frmDangNhap_Load);
             this.grbTuCach.ResumeLayout(false);
             this.grbTuCach.PerformLayout();
             this.pnlDangNhap.ResumeLayout(false);
             this.pnlDangNhap.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -273,7 +277,7 @@
         private System.Windows.Forms.GroupBox grbTuCach;
         private System.Windows.Forms.Panel pnlDangNhap;
         private System.Windows.Forms.Label lblDangNhap;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.LinkLabel llblKiemTraKetNoi;
     }
 }
 

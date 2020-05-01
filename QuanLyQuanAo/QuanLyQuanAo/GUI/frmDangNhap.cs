@@ -12,11 +12,24 @@ namespace quanlyquanao
 {
     public partial class frmDangNhap : Form
     {
+        #region các khai báo
+        #endregion
+
+        #region các phương thức
         public frmDangNhap()
         {
             InitializeComponent();
         }
 
+
+
+        #endregion
+
+        #region các xử lý
+        private void frmDangNhap_Load(object sender, EventArgs e)
+        {
+
+        }
         private void lblDangNhap_Click(object sender, EventArgs e)
         {
             rbNhanVien.Checked = false;
@@ -25,7 +38,7 @@ namespace quanlyquanao
 
         private void llblQuenMatKhau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmQuenMatKhau frm = new frmQuenMatKhau();
+           frmQuenMatKhau frm = new frmQuenMatKhau();
             frm.ShowDialog();
         }
 
@@ -46,7 +59,23 @@ namespace quanlyquanao
             {
                 tuCach = "1";
             }
-            BUSDangNhap.Instance.KiemTraDangNhap(taiKhoan, matKhau, tuCach, dataGridView1);
+           // BUSDangNhap.Instance.KiemTraDangNhap(taiKhoan, matKhau, tuCach);
+        }
+
+
+
+        #endregion
+
+        private void llblKiemTraKetNoi_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (BUSDangNhap.Instance.KiemTraKetNoi()==true)
+            {
+                MessageBox.Show("Kết nối CSDL thành Công.");
+            }
+            else
+            {
+                MessageBox.Show("Kết nối CSDL thất bại.");
+            }
         }
     }
 }
