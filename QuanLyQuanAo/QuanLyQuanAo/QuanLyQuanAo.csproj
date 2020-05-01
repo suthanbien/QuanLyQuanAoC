@@ -74,12 +74,6 @@
     <Compile Include="GUI\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmNhapma6so.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmNhapma6so.Designer.cs">
-      <DependentUpon>frmNhapma6so.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\frmQuenMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,9 +90,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmNhapma6so.resx">
-      <DependentUpon>frmNhapma6so.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmQuenMatKhau.resx">
       <DependentUpon>frmQuenMatKhau.cs</DependentUpon>
