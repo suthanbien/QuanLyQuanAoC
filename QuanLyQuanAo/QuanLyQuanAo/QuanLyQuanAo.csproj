@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="BUS\BUSDangNhap.cs" />
     <Compile Include="BUS\BUSDoiMatKhau.cs" />
+    <Compile Include="BUS\BUSQuenMatKhau.cs" />
     <Compile Include="DAO\CSDLQuanLyQuanAo.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -56,6 +57,7 @@
     </Compile>
     <Compile Include="DAO\DAODangNhap.cs" />
     <Compile Include="DAO\DAODoiMatKhau.cs" />
+    <Compile Include="DAO\DAOQuenMatKhau.cs" />
     <Compile Include="GUI\frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -51,7 +51,7 @@
             this.lblThongBao.MinimumSize = new System.Drawing.Size(444, 24);
             this.lblThongBao.Name = "lblThongBao";
             this.lblThongBao.Size = new System.Drawing.Size(444, 38);
-            this.lblThongBao.TabIndex = 0;
+            this.lblThongBao.TabIndex = 7;
             this.lblThongBao.Text = "Hãy nhập email đã đăng ký, một mã 6 số sẽ được gửi đến email của bạn, xác nhận để" +
     " lấy lại mật khẩu.";
             // 
@@ -77,7 +77,7 @@
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(297, 27);
-            this.txtEmail.TabIndex = 2;
+            this.txtEmail.TabIndex = 0;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // btnXacNhan
@@ -93,7 +93,7 @@
             this.btnXacNhan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(148, 63);
-            this.btnXacNhan.TabIndex = 3;
+            this.btnXacNhan.TabIndex = 2;
             this.btnXacNhan.Text = "Xác Nhận";
             this.btnXacNhan.UseVisualStyleBackColor = false;
             this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
@@ -110,7 +110,7 @@
             this.lblLoiMail.MinimumSize = new System.Drawing.Size(444, 24);
             this.lblLoiMail.Name = "lblLoiMail";
             this.lblLoiMail.Size = new System.Drawing.Size(444, 38);
-            this.lblLoiMail.TabIndex = 4;
+            this.lblLoiMail.TabIndex = 6;
             this.lblLoiMail.Text = "Lỗi: Email này không có trong hệ thống vui lòng kiểm tra lại thông tin";
             this.lblLoiMail.Visible = false;
             // 
@@ -126,10 +126,10 @@
             this.btnKiemTra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnKiemTra.Name = "btnKiemTra";
             this.btnKiemTra.Size = new System.Drawing.Size(122, 45);
-            this.btnKiemTra.TabIndex = 3;
+            this.btnKiemTra.TabIndex = 1;
             this.btnKiemTra.Text = "Kiểm Tra";
             this.btnKiemTra.UseVisualStyleBackColor = false;
-            this.btnKiemTra.Click += new System.EventHandler(this.btnXacNhan_Click);
+            this.btnKiemTra.Click += new System.EventHandler(this.btnKiemTra_Click);
             // 
             // label1
             // 
@@ -152,9 +152,8 @@
             this.lblTenTK.Location = new System.Drawing.Point(243, 198);
             this.lblTenTK.Name = "lblTenTK";
             this.lblTenTK.Size = new System.Drawing.Size(94, 35);
-            this.lblTenTK.TabIndex = 6;
+            this.lblTenTK.TabIndex = 4;
             this.lblTenTK.Text = "admin";
-            this.lblTenTK.Visible = false;
             // 
             // frmQuenMatKhau
             // 
