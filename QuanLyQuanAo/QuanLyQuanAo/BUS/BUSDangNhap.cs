@@ -62,12 +62,12 @@ namespace quanlyquanao
 
                 MessageBox.Show("Đăng Nhập thành công tài khoản: "
                     + DAODangNhap.Instance.KiemTraDangNhap(taiKhoan, matKhau, quyen).Count()+"\n"
-                   + DAODangNhap.Instance.KiemTraKetNoi()[0].TenDangNhap.ToString() + "\n" +
-                   "Quyền: " + DAODangNhap.Instance.KiemTraKetNoi()[0].Quyen.ToString());
+                   + DAODangNhap.Instance.KiemTraDangNhap(taiKhoan, matKhau, quyen)[0].TenDangNhap.ToString() + "\n" +
+                   "Quyền: " + DAODangNhap.Instance.KiemTraDangNhap(taiKhoan, matKhau, quyen)[0].Quyen.ToString());
 
 
-                /* frmMain.quyen = DAODangNhap.Instance.KiemTraKetNoi(taiKhoan,matKhau,quyen)[0].Quyen.ToString();
-                 frmMain.taiKhoan = DAODangNhap.Instance.KiemTraKetNoi(taiKhoan,matKhau,quyen)[0].TenDangNhap.ToString();
+                /* frmMain.quyen = DAODangNhap.Instance.KiemTraDangNhap(taiKhoan,matKhau,quyen)[0].Quyen.ToString();
+                 frmMain.taiKhoan = DAODangNhap.Instance.KiemTraDangNhap(taiKhoan,matKhau,quyen)[0].TenDangNhap.ToString();
 
                  frm_Main.Show();
                  frm_DangNhap.Visible=false;*/
