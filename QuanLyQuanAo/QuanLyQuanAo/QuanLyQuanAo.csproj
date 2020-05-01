@@ -48,12 +48,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\BUSDangNhap.cs" />
+    <Compile Include="BUS\BUSDoiMatKhau.cs" />
     <Compile Include="DAO\CSDLQuanLyQuanAo.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CSDLQuanLyQuanAo.dbml</DependentUpon>
     </Compile>
     <Compile Include="DAO\DAODangNhap.cs" />
+    <Compile Include="DAO\DAODoiMatKhau.cs" />
     <Compile Include="GUI\frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>

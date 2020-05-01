@@ -170,6 +170,7 @@
             this.llblDoiMatKhau.TabIndex = 12;
             this.llblDoiMatKhau.TabStop = true;
             this.llblDoiMatKhau.Text = "Đổi mật khẩu";
+            this.llblDoiMatKhau.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblDoiMatKhau_LinkClicked);
             // 
             // grbTuCach
             // 

@@ -1,4 +1,5 @@
-﻿using QuanLyQuanAo.GUI;
+﻿using quanlyquanao.GUI;
+using QuanLyQuanAo.GUI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -48,6 +49,7 @@ namespace quanlyquanao
         {
 
         }
+
         private void lblDangNhap_Click(object sender, EventArgs e)
         {
             rbNhanVien.Checked = false;
@@ -76,11 +78,9 @@ namespace quanlyquanao
             
         }
 
-        #endregion
-
         private void llblKiemTraKetNoi_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (BUSDangNhap.Instance.KiemTraKetNoi()==true)
+            if (BUSDangNhap.Instance.KiemTraKetNoi() == true)
             {
                 MessageBox.Show("Kết nối CSDL thành Công.");
             }
@@ -89,5 +89,18 @@ namespace quanlyquanao
                 MessageBox.Show("Kết nối CSDL thất bại.");
             }
         }
+
+        private void llblDoiMatKhau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmDoiMatKhau.tenTK = txtTenTaiKhoan.Text;
+           frmDoiMatKhau frm = new frmDoiMatKhau();
+            frm.ShowDialog();
+          
+
+        }
+
+        #endregion
+
+
     }
 }
