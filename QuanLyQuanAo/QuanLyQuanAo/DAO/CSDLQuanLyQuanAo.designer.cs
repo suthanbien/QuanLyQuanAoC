@@ -2631,6 +2631,8 @@ namespace QuanLyQuanAo.DAO
 		
 		private string _ChuThich;
 		
+		private System.Nullable<bool> _TinhTrang;
+		
 		private EntityRef<NhanVien> _NhanVien;
 		
 		private EntityRef<Quyen> _Quyen1;
@@ -2651,6 +2653,8 @@ namespace QuanLyQuanAo.DAO
     partial void OnQuyenChanged();
     partial void OnChuThichChanging(string value);
     partial void OnChuThichChanged();
+    partial void OnTinhTrangChanging(System.Nullable<bool> value);
+    partial void OnTinhTrangChanged();
     #endregion
 		
 		public User()
@@ -2784,6 +2788,26 @@ namespace QuanLyQuanAo.DAO
 					this._ChuThich = value;
 					this.SendPropertyChanged("ChuThich");
 					this.OnChuThichChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TinhTrang", DbType="Bit")]
+		public System.Nullable<bool> TinhTrang
+		{
+			get
+			{
+				return this._TinhTrang;
+			}
+			set
+			{
+				if ((this._TinhTrang != value))
+				{
+					this.OnTinhTrangChanging(value);
+					this.SendPropertyChanging();
+					this._TinhTrang = value;
+					this.SendPropertyChanged("TinhTrang");
+					this.OnTinhTrangChanged();
 				}
 			}
 		}

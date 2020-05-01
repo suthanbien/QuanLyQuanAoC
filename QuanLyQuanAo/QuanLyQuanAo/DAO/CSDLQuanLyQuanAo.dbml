@@ -128,6 +128,7 @@
       <Column Name="Password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Quyen" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="ChuThich" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Association Name="NhanVien_User" Member="NhanVien" ThisKey="MaNhanVien" OtherKey="MaNhanVien" Type="NhanVien" IsForeignKey="true" />
       <Association Name="Quyen_User" Member="Quyen1" ThisKey="Quyen" OtherKey="MaQuyen" Type="Quyen" IsForeignKey="true" />
     </Type>

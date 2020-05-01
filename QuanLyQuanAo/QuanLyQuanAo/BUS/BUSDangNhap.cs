@@ -1,4 +1,5 @@
 ﻿using quanlyquanao.DAO;
+using QuanLyQuanAo.GUI;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -52,10 +53,29 @@ namespace quanlyquanao
             return KetNoi;
         }
 
-        public void KiemTraD(string taiKhoan, string matKhau, string tuCach, DataGridView dataGridView1)
+        //xử lý sự kiện đăng nhập
+        public void KiemTraDangNhap(string taiKhoan, string matKhau, int quyen,frmMain frm_Main, frmDangNhap frm_DangNhap)
         {
 
-             dataGridView1.DataSource = DAODangNhap.Instance.KiemTraKetNoi();
+            if (DAODangNhap.Instance.KiemTraDangNhap(taiKhoan,matKhau,quyen).Count()>0)
+            {
+
+                MessageBox.Show("Đăng Nhập thành công tài khoản: "
+                    + DAODangNhap.Instance.KiemTraDangNhap(taiKhoan, matKhau, quyen).Count()+"\n"
+                   + DAODangNhap.Instance.KiemTraKetNoi()[0].TenDangNhap.ToString() + "\n" +
+                   "Quyền: " + DAODangNhap.Instance.KiemTraKetNoi()[0].Quyen.ToString());
+
+
+                /* frmMain.quyen = DAODangNhap.Instance.KiemTraKetNoi(taiKhoan,matKhau,quyen)[0].Quyen.ToString();
+                 frmMain.taiKhoan = DAODangNhap.Instance.KiemTraKetNoi(taiKhoan,matKhau,quyen)[0].TenDangNhap.ToString();
+
+                 frm_Main.Show();
+                 frm_DangNhap.Visible=false;*/
+
+            }
+            else
+                MessageBox.Show("Sai tên đăng nhập/mật khẩu\nHoặc TK đã khóa", "Mật khẩu");
+
             // MessageBox.Show(DAODangNhap.Instance.KiemTraKetNoi()[1].MaNhanVien+"");
         }
 
@@ -64,6 +84,8 @@ namespace quanlyquanao
 
 
         #region các xử lý
+
+
         #endregion
 
     }

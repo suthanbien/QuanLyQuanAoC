@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyQuanAo.GUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,7 +22,24 @@ namespace quanlyquanao
             InitializeComponent();
         }
 
-
+        //kiểm tra quyền
+        public int KiemTraQuyenDangNhap()
+        {
+            int quyen=0;
+            if (rbNhanVien.Checked == false && rbQuanLy.Checked == false)// admin
+            {
+                quyen = 1;
+            }
+            else if (rbNhanVien.Checked == false)   //quản lý
+            {
+                quyen = 2;
+            }
+            else    //nhân viên
+            {
+                quyen = 3;
+            }
+            return quyen;
+        }   
 
         #endregion
 
@@ -44,25 +62,19 @@ namespace quanlyquanao
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
+
             string taiKhoan = txtTenTaiKhoan.Text;
             string matKhau = txtMatKhau.Text;
-            string tuCach;
-            if (rbNhanVien.Checked == false && rbQuanLy.Checked == false)
-            {
-                tuCach = "3";
-            }
-            else if (rbQuanLy.Checked == false)
-            {
-                tuCach = "2";
-            }
-            else
-            {
-                tuCach = "1";
-            }
-           // BUSDangNhap.Instance.KiemTraDangNhap(taiKhoan, matKhau, tuCach);
+            int quyen;
+            frmMain frm = new frmMain();
+
+            quyen = KiemTraQuyenDangNhap();
+
+            //truyền thông tin đăng nhập vào BUS để xử lý
+            BUSDangNhap.Instance.KiemTraDangNhap(taiKhoan, matKhau, quyen,frm,this);
+
+            
         }
-
-
 
         #endregion
 
