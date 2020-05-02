@@ -54,22 +54,22 @@ namespace quanlyquanao
             GuiMail("suthanbien2@gmail.com",nguoiNhan, traVePass,"Xác Nhận Lấy Lại Mật Khẩu");
             MessageBox.Show("Mật khẩu đã được gửi đến Email, vui lòng kiểm tra lại. \n"
                                +"nếu không nhận được gamil vui lòng ấn thử lại.");
-            btnXacNhan.Text = "Thử Lại";
+            btnXacNhanQuenMatKhau.Text = "Thử Lại";
         }
 
         private void frmQuenMatKhau_Load(object sender, EventArgs e)
         {
-            btnXacNhan.Enabled = false;
-            btnXacNhan.Text = "Xác Nhận";
-            lblTenTK.Text = "";
+            btnXacNhanQuenMatKhau.Enabled = false;
+            btnXacNhanQuenMatKhau.Text = "Xác Nhận";
+            lblAdMin.Text = "";
             lblLoiMail.Visible = false;
         }
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
-            btnXacNhan.Enabled = false;
-            btnXacNhan.Text = "Xác Nhận";
-            lblTenTK.Text = "";
+            btnXacNhanQuenMatKhau.Enabled = false;
+            btnXacNhanQuenMatKhau.Text = "Xác Nhận";
+            lblAdMin.Text = "";
             lblLoiMail.Visible = false;
         }
 
@@ -84,15 +84,19 @@ namespace quanlyquanao
             }
             else
             {
-                lblTenTK.Text = BUSQuenMatKhau.Instance.KiemTraEmail(nEmail);
-                btnXacNhan.Enabled = true;
+                lblAdMin.Text = BUSQuenMatKhau.Instance.KiemTraEmail(nEmail);
+                btnXacNhanQuenMatKhau.Enabled = true;
             }
             
         }
 
 
+
         #endregion
 
+        private void lblThongBao_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
