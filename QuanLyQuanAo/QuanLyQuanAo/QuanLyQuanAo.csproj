@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="BUS\BUSDangNhap.cs" />
     <Compile Include="BUS\BUSDoiMatKhau.cs" />
+    <Compile Include="BUS\BUSLoaiSanPham.cs" />
     <Compile Include="BUS\BUSQuenMatKhau.cs" />
     <Compile Include="DAO\CSDLQuanLyQuanAo.designer.cs">
       <AutoGen>True</AutoGen>
@@ -57,7 +58,15 @@
     </Compile>
     <Compile Include="DAO\DAODangNhap.cs" />
     <Compile Include="DAO\DAODoiMatKhau.cs" />
+    <Compile Include="DAO\DAOLoaiSanPham.cs" />
     <Compile Include="DAO\DAOQuenMatKhau.cs" />
+    <Compile Include="GUI\ButtonGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ButtonGroup.Designer.cs">
+      <DependentUpon>ButtonGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ButtonGroupEventArgs.cs" />
     <Compile Include="GUI\frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +78,12 @@
     </Compile>
     <Compile Include="GUI\frmDoiMatKhau.Designer.cs">
       <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmLoaiSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmLoaiSanPham.Designer.cs">
+      <DependentUpon>frmLoaiSanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmMain.cs">
       <SubType>Form</SubType>
@@ -84,11 +99,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\ButtonGroup.resx">
+      <DependentUpon>ButtonGroup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDoiMatKhau.resx">
       <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmLoaiSanPham.resx">
+      <DependentUpon>frmLoaiSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
