@@ -66,5 +66,16 @@ namespace QuanLyQuanAo.Properties {
                 return ((string)(this["QuanLySanPhamConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=QUY\\QUY;Initial Catalog=QuanLySanPham;Persist Security Info=True;User" +
+            " ID=sa;Password=Quy0164vn")]
+        public string QuanLySanPhamConnectionString2 {
+            get {
+                return ((string)(this["QuanLySanPhamConnectionString2"]));
+            }
+        }
     }
 }

@@ -49,7 +49,7 @@
             // btnClose
             // 
             this.btnClose.BackColor = System.Drawing.Color.Aqua;
-            this.btnClose.Location = new System.Drawing.Point(1101, 4);
+            this.btnClose.Location = new System.Drawing.Point(1100, 14);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(70, 50);
             this.btnClose.TabIndex = 14;
@@ -60,7 +60,7 @@
             // btnEdit
             // 
             this.btnEdit.BackColor = System.Drawing.Color.Aqua;
-            this.btnEdit.Location = new System.Drawing.Point(388, 3);
+            this.btnEdit.Location = new System.Drawing.Point(387, 13);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(70, 50);
             this.btnEdit.TabIndex = 5;
@@ -71,7 +71,7 @@
             // btnExtra2
             // 
             this.btnExtra2.BackColor = System.Drawing.Color.Aqua;
-            this.btnExtra2.Location = new System.Drawing.Point(989, 3);
+            this.btnExtra2.Location = new System.Drawing.Point(988, 13);
             this.btnExtra2.Name = "btnExtra2";
             this.btnExtra2.Size = new System.Drawing.Size(97, 50);
             this.btnExtra2.TabIndex = 13;
@@ -83,7 +83,7 @@
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Aqua;
-            this.btnCancel.Location = new System.Drawing.Point(388, 4);
+            this.btnCancel.Location = new System.Drawing.Point(387, 14);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(70, 50);
             this.btnCancel.TabIndex = 6;
@@ -94,7 +94,7 @@
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.Aqua;
-            this.btnDelete.Location = new System.Drawing.Point(464, 3);
+            this.btnDelete.Location = new System.Drawing.Point(463, 13);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(70, 50);
             this.btnDelete.TabIndex = 7;
@@ -105,7 +105,7 @@
             // btnExtra
             // 
             this.btnExtra.BackColor = System.Drawing.Color.Aqua;
-            this.btnExtra.Location = new System.Drawing.Point(887, 3);
+            this.btnExtra.Location = new System.Drawing.Point(886, 13);
             this.btnExtra.Name = "btnExtra";
             this.btnExtra.Size = new System.Drawing.Size(96, 51);
             this.btnExtra.TabIndex = 12;
@@ -117,7 +117,7 @@
             // btnLast
             // 
             this.btnLast.BackColor = System.Drawing.Color.Aqua;
-            this.btnLast.Location = new System.Drawing.Point(231, 3);
+            this.btnLast.Location = new System.Drawing.Point(230, 13);
             this.btnLast.Name = "btnLast";
             this.btnLast.Size = new System.Drawing.Size(70, 50);
             this.btnLast.TabIndex = 3;
@@ -128,7 +128,7 @@
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.Aqua;
-            this.btnAdd.Location = new System.Drawing.Point(307, 4);
+            this.btnAdd.Location = new System.Drawing.Point(306, 14);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 50);
             this.btnAdd.TabIndex = 4;
@@ -139,7 +139,7 @@
             // btnTim
             // 
             this.btnTim.BackColor = System.Drawing.Color.Aqua;
-            this.btnTim.Location = new System.Drawing.Point(802, 3);
+            this.btnTim.Location = new System.Drawing.Point(801, 13);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(70, 50);
             this.btnTim.TabIndex = 11;
@@ -150,7 +150,7 @@
             // btnNext
             // 
             this.btnNext.BackColor = System.Drawing.Color.Aqua;
-            this.btnNext.Location = new System.Drawing.Point(155, 3);
+            this.btnNext.Location = new System.Drawing.Point(154, 13);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(70, 50);
             this.btnNext.TabIndex = 2;
@@ -161,7 +161,7 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Aqua;
-            this.btnSave.Location = new System.Drawing.Point(307, 3);
+            this.btnSave.Location = new System.Drawing.Point(306, 13);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 50);
             this.btnSave.TabIndex = 24;
@@ -172,7 +172,7 @@
             // btnPrev
             // 
             this.btnPrev.BackColor = System.Drawing.Color.Aqua;
-            this.btnPrev.Location = new System.Drawing.Point(79, 3);
+            this.btnPrev.Location = new System.Drawing.Point(78, 13);
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.Size = new System.Drawing.Size(70, 50);
             this.btnPrev.TabIndex = 1;
@@ -184,7 +184,7 @@
             // 
             this.btnFirst.BackColor = System.Drawing.Color.Aqua;
             this.btnFirst.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnFirst.Location = new System.Drawing.Point(3, 3);
+            this.btnFirst.Location = new System.Drawing.Point(2, 13);
             this.btnFirst.Name = "btnFirst";
             this.btnFirst.Size = new System.Drawing.Size(70, 50);
             this.btnFirst.TabIndex = 0;
@@ -195,7 +195,7 @@
             // radTimTheoMa
             // 
             this.radTimTheoMa.AutoSize = true;
-            this.radTimTheoMa.Location = new System.Drawing.Point(684, 33);
+            this.radTimTheoMa.Location = new System.Drawing.Point(683, 43);
             this.radTimTheoMa.Name = "radTimTheoMa";
             this.radTimTheoMa.Size = new System.Drawing.Size(112, 21);
             this.radTimTheoMa.TabIndex = 10;
@@ -207,7 +207,7 @@
             // 
             this.radTimTheoTen.AutoSize = true;
             this.radTimTheoTen.Checked = true;
-            this.radTimTheoTen.Location = new System.Drawing.Point(560, 32);
+            this.radTimTheoTen.Location = new System.Drawing.Point(559, 42);
             this.radTimTheoTen.Name = "radTimTheoTen";
             this.radTimTheoTen.Size = new System.Drawing.Size(118, 21);
             this.radTimTheoTen.TabIndex = 9;
@@ -220,7 +220,7 @@
             // 
             this.txtTimKiem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtTimKiem.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtTimKiem.Location = new System.Drawing.Point(592, 4);
+            this.txtTimKiem.Location = new System.Drawing.Point(591, 14);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(174, 22);
             this.txtTimKiem.TabIndex = 8;
@@ -247,7 +247,7 @@
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.btnFirst);
             this.Name = "ButtonGroup";
-            this.Size = new System.Drawing.Size(1181, 62);
+            this.Size = new System.Drawing.Size(1181, 75);
             this.Load += new System.EventHandler(this.ButtonGroup_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

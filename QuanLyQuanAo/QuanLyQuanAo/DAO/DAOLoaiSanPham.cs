@@ -42,40 +42,8 @@ namespace QuanLyQuanAo.DAO
                 return lsLSP;
             }
         }
-        public int LayID()
-        {
-            using (CSDLQuanLyQuanAoDataContext db = new CSDLQuanLyQuanAoDataContext())
-            {
-                var maLSPLonNhat = from n in db.LoaiSanPhams
-                                   where n.MaLoaiSanPham==(db.LoaiSanPhams.Max(u1=>u1.MaLoaiSanPham))
-                                   select  n.MaLoaiSanPham;
-                try
-                {
-                    foreach (int i in maLSPLonNhat)
-                    {
-                        return i+1;
-                    }
-                }
-                catch
-                {
-                    return 0;
-                }
-            }
-            return 0;
-        }
-        public List<LoaiSanPham> AddRow()
-        {
-            using (CSDLQuanLyQuanAoDataContext db = new CSDLQuanLyQuanAoDataContext())
-            {
-                List<LoaiSanPham> lsLSP = new List<LoaiSanPham>();
-                lsLSP = db.LoaiSanPhams.Select(p => p).ToList();
-                LoaiSanPham loaiSP = new LoaiSanPham();
-                loaiSP.MaLoaiSanPham = LayID();
-                loaiSP.TenLoaiSanPham = "";
-                lsLSP.Add(loaiSP);
-                return lsLSP;
-            }
-        }
+
+
         public void Them(int maLSP, string tenLSP)
         {
             using (CSDLQuanLyQuanAoDataContext db=new CSDLQuanLyQuanAoDataContext())

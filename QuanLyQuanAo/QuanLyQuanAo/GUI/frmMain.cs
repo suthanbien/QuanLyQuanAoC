@@ -64,7 +64,10 @@ namespace QuanLyQuanAo.GUI
         {
             mnuLoaiSanPham.Enabled = true;
         }
-
+        public void moMnuSanPham()
+        {
+            mnuSanPham.Enabled = true;
+        }
         public Form FormExist(String FormName)
         {
             foreach (Form frm in MdiChildren)
@@ -100,6 +103,25 @@ namespace QuanLyQuanAo.GUI
             frm.Focus();
 
             mnuLoaiSanPham.Enabled = false;
+        }
+
+        private void mnuSanPham_Click(object sender, EventArgs e)
+        {
+            frmHangHoa frm = (frmHangHoa)FormExist("");
+            if (frm == null)
+            {
+                frm = new frmHangHoa();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+            frm.Focus();
+
+            mnuSanPham.Enabled = false;
+        }
+
+        private void mainMenu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

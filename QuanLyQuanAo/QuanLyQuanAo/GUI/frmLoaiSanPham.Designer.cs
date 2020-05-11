@@ -28,16 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pnlTop = new System.Windows.Forms.Panel();
             this.blbLoaiSanPham = new System.Windows.Forms.Label();
             this.dgvLoaiSanPham = new System.Windows.Forms.DataGridView();
-            this.MLSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenLSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maLoaiSanPhamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenLoaiSanPhamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiSanPhamBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pnlBottom = new System.Windows.Forms.Panel();
             this.btgNhomLenh = new QuanLyQuanAo.GUI.ButtonGroup();
             this.pnCenter = new System.Windows.Forms.Panel();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoaiSanPham)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loaiSanPhamBindingSource)).BeginInit();
             this.pnlBottom.SuspendLayout();
             this.pnCenter.SuspendLayout();
             this.SuspendLayout();
@@ -68,49 +71,54 @@
             // 
             this.dgvLoaiSanPham.AllowUserToAddRows = false;
             this.dgvLoaiSanPham.AllowUserToDeleteRows = false;
+            this.dgvLoaiSanPham.AutoGenerateColumns = false;
             this.dgvLoaiSanPham.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.dgvLoaiSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLoaiSanPham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MLSP,
-            this.TenLSP});
+            this.maLoaiSanPhamDataGridViewTextBoxColumn,
+            this.tenLoaiSanPhamDataGridViewTextBoxColumn});
+            this.dgvLoaiSanPham.DataSource = this.loaiSanPhamBindingSource;
             this.dgvLoaiSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvLoaiSanPham.Location = new System.Drawing.Point(0, 0);
             this.dgvLoaiSanPham.MultiSelect = false;
             this.dgvLoaiSanPham.Name = "dgvLoaiSanPham";
+            this.dgvLoaiSanPham.ReadOnly = true;
             this.dgvLoaiSanPham.RowHeadersWidth = 51;
             this.dgvLoaiSanPham.RowTemplate.Height = 24;
             this.dgvLoaiSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgvLoaiSanPham.Size = new System.Drawing.Size(1183, 314);
+            this.dgvLoaiSanPham.Size = new System.Drawing.Size(1183, 308);
             this.dgvLoaiSanPham.TabIndex = 1;
             this.dgvLoaiSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLoaiSanPham_CellClick);
             // 
-            // MLSP
+            // maLoaiSanPhamDataGridViewTextBoxColumn
             // 
-            this.MLSP.DataPropertyName = "MaLoaiSanPham";
-            this.MLSP.HeaderText = "Mã Loại Sản Phẩm";
-            this.MLSP.MaxInputLength = 6;
-            this.MLSP.MinimumWidth = 6;
-            this.MLSP.Name = "MLSP";
-            this.MLSP.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.MLSP.Width = 150;
+            this.maLoaiSanPhamDataGridViewTextBoxColumn.DataPropertyName = "MaLoaiSanPham";
+            this.maLoaiSanPhamDataGridViewTextBoxColumn.HeaderText = "Mã Loại Sản Phẩm";
+            this.maLoaiSanPhamDataGridViewTextBoxColumn.MinimumWidth = 200;
+            this.maLoaiSanPhamDataGridViewTextBoxColumn.Name = "maLoaiSanPhamDataGridViewTextBoxColumn";
+            this.maLoaiSanPhamDataGridViewTextBoxColumn.ReadOnly = true;
+            this.maLoaiSanPhamDataGridViewTextBoxColumn.Width = 200;
             // 
-            // TenLSP
+            // tenLoaiSanPhamDataGridViewTextBoxColumn
             // 
-            this.TenLSP.DataPropertyName = "TenLoaiSanPham";
-            this.TenLSP.HeaderText = "Tên Loại Sản Phẩm";
-            this.TenLSP.MaxInputLength = 50;
-            this.TenLSP.MinimumWidth = 300;
-            this.TenLSP.Name = "TenLSP";
-            this.TenLSP.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.TenLSP.Width = 500;
+            this.tenLoaiSanPhamDataGridViewTextBoxColumn.DataPropertyName = "TenLoaiSanPham";
+            this.tenLoaiSanPhamDataGridViewTextBoxColumn.HeaderText = "Tên Loại Sản Phẩm";
+            this.tenLoaiSanPhamDataGridViewTextBoxColumn.MinimumWidth = 500;
+            this.tenLoaiSanPhamDataGridViewTextBoxColumn.Name = "tenLoaiSanPhamDataGridViewTextBoxColumn";
+            this.tenLoaiSanPhamDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tenLoaiSanPhamDataGridViewTextBoxColumn.Width = 500;
+            // 
+            // loaiSanPhamBindingSource
+            // 
+            this.loaiSanPhamBindingSource.DataSource = typeof(QuanLyQuanAo.DAO.LoaiSanPham);
             // 
             // pnlBottom
             // 
             this.pnlBottom.Controls.Add(this.btgNhomLenh);
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottom.Location = new System.Drawing.Point(0, 381);
+            this.pnlBottom.Location = new System.Drawing.Point(0, 375);
             this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.Size = new System.Drawing.Size(1183, 65);
+            this.pnlBottom.Size = new System.Drawing.Size(1183, 71);
             this.pnlBottom.TabIndex = 0;
             // 
             // btgNhomLenh
@@ -136,7 +144,7 @@
             this.btgNhomLenh.Name = "btgNhomLenh";
             this.btgNhomLenh.Position = 0;
             this.btgNhomLenh.Reccount = 0;
-            this.btgNhomLenh.Size = new System.Drawing.Size(1183, 65);
+            this.btgNhomLenh.Size = new System.Drawing.Size(1183, 71);
             this.btgNhomLenh.TabIndex = 0;
             this.btgNhomLenh.TenTimKiem = "";
             this.btgNhomLenh.Display += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_Display);
@@ -156,7 +164,7 @@
             this.pnCenter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnCenter.Location = new System.Drawing.Point(0, 67);
             this.pnCenter.Name = "pnCenter";
-            this.pnCenter.Size = new System.Drawing.Size(1183, 314);
+            this.pnCenter.Size = new System.Drawing.Size(1183, 308);
             this.pnCenter.TabIndex = 2;
             // 
             // frmLoaiSanPham
@@ -173,6 +181,7 @@
             this.Load += new System.EventHandler(this.frmLoaiSanPham_Load);
             this.pnlTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoaiSanPham)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loaiSanPhamBindingSource)).EndInit();
             this.pnlBottom.ResumeLayout(false);
             this.pnCenter.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -186,8 +195,9 @@
         private ButtonGroup btgNhomLenh;
         private System.Windows.Forms.Label blbLoaiSanPham;
         private System.Windows.Forms.DataGridView dgvLoaiSanPham;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MLSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenLSP;
         private System.Windows.Forms.Panel pnCenter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maLoaiSanPhamDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenLoaiSanPhamDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource loaiSanPhamBindingSource;
     }
 }

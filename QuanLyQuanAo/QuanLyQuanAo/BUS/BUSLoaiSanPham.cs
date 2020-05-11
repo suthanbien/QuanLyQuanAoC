@@ -14,7 +14,6 @@ namespace QuanLyQuanAo.BUS
         #region các khai báo
         private static BUSLoaiSanPham instance;
         List<LoaiSanPham> lstLoaiSanPham = new List<LoaiSanPham>();
-        List<LoaiSanPham> lstLoaiSanPhamNew = new List<LoaiSanPham>();
         #endregion
 
         #region các phương thức
@@ -45,10 +44,17 @@ namespace QuanLyQuanAo.BUS
 
         public void AddRows(DataGridView dgvLoaiSanPham)
         {
-            lstLoaiSanPhamNew = DAOLoaiSanPham.Instance.AddRow();
-            dgvLoaiSanPham.DataSource = lstLoaiSanPhamNew;
+            dgvLoaiSanPham.DataSource = null;
+            LoaiSanPham lspMoi = new LoaiSanPham();
+            lstLoaiSanPham.Add(lspMoi);
+            dgvLoaiSanPham.DataSource = lstLoaiSanPham;
         }
-
+        public void XoaRow(DataGridView dgvLoaiSanPham)
+        {
+            lstLoaiSanPham.RemoveAt(lstLoaiSanPham.Count-1);
+            dgvLoaiSanPham.DataSource = null;
+            dgvLoaiSanPham.DataSource = lstLoaiSanPham;
+        }
         public void Them(int maLSP,string tenLSP)
         {
             DAOLoaiSanPham.Instance.Them( maLSP,tenLSP);

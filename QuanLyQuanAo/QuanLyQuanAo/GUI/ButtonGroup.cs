@@ -24,6 +24,8 @@ namespace QuanLyQuanAo.GUI
         private string m_MsMau;
         private bool m_AutoNumber = false;
         private List<string> lstTimKiem;
+        private bool m_CanSave=true;
+        private bool m_CanDelete = true;
 
         #endregion
         public ButtonGroup()
@@ -47,8 +49,7 @@ namespace QuanLyQuanAo.GUI
         public event ButtonGroupEventHandler Extra2Click;
         public event ButtonGroupEventHandler RadTimClick;
         // Khai báo thể hiện ủy quyền
-        public ButtonGroupCanDoDelegate CanSave;
-        public ButtonGroupCanDoDelegate CanDelete;
+
 
         public int Reccount
         {
@@ -147,6 +148,9 @@ namespace QuanLyQuanAo.GUI
             get { return btnEdit.Enabled; }
         }
 
+        public bool CanSave { get => m_CanSave; set => m_CanSave = value; }
+        public bool CanDelete { get => m_CanDelete; set => m_CanDelete = value; }
+
 
         #region Các phương thức
         public void EnableButton(bool b)
@@ -203,14 +207,9 @@ namespace QuanLyQuanAo.GUI
                 handler(this, e);
 
         }
-        private bool OnCanSave(ButtonGroupEventArgs e)
-
+        private bool OnCanSave()
         {
-            ButtonGroupCanDoDelegate func = CanSave;
-            if (func != null)
-                return CanSave(this, e);
-            else
-                return true;
+            return CanSave;
 
         }
         private void OnSaveClick(ButtonGroupEventArgs e)
@@ -243,15 +242,10 @@ namespace QuanLyQuanAo.GUI
             dgv.ReadOnly = true;
 
         }
-        private bool OnCanDelete(ButtonGroupEventArgs e)
+        private bool OnCanDelete()
 
         {
-            ButtonGroupCanDoDelegate func = CanDelete;
-            if (func != null)
-                return CanDelete(this, e);
-            else
-                return true;
-
+            return CanDelete;
         }
         private void OnDeleteClick(ButtonGroupEventArgs e)
 
@@ -359,26 +353,29 @@ namespace QuanLyQuanAo.GUI
             ButtonGroupEventArgs e1 = new ButtonGroupEventArgs();
             if (m_Mode == 1)
             { // Lưu lúc thêm
-                if (OnCanSave(e1))
+                OnSaveClick(e1);
+                if (OnCanSave()==true)
                 { // Lưu được lúc thêm
-                    OnSaveClick(e1);
+                   
                     m_Mode = 0; // Bình thường
                     OnDeactivateRow(m_Position);
                     EnableButton(true);
                 }
-                else MessageBox.Show("Không thể lưu lúc thêm", ParentForm.Text);
+
             }
             else
             { // Lưu lúc sửa
-               // MessageBox.Show(" lưu lúc sua", ParentForm.Text);
-                if (OnCanSave(e1))
+
+                // MessageBox.Show(" lưu lúc sua", ParentForm.Text);
+                OnSaveClick(e1);
+                if (OnCanSave()==true)
                 { // Lưu được lúc sửa
-                    OnSaveClick(e1);
+                    
                     m_Mode = 0; // Bình thường
                     OnDeactivateRow(m_Position);
                     EnableButton(true);
                 }
-                else MessageBox.Show("Không thể lưu lúc sửa", ParentForm.Text);
+
             }
         }
 
@@ -407,7 +404,7 @@ namespace QuanLyQuanAo.GUI
         private void btnDelete_Click(object sender, EventArgs e)
         {
             ButtonGroupEventArgs e1 = new ButtonGroupEventArgs();
-            if (OnCanDelete(e1))
+            if (OnCanDelete())
             {
                 OnDeleteClick(e1);
                 if (m_Position >= m_Reccount) m_Position = m_Reccount - 1;
