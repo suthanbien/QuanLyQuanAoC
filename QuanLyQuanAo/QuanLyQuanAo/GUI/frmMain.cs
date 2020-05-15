@@ -68,6 +68,18 @@ namespace QuanLyQuanAo.GUI
         {
             mnuSanPham.Enabled = true;
         }
+        public void moMnuHangSanXuat()
+        {
+            mnuHangSanXuat.Enabled = true;
+        }
+        public void moMnuHangHoaAn()
+        {
+            mnuHangHoaDaAn.Enabled = true;
+        }
+        public void moMnuQLNhanVien()
+        {
+            mnuQLNhanVien.Enabled = true;
+        }
         public Form FormExist(String FormName)
         {
             foreach (Form frm in MdiChildren)
@@ -122,6 +134,53 @@ namespace QuanLyQuanAo.GUI
         private void mainMenu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void mnuHangSanXuat_Click(object sender, EventArgs e)
+        {
+            frmHangSanXuat frm = (frmHangSanXuat)FormExist("");
+            if (frm == null)
+            {
+                frm = new frmHangSanXuat();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+            frm.Focus();
+
+            mnuHangSanXuat.Enabled = false;
+        }
+
+        private void mnuHangHoaDaAn_Click(object sender, EventArgs e)
+        {
+            frmAnHangHoa frm = (frmAnHangHoa)FormExist("");
+            if (frm == null)
+            {
+                frm = new frmAnHangHoa();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+            frm.Focus();
+
+            mnuHangHoaDaAn.Enabled = false;
+        }
+
+        private void mnuTKNhanVien_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void mnuQLNhanVien_Click(object sender, EventArgs e)
+        {
+            frmQLNhanVien frm = (frmQLNhanVien)FormExist("");
+            if (frm == null)
+            {
+                frm = new frmQLNhanVien();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+            frm.Focus();
+
+            mnuQLNhanVien.Enabled = false;
         }
     }
 }

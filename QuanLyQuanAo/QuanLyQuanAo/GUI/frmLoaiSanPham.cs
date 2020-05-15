@@ -22,7 +22,8 @@ namespace QuanLyQuanAo.GUI
         #region Các phương thức
         private void LoadData()
         {
-            BUSLoaiSanPham.Instance.GetLoaiSanPham(dgvLoaiSanPham);
+            BUSLoaiSanPham.Instance.LayLoaiSanPham(dgvLoaiSanPham);
+
             btgNhomLenh.Reccount = dgvLoaiSanPham.RowCount;
            // MessageBox.Show(""+ dgvLoaiSanPham.RowCount);
 
@@ -60,6 +61,7 @@ namespace QuanLyQuanAo.GUI
             }
 
 
+
             if (dgvLoaiSanPham.CurrentCell != null)
             {
                 btgNhomLenh.Position = dgvLoaiSanPham.CurrentCell.RowIndex;
@@ -73,6 +75,7 @@ namespace QuanLyQuanAo.GUI
         {
             LoadData();
             btgNhomLenh.EnableButton(true);
+
             btgNhomLenh.AddDataTimKiem(BUSLoaiSanPham.Instance.ListTimTheoTen());
             btgNhomLenh.ExtraVisible = true;
             btgNhomLenh.ExtraText = "Làm Mới";

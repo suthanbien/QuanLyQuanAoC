@@ -33,12 +33,13 @@ namespace QuanLyQuanAo.DAO
         #endregion
 
         #region các xử lý
-        public List<LoaiSanPham> GetLoaiSanPham()
+        public List<LoaiSanPham> LayLoaiSanPham()
         {
+            //tạo csdl
             using (CSDLQuanLyQuanAoDataContext db=new CSDLQuanLyQuanAoDataContext())
             {
                 List<LoaiSanPham> lsLSP = new List<LoaiSanPham>();
-                lsLSP = db.LoaiSanPhams.Select(p => p).ToList();
+                lsLSP = db.LoaiSanPhams.Select(n => n).ToList();
                 return lsLSP;
             }
         }

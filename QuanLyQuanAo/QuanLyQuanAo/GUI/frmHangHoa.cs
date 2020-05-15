@@ -20,12 +20,16 @@ namespace QuanLyQuanAo.GUI
         private String m_TenHH;
         private String[] OldHangHoa;
         private bool isEdit=false;
+        private bool isOpen=true;
         #endregion
 
         #region Các phương thức
         private void LoadData()
         {
+            List<string> lstLoaiHH = new List<string>();
             BUSHangHoa.Instance.GetHangHoa(dgvSanPham);
+            lstLoaiHH.Add("Tất Cả");
+
             btgNhomLenh.Reccount = dgvSanPham.RowCount;
             // MessageBox.Show(""+ dgvLoaiSanPham.RowCount);
 
@@ -49,6 +53,10 @@ namespace QuanLyQuanAo.GUI
             txtAnh.DataBindings.Add("text", dgvSanPham.DataSource, "Image");
             ricChuThich.DataBindings.Clear();
             ricChuThich.DataBindings.Add("text", dgvSanPham.DataSource, "ChuThich");
+            lstLoaiHH.AddRange( BUSHangHoa.Instance.GetListLoaiHH());
+            cboLoaiHH.DataSource = lstLoaiHH;
+            LoadAnh();
+           
 
         }
 
@@ -129,7 +137,35 @@ namespace QuanLyQuanAo.GUI
 
         }
 
+        private void dgvSanPham_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            e.Control.KeyPress -= new KeyPressEventHandler(Column_KeyPress);
 
+            if (dgvSanPham.CurrentCell.ColumnIndex == 4 ||
+                dgvSanPham.CurrentCell.ColumnIndex == 5 ||
+                dgvSanPham.CurrentCell.ColumnIndex == 6) //Desired Column
+            {
+                TextBox tb = e.Control as TextBox;
+                if (tb != null)
+                {
+                    tb.KeyPress += new KeyPressEventHandler(Column_KeyPress);
+                }
+            }
+            TextBox tb1 = e.Control as TextBox;
+            if (tb1 != null)
+            {
+                tb1.Text = "";
+            }
+        }
+        private void Column_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        //NhomLenh
         private void btgNhomLenh_Load(object sender, EventArgs e)
         {
             btgNhomLenh.dgv = dgvSanPham;
@@ -138,9 +174,12 @@ namespace QuanLyQuanAo.GUI
         private void btgNhomLenh_Display(object sender, ButtonGroupEventArgs e)
         {
             if (btgNhomLenh.Reccount > 0)
+            {
                 dgvSanPham.CurrentCell = dgvSanPham.Rows[btgNhomLenh.Position].Cells[0];
-            m_TenHH = dgvSanPham.Rows[btgNhomLenh.Position].Cells[1].ToString();
-            LoadAnh();
+                m_TenHH = dgvSanPham.Rows[btgNhomLenh.Position].Cells[1].ToString();
+                LoadAnh();
+            }
+               
         }
 
         private void btgNhomLenh_AddClick(object sender, ButtonGroupEventArgs e)
@@ -185,9 +224,9 @@ namespace QuanLyQuanAo.GUI
                 hangSanXuat = dgvSanPham.Rows[btgNhomLenh.Position].Cells[3].Value.ToString();
                 tinhTrang = Convert.ToBoolean(dgvSanPham.Rows[btgNhomLenh.Position].Cells[7].Value);
                 chuThich = dgvSanPham.Rows[btgNhomLenh.Position].Cells[8].Value.ToString();
-                if (tenHH.Length>0|| hangSanXuat.Length>0|| loaiHH.Length>0)
+                if (tenHH.Length>0&& hangSanXuat.Length>0&& loaiHH.Length>0)
                 {
-                    if (giaNhap > 10000 || giaBan > 10000)
+                    if (giaNhap > 10000 && giaBan > 10000)
                     {
                         if (soLuongCon > 10)
                         {
@@ -232,9 +271,9 @@ namespace QuanLyQuanAo.GUI
                 hangSanXuat = dgvSanPham.Rows[btgNhomLenh.Position].Cells[3].Value.ToString();
                 tinhTrang = Convert.ToBoolean(dgvSanPham.Rows[btgNhomLenh.Position].Cells[7].Value);
                 chuThich = dgvSanPham.Rows[btgNhomLenh.Position].Cells[8].Value.ToString();
-                if (tenHH.Length > 0 || hangSanXuat.Length > 0 || loaiHH.Length > 0)
+                if (tenHH.Length > 0 && hangSanXuat.Length > 0 && loaiHH.Length > 0)
                 {
-                    if (giaNhap > 10000 || giaBan > 10000)
+                    if (giaNhap > 10000 && giaBan > 10000)
                     {
                         if (soLuongCon > 10)
                         {
@@ -315,6 +354,7 @@ namespace QuanLyQuanAo.GUI
 
 
                 btgNhomLenh.Reccount = dgvSanPham.RowCount;
+               // MessageBox.Show(btgNhomLenh.Reccount + "");
                 btgNhomLenh.Position = 0;
 
             }
@@ -325,6 +365,7 @@ namespace QuanLyQuanAo.GUI
 
 
                 btgNhomLenh.Reccount = dgvSanPham.RowCount;
+                //MessageBox.Show(btgNhomLenh.Reccount + "");
                 btgNhomLenh.Position = 0;
             }
 
@@ -351,33 +392,7 @@ namespace QuanLyQuanAo.GUI
             LoadData();
         }
 
-        private void dgvSanPham_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
-        {
-            e.Control.KeyPress -= new KeyPressEventHandler(Column_KeyPress);
-
-            if (dgvSanPham.CurrentCell.ColumnIndex == 4|| 
-                dgvSanPham.CurrentCell.ColumnIndex == 5 ||
-                dgvSanPham.CurrentCell.ColumnIndex == 6 ) //Desired Column
-            {
-                TextBox tb = e.Control as TextBox;
-                if (tb != null)
-                {
-                    tb.KeyPress += new KeyPressEventHandler(Column_KeyPress);
-                }
-            }
-            TextBox tb1 = e.Control as TextBox;
-            if (tb1 != null)
-            {
-                tb1.Text = "";
-            }
-        }
-        private void Column_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
+        
 
         private void btgNhomLenh_Extra2Click(object sender, ButtonGroupEventArgs e)
         {
@@ -393,7 +408,7 @@ namespace QuanLyQuanAo.GUI
             frm.TenHangHoa = dgvSanPham.Rows[btgNhomLenh.Position].Cells[7].Value.ToString().Trim();
             frm.ChuThich = dgvSanPham.Rows[btgNhomLenh.Position].Cells[8].Value.ToString().Trim();
            
-            if (!dgvSanPham.Rows[btgNhomLenh.Position].Cells[8].Equals(System.DBNull.Value))
+            if (!dgvSanPham.Rows[btgNhomLenh.Position].Cells[9].Equals(System.DBNull.Value))
             {
                 frm.Image = (Image)dgvSanPham.Rows[btgNhomLenh.Position].Cells[9].Value;
             }
@@ -404,6 +419,25 @@ namespace QuanLyQuanAo.GUI
             }
         }
 
-       
+        private void cboLoaiHH_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (isOpen==false)
+            {
+                string loaiHH = cboLoaiHH.SelectedValue.ToString();
+                BUSHangHoa.Instance.GetHangHoaTheoLoai(loaiHH, dgvSanPham);
+                btgNhomLenh.Reccount = dgvSanPham.RowCount;
+                // MessageBox.Show(btgNhomLenh.Reccount + "");
+                btgNhomLenh.Position = 0;
+                LoadAnh();
+            }
+            
+
+        }
+
+        private void cboLoaiHH_Click(object sender, EventArgs e)
+        {
+            isOpen = false;
+            
+        }
     }
 }

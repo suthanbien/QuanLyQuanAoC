@@ -51,9 +51,10 @@
             this.picAnh = new System.Windows.Forms.PictureBox();
             this.lblSanPham = new System.Windows.Forms.Label();
             this.pnlBottom = new System.Windows.Forms.Panel();
-            this.btgNhomLenh = new QuanLyQuanAo.GUI.ButtonGroup();
             this.pnlCenter = new System.Windows.Forms.Panel();
             this.dgvSanPham = new System.Windows.Forms.DataGridView();
+            this.cboLoaiHH = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.maHangHoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenHangHoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loaiHangHoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,6 +66,7 @@
             this.chuThichDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.classHangHoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btgNhomLenh = new QuanLyQuanAo.GUI.ButtonGroup();
             this.pnlTop.SuspendLayout();
             this.pnlTop_Center.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnh)).BeginInit();
@@ -86,6 +88,8 @@
             // 
             // pnlTop_Center
             // 
+            this.pnlTop_Center.Controls.Add(this.label2);
+            this.pnlTop_Center.Controls.Add(this.cboLoaiHH);
             this.pnlTop_Center.Controls.Add(this.ricChuThich);
             this.pnlTop_Center.Controls.Add(this.txtAnh);
             this.pnlTop_Center.Controls.Add(this.txtSoLuong);
@@ -112,7 +116,7 @@
             // 
             // ricChuThich
             // 
-            this.ricChuThich.Location = new System.Drawing.Point(472, 183);
+            this.ricChuThich.Location = new System.Drawing.Point(504, 183);
             this.ricChuThich.Name = "ricChuThich";
             this.ricChuThich.ReadOnly = true;
             this.ricChuThich.Size = new System.Drawing.Size(252, 122);
@@ -121,10 +125,10 @@
             // 
             // txtAnh
             // 
-            this.txtAnh.Location = new System.Drawing.Point(586, 155);
+            this.txtAnh.Location = new System.Drawing.Point(762, 283);
             this.txtAnh.Name = "txtAnh";
             this.txtAnh.ReadOnly = true;
-            this.txtAnh.Size = new System.Drawing.Size(138, 22);
+            this.txtAnh.Size = new System.Drawing.Size(22, 22);
             this.txtAnh.TabIndex = 24;
             // 
             // txtSoLuong
@@ -287,46 +291,6 @@
             this.pnlBottom.Size = new System.Drawing.Size(1190, 74);
             this.pnlBottom.TabIndex = 1;
             // 
-            // btgNhomLenh
-            // 
-            this.btgNhomLenh.AddEnabled = true;
-            this.btgNhomLenh.AutoNumber = false;
-            this.btgNhomLenh.CanDelete = true;
-            this.btgNhomLenh.CanSave = true;
-            this.btgNhomLenh.dgv = null;
-            this.btgNhomLenh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btgNhomLenh.EditEnabled = true;
-            this.btgNhomLenh.Extra2Enabled = true;
-            this.btgNhomLenh.Extra2Text = "Thêm Ảnh";
-            this.btgNhomLenh.Extra2Visible = true;
-            this.btgNhomLenh.ExtraEnabled = true;
-            this.btgNhomLenh.ExtraText = "Làm Mới";
-            this.btgNhomLenh.ExtraVisible = true;
-            this.btgNhomLenh.ListTimKiem = null;
-            this.btgNhomLenh.Location = new System.Drawing.Point(0, 0);
-            this.btgNhomLenh.MaTimKiem = "";
-            this.btgNhomLenh.Mode = 0;
-            this.btgNhomLenh.ModeADD = 0;
-            this.btgNhomLenh.ModeTimKiem = 1;
-            this.btgNhomLenh.MsMau = null;
-            this.btgNhomLenh.Name = "btgNhomLenh";
-            this.btgNhomLenh.Position = 0;
-            this.btgNhomLenh.Reccount = 0;
-            this.btgNhomLenh.Size = new System.Drawing.Size(1190, 74);
-            this.btgNhomLenh.TabIndex = 0;
-            this.btgNhomLenh.TenTimKiem = "";
-            this.btgNhomLenh.Display += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_Display);
-            this.btgNhomLenh.AddClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_AddClick);
-            this.btgNhomLenh.EditClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_EditClick);
-            this.btgNhomLenh.SaveClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_SaveClick);
-            this.btgNhomLenh.CancelClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_CancelClick);
-            this.btgNhomLenh.DeleteClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_DeleteClick);
-            this.btgNhomLenh.TimKiemClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_TimKiemClick);
-            this.btgNhomLenh.ExtraClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_ExtraClick);
-            this.btgNhomLenh.Extra2Click += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_Extra2Click);
-            this.btgNhomLenh.RadTimClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_RadTimClick);
-            this.btgNhomLenh.Load += new System.EventHandler(this.btgNhomLenh_Load);
-            // 
             // pnlCenter
             // 
             this.pnlCenter.Controls.Add(this.dgvSanPham);
@@ -367,6 +331,25 @@
             this.dgvSanPham.TabIndex = 1;
             this.dgvSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellClick);
             this.dgvSanPham.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgvSanPham_EditingControlShowing);
+            // 
+            // cboLoaiHH
+            // 
+            this.cboLoaiHH.FormattingEnabled = true;
+            this.cboLoaiHH.Location = new System.Drawing.Point(323, 261);
+            this.cboLoaiHH.Name = "cboLoaiHH";
+            this.cboLoaiHH.Size = new System.Drawing.Size(175, 24);
+            this.cboLoaiHH.TabIndex = 26;
+            this.cboLoaiHH.SelectedIndexChanged += new System.EventHandler(this.cboLoaiHH_SelectedIndexChanged);
+            this.cboLoaiHH.Click += new System.EventHandler(this.cboLoaiHH_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(371, 232);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(94, 17);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "loại hàng hóa";
             // 
             // maHangHoaDataGridViewTextBoxColumn
             // 
@@ -463,6 +446,46 @@
             // 
             this.classHangHoaBindingSource.DataSource = typeof(QuanLyQuanAo.DAO.ClassHangHoa);
             // 
+            // btgNhomLenh
+            // 
+            this.btgNhomLenh.AddEnabled = true;
+            this.btgNhomLenh.AutoNumber = false;
+            this.btgNhomLenh.CanDelete = true;
+            this.btgNhomLenh.CanSave = true;
+            this.btgNhomLenh.dgv = null;
+            this.btgNhomLenh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btgNhomLenh.EditEnabled = true;
+            this.btgNhomLenh.Extra2Enabled = true;
+            this.btgNhomLenh.Extra2Text = "Thêm Ảnh";
+            this.btgNhomLenh.Extra2Visible = true;
+            this.btgNhomLenh.ExtraEnabled = true;
+            this.btgNhomLenh.ExtraText = "Làm Mới";
+            this.btgNhomLenh.ExtraVisible = true;
+            this.btgNhomLenh.ListTimKiem = null;
+            this.btgNhomLenh.Location = new System.Drawing.Point(0, 0);
+            this.btgNhomLenh.MaTimKiem = "";
+            this.btgNhomLenh.Mode = 0;
+            this.btgNhomLenh.ModeADD = 0;
+            this.btgNhomLenh.ModeTimKiem = 1;
+            this.btgNhomLenh.MsMau = null;
+            this.btgNhomLenh.Name = "btgNhomLenh";
+            this.btgNhomLenh.Position = 0;
+            this.btgNhomLenh.Reccount = 0;
+            this.btgNhomLenh.Size = new System.Drawing.Size(1190, 74);
+            this.btgNhomLenh.TabIndex = 0;
+            this.btgNhomLenh.TenTimKiem = "";
+            this.btgNhomLenh.Display += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_Display);
+            this.btgNhomLenh.AddClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_AddClick);
+            this.btgNhomLenh.EditClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_EditClick);
+            this.btgNhomLenh.SaveClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_SaveClick);
+            this.btgNhomLenh.CancelClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_CancelClick);
+            this.btgNhomLenh.DeleteClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_DeleteClick);
+            this.btgNhomLenh.TimKiemClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_TimKiemClick);
+            this.btgNhomLenh.ExtraClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_ExtraClick);
+            this.btgNhomLenh.Extra2Click += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_Extra2Click);
+            this.btgNhomLenh.RadTimClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_RadTimClick);
+            this.btgNhomLenh.Load += new System.EventHandler(this.btgNhomLenh_Load);
+            // 
             // frmHangHoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -525,5 +548,7 @@
         private System.Windows.Forms.TextBox txtGiaBan;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cboLoaiHH;
     }
 }

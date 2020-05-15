@@ -36,9 +36,10 @@ namespace QuanLyQuanAo.BUS
         #endregion
 
         #region các xử lý
-        public void GetLoaiSanPham(DataGridView dgvLoaiSanPham)
+
+        public void LayLoaiSanPham(DataGridView dgvLoaiSanPham)
         {
-            lstLoaiSanPham = DAOLoaiSanPham.Instance.GetLoaiSanPham();
+            lstLoaiSanPham = DAOLoaiSanPham.Instance.LayLoaiSanPham();
             dgvLoaiSanPham.DataSource= lstLoaiSanPham;
         }
 
@@ -76,7 +77,7 @@ namespace QuanLyQuanAo.BUS
         {
             if (tenLSP.Equals(""))
             {
-                lstLoaiSanPham = DAOLoaiSanPham.Instance.GetLoaiSanPham();
+               // lstLoaiSanPham = DAOLoaiSanPham.Instance.GetLoaiSanPham();
                 dgvLoaiSanPham.DataSource = lstLoaiSanPham;
                 return 0;
             }
@@ -97,7 +98,7 @@ namespace QuanLyQuanAo.BUS
             }
             catch
             {
-                lstLoaiSanPham = DAOLoaiSanPham.Instance.GetLoaiSanPham();
+               // lstLoaiSanPham = DAOLoaiSanPham.Instance.GetLoaiSanPham();
                 dgvLoaiSanPham.DataSource = lstLoaiSanPham;
                 return 0;
             }

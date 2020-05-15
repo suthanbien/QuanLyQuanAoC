@@ -14,6 +14,7 @@ namespace QuanLyQuanAo.BUS
         #region các khai báo
         private static BUSHangHoa instance;
         List<ClassHangHoa> lstHangHoa = new List<ClassHangHoa>();
+        List<ClassHangHoa> lstHangHoaTheoLoai;
         List<string> lstNhaSanXuat = new List<string>();
         List<string> lstLoaiHangHoa = new List<string>();
         #endregion
@@ -54,6 +55,33 @@ namespace QuanLyQuanAo.BUS
             dgvHangHoa.DataSource = lstHangHoa;
             GetListHangSX();
             GetListLoaiHH();
+        }
+        public void GetHangHoa2(DataGridView dgvHangHoa)
+        {
+           // lstHangHoa = DAOHangHoa.Instance.GetHangHoa();
+            dgvHangHoa.DataSource = lstHangHoa;
+            GetListHangSX();
+            GetListLoaiHH();
+        }
+        public void GetHangHoaTheoLoai(string loaiHH,DataGridView dgvHangHoa)
+        {
+            lstHangHoaTheoLoai = new List<ClassHangHoa>();
+            if (loaiHH.Equals("Tất Cả"))
+            {
+                lstHangHoaTheoLoai = lstHangHoa;
+            }
+            else
+            {
+                for (int i = 0; i < lstHangHoa.Count; i++)
+                {
+                    if (lstHangHoa[i].LoaiHangHoa.Equals(loaiHH))
+                    {
+                        lstHangHoaTheoLoai.Add(lstHangHoa[i]);
+                    }
+                }
+            }
+            
+            dgvHangHoa.DataSource = lstHangHoaTheoLoai;
         }
 
         public void AddRows(DataGridView dgvHangHoa, DataGridViewComboBoxCell comboBoxCell, DataGridViewComboBoxCell comboBoxCell2)

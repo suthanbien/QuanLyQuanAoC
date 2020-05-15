@@ -47,21 +47,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\BUSAnHangHoa.cs" />
     <Compile Include="BUS\BUSDangNhap.cs" />
     <Compile Include="BUS\BUSDoiMatKhau.cs" />
     <Compile Include="BUS\BUSHangHoa.cs" />
+    <Compile Include="BUS\BUSHangSanXuat.cs" />
     <Compile Include="BUS\BUSLoaiSanPham.cs" />
+    <Compile Include="BUS\BUSQLNhanVien.cs" />
     <Compile Include="BUS\BUSQuenMatKhau.cs" />
     <Compile Include="DAO\ClassHangHoa.cs" />
+    <Compile Include="DAO\ClassNhanVien.cs" />
     <Compile Include="DAO\CSDLQuanLyQuanAo.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CSDLQuanLyQuanAo.dbml</DependentUpon>
     </Compile>
+    <Compile Include="DAO\DAOAnHangHoa.cs" />
     <Compile Include="DAO\DAODangNhap.cs" />
     <Compile Include="DAO\DAODoiMatKhau.cs" />
     <Compile Include="DAO\DAOHangHoa.cs" />
+    <Compile Include="DAO\DAOHangSanXuat.cs" />
     <Compile Include="DAO\DAOLoaiSanPham.cs" />
+    <Compile Include="DAO\DAOQLNhanVien.cs" />
     <Compile Include="DAO\DAOQuenMatKhau.cs" />
     <Compile Include="GUI\ButtonGroup.cs">
       <SubType>UserControl</SubType>
@@ -70,11 +77,23 @@
       <DependentUpon>ButtonGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\ButtonGroupEventArgs.cs" />
+    <Compile Include="GUI\frmAnHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmAnHangHoa.Designer.cs">
+      <DependentUpon>frmAnHangHoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmAnhHH.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\frmAnhHH.Designer.cs">
       <DependentUpon>frmAnhHH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmAnhNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmAnhNV.Designer.cs">
+      <DependentUpon>frmAnhNV.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmDangNhap.cs">
       <SubType>Form</SubType>
@@ -88,6 +107,12 @@
     <Compile Include="GUI\frmDoiMatKhau.Designer.cs">
       <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmHangSanXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmHangSanXuat.Designer.cs">
+      <DependentUpon>frmHangSanXuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmLoaiSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +124,12 @@
     </Compile>
     <Compile Include="GUI\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmQLNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmQLNhanVien.Designer.cs">
+      <DependentUpon>frmQLNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmQuenMatKhau.cs">
       <SubType>Form</SubType>
@@ -112,13 +143,25 @@
     <Compile Include="GUI\frmHangHoa.Designer.cs">
       <DependentUpon>frmHangHoa.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmSanPhamHetHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmSanPhamHetHang.Designer.cs">
+      <DependentUpon>frmSanPhamHetHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\ButtonGroup.resx">
       <DependentUpon>ButtonGroup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmAnHangHoa.resx">
+      <DependentUpon>frmAnHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmAnhHH.resx">
       <DependentUpon>frmAnhHH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmAnhNV.resx">
+      <DependentUpon>frmAnhNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
@@ -126,17 +169,26 @@
     <EmbeddedResource Include="GUI\frmDoiMatKhau.resx">
       <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmHangSanXuat.resx">
+      <DependentUpon>frmHangSanXuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmLoaiSanPham.resx">
       <DependentUpon>frmLoaiSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmQLNhanVien.resx">
+      <DependentUpon>frmQLNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmQuenMatKhau.resx">
       <DependentUpon>frmQuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmHangHoa.resx">
       <DependentUpon>frmHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmSanPhamHetHang.resx">
+      <DependentUpon>frmSanPhamHetHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -157,7 +209,9 @@
       <DependentUpon>CSDLQuanLyQuanAo.dbml</DependentUpon>
     </None>
     <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ClassHangHoa.datasource" />
+    <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ClassNhanVien.datasource" />
     <None Include="Properties\DataSources\QuanLyQuanAo.DAO.HangHoa.datasource" />
+    <None Include="Properties\DataSources\QuanLyQuanAo.DAO.HangSanXuat.datasource" />
     <None Include="Properties\DataSources\QuanLyQuanAo.DAO.LoaiSanPham.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
