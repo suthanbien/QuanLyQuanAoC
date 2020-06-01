@@ -119,9 +119,16 @@ namespace QuanLyQuanAo.GUI
 
         private void dgvHangHoaAn_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgvHangHoaAn.Rows[e.RowIndex].Cells[0].Value != null)
+            try
             {
-                MaHangHoaAn = dgvHangHoaAn.Rows[e.RowIndex].Cells[0].Value.ToString();
+                if (dgvHangHoaAn.Rows[e.RowIndex].Cells[0].Value != null)
+                {
+                    MaHangHoaAn = dgvHangHoaAn.Rows[e.RowIndex].Cells[0].Value.ToString();
+                }
+            }
+            catch
+            {
+
             }
         }
 

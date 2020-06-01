@@ -52,11 +52,20 @@
     <Compile Include="BUS\BUSDoiMatKhau.cs" />
     <Compile Include="BUS\BUSHangHoa.cs" />
     <Compile Include="BUS\BUSHangSanXuat.cs" />
+    <Compile Include="BUS\BUSKhachHang.cs" />
+    <Compile Include="BUS\BUSLapHoaDon.cs" />
     <Compile Include="BUS\BUSLoaiSanPham.cs" />
     <Compile Include="BUS\BUSQLNhanVien.cs" />
     <Compile Include="BUS\BUSQuenMatKhau.cs" />
+    <Compile Include="BUS\BUSTaiKhoanNV.cs" />
+    <Compile Include="BUS\BUSPhieuNhap.cs" />
+    <Compile Include="BUS\BUSTimHoaDon.cs" />
+    <Compile Include="DAO\ClassChiTietHoaDon.cs" />
     <Compile Include="DAO\ClassHangHoa.cs" />
+    <Compile Include="DAO\ClassHoaDon.cs" />
+    <Compile Include="DAO\ClassKhachHang.cs" />
     <Compile Include="DAO\ClassNhanVien.cs" />
+    <Compile Include="DAO\ClassTaiKhoanNV.cs" />
     <Compile Include="DAO\CSDLQuanLyQuanAo.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -67,9 +76,14 @@
     <Compile Include="DAO\DAODoiMatKhau.cs" />
     <Compile Include="DAO\DAOHangHoa.cs" />
     <Compile Include="DAO\DAOHangSanXuat.cs" />
+    <Compile Include="DAO\DAOKhachHang.cs" />
+    <Compile Include="DAO\DAOLapHoaDon.cs" />
     <Compile Include="DAO\DAOLoaiSanPham.cs" />
     <Compile Include="DAO\DAOQLNhanVien.cs" />
     <Compile Include="DAO\DAOQuenMatKhau.cs" />
+    <Compile Include="DAO\DAOTaiKhoanNV.cs" />
+    <Compile Include="DAO\DAOPhieuNhap.cs" />
+    <Compile Include="DAO\DAOTimHoaDon.cs" />
     <Compile Include="GUI\ButtonGroup.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -113,6 +127,18 @@
     <Compile Include="GUI\frmHangSanXuat.Designer.cs">
       <DependentUpon>frmHangSanXuat.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmLapHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmLapHoaDon.Designer.cs">
+      <DependentUpon>frmLapHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmLoaiSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +157,12 @@
     <Compile Include="GUI\frmQLNhanVien.Designer.cs">
       <DependentUpon>frmQLNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmQLTaiKhoanNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmQLTaiKhoanNV.Designer.cs">
+      <DependentUpon>frmQLTaiKhoanNV.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmQuenMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,11 +175,17 @@
     <Compile Include="GUI\frmHangHoa.Designer.cs">
       <DependentUpon>frmHangHoa.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmSanPhamHetHang.cs">
+    <Compile Include="GUI\frmPhieuNhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmSanPhamHetHang.Designer.cs">
-      <DependentUpon>frmSanPhamHetHang.cs</DependentUpon>
+    <Compile Include="GUI\frmPhieuNhapHang.Designer.cs">
+      <DependentUpon>frmPhieuNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmTimHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmTimHoaDon.Designer.cs">
+      <DependentUpon>frmTimHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -172,6 +210,12 @@
     <EmbeddedResource Include="GUI\frmHangSanXuat.resx">
       <DependentUpon>frmHangSanXuat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmLapHoaDon.resx">
+      <DependentUpon>frmLapHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmLoaiSanPham.resx">
       <DependentUpon>frmLoaiSanPham.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,14 +225,20 @@
     <EmbeddedResource Include="GUI\frmQLNhanVien.resx">
       <DependentUpon>frmQLNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmQLTaiKhoanNV.resx">
+      <DependentUpon>frmQLTaiKhoanNV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmQuenMatKhau.resx">
       <DependentUpon>frmQuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmHangHoa.resx">
       <DependentUpon>frmHangHoa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmSanPhamHetHang.resx">
-      <DependentUpon>frmSanPhamHetHang.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\frmPhieuNhapHang.resx">
+      <DependentUpon>frmPhieuNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmTimHoaDon.resx">
+      <DependentUpon>frmTimHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -208,11 +258,18 @@
     <None Include="DAO\CSDLQuanLyQuanAo.dbml.layout">
       <DependentUpon>CSDLQuanLyQuanAo.dbml</DependentUpon>
     </None>
+    <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ChiTietHoaDon.datasource" />
+    <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ClassChiTietHoaDon.datasource" />
     <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ClassHangHoa.datasource" />
+    <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ClassHoaDon.datasource" />
+    <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ClassKhachHang.datasource" />
     <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ClassNhanVien.datasource" />
+    <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ClassTaiKhoanNV.datasource" />
+    <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ClassTaiKhoanNV1.datasource" />
     <None Include="Properties\DataSources\QuanLyQuanAo.DAO.HangHoa.datasource" />
     <None Include="Properties\DataSources\QuanLyQuanAo.DAO.HangSanXuat.datasource" />
     <None Include="Properties\DataSources\QuanLyQuanAo.DAO.LoaiSanPham.datasource" />
+    <None Include="Properties\DataSources\QuanLyQuanAo.DAO.User.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

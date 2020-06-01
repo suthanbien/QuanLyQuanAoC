@@ -83,6 +83,7 @@
             this.dgvLoaiSanPham.MultiSelect = false;
             this.dgvLoaiSanPham.Name = "dgvLoaiSanPham";
             this.dgvLoaiSanPham.ReadOnly = true;
+            this.dgvLoaiSanPham.RowHeadersVisible = false;
             this.dgvLoaiSanPham.RowHeadersWidth = 51;
             this.dgvLoaiSanPham.RowTemplate.Height = 24;
             this.dgvLoaiSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
@@ -125,6 +126,8 @@
             // 
             this.btgNhomLenh.AddEnabled = true;
             this.btgNhomLenh.AutoNumber = false;
+            this.btgNhomLenh.CanDelete = true;
+            this.btgNhomLenh.CanSave = true;
             this.btgNhomLenh.dgv = null;
             this.btgNhomLenh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btgNhomLenh.EditEnabled = true;

@@ -30,6 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlTop = new System.Windows.Forms.Panel();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.ricChuThich = new System.Windows.Forms.RichTextBox();
+            this.txtAnh = new System.Windows.Forms.TextBox();
+            this.txtChucVu = new System.Windows.Forms.TextBox();
+            this.txtGioiTinh = new System.Windows.Forms.TextBox();
+            this.txtCMND = new System.Windows.Forms.TextBox();
+            this.txtNgaySinh = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtTenNV = new System.Windows.Forms.TextBox();
+            this.txtMaNV = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblMLSP = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblGiaTien = new System.Windows.Forms.Label();
+            this.lblSL = new System.Windows.Forms.Label();
+            this.lblTenSp = new System.Windows.Forms.Label();
+            this.lblMaSp = new System.Windows.Forms.Label();
             this.picAnh = new System.Windows.Forms.PictureBox();
             this.pnlT_Top = new System.Windows.Forms.Panel();
             this.lblSanPham = new System.Windows.Forms.Label();
@@ -52,27 +73,6 @@
             this.ghiChuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.classNhanVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ricChuThich = new System.Windows.Forms.RichTextBox();
-            this.txtAnh = new System.Windows.Forms.TextBox();
-            this.txtChucVu = new System.Windows.Forms.TextBox();
-            this.txtGioiTinh = new System.Windows.Forms.TextBox();
-            this.txtCMND = new System.Windows.Forms.TextBox();
-            this.txtNgaySinh = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtTenNV = new System.Windows.Forms.TextBox();
-            this.txtMaNV = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblMLSP = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblGiaTien = new System.Windows.Forms.Label();
-            this.lblSL = new System.Windows.Forms.Label();
-            this.lblTenSp = new System.Windows.Forms.Label();
-            this.lblMaSp = new System.Windows.Forms.Label();
-            this.txtSDT = new System.Windows.Forms.TextBox();
-            this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnh)).BeginInit();
             this.pnlT_Top.SuspendLayout();
@@ -113,261 +113,39 @@
             this.pnlTop.Size = new System.Drawing.Size(1201, 409);
             this.pnlTop.TabIndex = 0;
             // 
-            // picAnh
+            // txtSDT
             // 
-            this.picAnh.Dock = System.Windows.Forms.DockStyle.Right;
-            this.picAnh.Location = new System.Drawing.Point(826, 76);
-            this.picAnh.Name = "picAnh";
-            this.picAnh.Size = new System.Drawing.Size(375, 333);
-            this.picAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picAnh.TabIndex = 5;
-            this.picAnh.TabStop = false;
+            this.txtSDT.Location = new System.Drawing.Point(573, 249);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.ReadOnly = true;
+            this.txtSDT.Size = new System.Drawing.Size(138, 22);
+            this.txtSDT.TabIndex = 45;
             // 
-            // pnlT_Top
+            // txtDiaChi
             // 
-            this.pnlT_Top.Controls.Add(this.lblSanPham);
-            this.pnlT_Top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlT_Top.Location = new System.Drawing.Point(0, 0);
-            this.pnlT_Top.Name = "pnlT_Top";
-            this.pnlT_Top.Size = new System.Drawing.Size(1201, 76);
-            this.pnlT_Top.TabIndex = 0;
+            this.txtDiaChi.Location = new System.Drawing.Point(573, 206);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.ReadOnly = true;
+            this.txtDiaChi.Size = new System.Drawing.Size(138, 22);
+            this.txtDiaChi.TabIndex = 46;
             // 
-            // lblSanPham
+            // label2
             // 
-            this.lblSanPham.BackColor = System.Drawing.Color.Chartreuse;
-            this.lblSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSanPham.ForeColor = System.Drawing.Color.Crimson;
-            this.lblSanPham.Location = new System.Drawing.Point(0, 0);
-            this.lblSanPham.Name = "lblSanPham";
-            this.lblSanPham.Size = new System.Drawing.Size(1201, 76);
-            this.lblSanPham.TabIndex = 2;
-            this.lblSanPham.Text = "Danh Mục Nhân Viên";
-            this.lblSanPham.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(422, 254);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 17);
+            this.label2.TabIndex = 44;
+            this.label2.Text = "SDT";
             // 
-            // pnlBottom
+            // label3
             // 
-            this.pnlBottom.Controls.Add(this.btgNhomLenh);
-            this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottom.Location = new System.Drawing.Point(0, 607);
-            this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.Size = new System.Drawing.Size(1201, 80);
-            this.pnlBottom.TabIndex = 1;
-            // 
-            // btgNhomLenh
-            // 
-            this.btgNhomLenh.AddEnabled = true;
-            this.btgNhomLenh.AutoNumber = false;
-            this.btgNhomLenh.CanDelete = true;
-            this.btgNhomLenh.CanSave = true;
-            this.btgNhomLenh.dgv = null;
-            this.btgNhomLenh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btgNhomLenh.EditEnabled = true;
-            this.btgNhomLenh.Extra2Enabled = true;
-            this.btgNhomLenh.Extra2Text = "Thêm Ảnh";
-            this.btgNhomLenh.Extra2Visible = true;
-            this.btgNhomLenh.ExtraEnabled = true;
-            this.btgNhomLenh.ExtraText = "Làm Mới";
-            this.btgNhomLenh.ExtraVisible = true;
-            this.btgNhomLenh.ListTimKiem = null;
-            this.btgNhomLenh.Location = new System.Drawing.Point(0, 0);
-            this.btgNhomLenh.MaTimKiem = "";
-            this.btgNhomLenh.Mode = 0;
-            this.btgNhomLenh.ModeADD = 0;
-            this.btgNhomLenh.ModeTimKiem = 1;
-            this.btgNhomLenh.MsMau = null;
-            this.btgNhomLenh.Name = "btgNhomLenh";
-            this.btgNhomLenh.Position = 0;
-            this.btgNhomLenh.Reccount = 0;
-            this.btgNhomLenh.Size = new System.Drawing.Size(1201, 80);
-            this.btgNhomLenh.TabIndex = 0;
-            this.btgNhomLenh.TenTimKiem = "";
-            this.btgNhomLenh.Display += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_Display);
-            this.btgNhomLenh.AddClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_AddClick);
-            this.btgNhomLenh.EditClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_EditClick);
-            this.btgNhomLenh.SaveClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_SaveClick);
-            this.btgNhomLenh.CancelClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_CancelClick);
-            this.btgNhomLenh.DeleteClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_DeleteClick);
-            this.btgNhomLenh.TimKiemClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_TimKiemClick);
-            this.btgNhomLenh.ExtraClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_ExtraClick);
-            this.btgNhomLenh.Extra2Click += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_Extra2Click);
-            this.btgNhomLenh.RadTimClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_RadTimClick);
-            this.btgNhomLenh.Load += new System.EventHandler(this.btgNhomLenh_Load);
-            // 
-            // pnlCenter
-            // 
-            this.pnlCenter.Controls.Add(this.dgvNhanVien);
-            this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCenter.Location = new System.Drawing.Point(0, 409);
-            this.pnlCenter.Name = "pnlCenter";
-            this.pnlCenter.Size = new System.Drawing.Size(1201, 198);
-            this.pnlCenter.TabIndex = 2;
-            // 
-            // dgvNhanVien
-            // 
-            this.dgvNhanVien.AllowUserToAddRows = false;
-            this.dgvNhanVien.AllowUserToDeleteRows = false;
-            this.dgvNhanVien.AutoGenerateColumns = false;
-            this.dgvNhanVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.maNhanVienDataGridViewTextBoxColumn,
-            this.tenNhanVienDataGridViewTextBoxColumn,
-            this.chucVuDataGridViewTextBoxColumn,
-            this.ngaySinhDataGridViewTextBoxColumn,
-            this.gioiTinhDataGridViewTextBoxColumn,
-            this.cMNDDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn,
-            this.ngayVaoLamDataGridViewTextBoxColumn,
-            this.ngayNghiLamDataGridViewTextBoxColumn,
-            this.diaChiDataGridViewTextBoxColumn,
-            this.soDTDataGridViewTextBoxColumn,
-            this.tinhTrangDataGridViewCheckBoxColumn,
-            this.ghiChuDataGridViewTextBoxColumn,
-            this.imageDataGridViewImageColumn});
-            this.dgvNhanVien.DataSource = this.classNhanVienBindingSource;
-            this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvNhanVien.Location = new System.Drawing.Point(0, 0);
-            this.dgvNhanVien.MultiSelect = false;
-            this.dgvNhanVien.Name = "dgvNhanVien";
-            this.dgvNhanVien.ReadOnly = true;
-            this.dgvNhanVien.RowHeadersWidth = 51;
-            this.dgvNhanVien.RowTemplate.Height = 24;
-            this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgvNhanVien.Size = new System.Drawing.Size(1201, 198);
-            this.dgvNhanVien.TabIndex = 3;
-            this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellClick);
-            this.dgvNhanVien.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgvSanPham_EditingControlShowing);
-            // 
-            // maNhanVienDataGridViewTextBoxColumn
-            // 
-            this.maNhanVienDataGridViewTextBoxColumn.DataPropertyName = "MaNhanVien";
-            this.maNhanVienDataGridViewTextBoxColumn.HeaderText = "MaNhanVien";
-            this.maNhanVienDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.maNhanVienDataGridViewTextBoxColumn.Name = "maNhanVienDataGridViewTextBoxColumn";
-            this.maNhanVienDataGridViewTextBoxColumn.ReadOnly = true;
-            this.maNhanVienDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // tenNhanVienDataGridViewTextBoxColumn
-            // 
-            this.tenNhanVienDataGridViewTextBoxColumn.DataPropertyName = "TenNhanVien";
-            this.tenNhanVienDataGridViewTextBoxColumn.HeaderText = "TenNhanVien";
-            this.tenNhanVienDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tenNhanVienDataGridViewTextBoxColumn.Name = "tenNhanVienDataGridViewTextBoxColumn";
-            this.tenNhanVienDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tenNhanVienDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // chucVuDataGridViewTextBoxColumn
-            // 
-            this.chucVuDataGridViewTextBoxColumn.DataPropertyName = "ChucVu";
-            this.chucVuDataGridViewTextBoxColumn.HeaderText = "ChucVu";
-            this.chucVuDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.chucVuDataGridViewTextBoxColumn.Name = "chucVuDataGridViewTextBoxColumn";
-            this.chucVuDataGridViewTextBoxColumn.ReadOnly = true;
-            this.chucVuDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ngaySinhDataGridViewTextBoxColumn
-            // 
-            this.ngaySinhDataGridViewTextBoxColumn.DataPropertyName = "NgaySinh";
-            this.ngaySinhDataGridViewTextBoxColumn.HeaderText = "NgaySinh";
-            this.ngaySinhDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ngaySinhDataGridViewTextBoxColumn.Name = "ngaySinhDataGridViewTextBoxColumn";
-            this.ngaySinhDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ngaySinhDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // gioiTinhDataGridViewTextBoxColumn
-            // 
-            this.gioiTinhDataGridViewTextBoxColumn.DataPropertyName = "GioiTinh";
-            this.gioiTinhDataGridViewTextBoxColumn.HeaderText = "GioiTinh";
-            this.gioiTinhDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.gioiTinhDataGridViewTextBoxColumn.Name = "gioiTinhDataGridViewTextBoxColumn";
-            this.gioiTinhDataGridViewTextBoxColumn.ReadOnly = true;
-            this.gioiTinhDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // cMNDDataGridViewTextBoxColumn
-            // 
-            this.cMNDDataGridViewTextBoxColumn.DataPropertyName = "CMND";
-            this.cMNDDataGridViewTextBoxColumn.HeaderText = "CMND";
-            this.cMNDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cMNDDataGridViewTextBoxColumn.Name = "cMNDDataGridViewTextBoxColumn";
-            this.cMNDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cMNDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
-            this.emailDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ngayVaoLamDataGridViewTextBoxColumn
-            // 
-            this.ngayVaoLamDataGridViewTextBoxColumn.DataPropertyName = "NgayVaoLam";
-            this.ngayVaoLamDataGridViewTextBoxColumn.HeaderText = "NgayVaoLam";
-            this.ngayVaoLamDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ngayVaoLamDataGridViewTextBoxColumn.Name = "ngayVaoLamDataGridViewTextBoxColumn";
-            this.ngayVaoLamDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ngayVaoLamDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ngayNghiLamDataGridViewTextBoxColumn
-            // 
-            this.ngayNghiLamDataGridViewTextBoxColumn.DataPropertyName = "NgayNghiLam";
-            this.ngayNghiLamDataGridViewTextBoxColumn.HeaderText = "NgayNghiLam";
-            this.ngayNghiLamDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ngayNghiLamDataGridViewTextBoxColumn.Name = "ngayNghiLamDataGridViewTextBoxColumn";
-            this.ngayNghiLamDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ngayNghiLamDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // diaChiDataGridViewTextBoxColumn
-            // 
-            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
-            this.diaChiDataGridViewTextBoxColumn.HeaderText = "DiaChi";
-            this.diaChiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
-            this.diaChiDataGridViewTextBoxColumn.ReadOnly = true;
-            this.diaChiDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // soDTDataGridViewTextBoxColumn
-            // 
-            this.soDTDataGridViewTextBoxColumn.DataPropertyName = "SoDT";
-            this.soDTDataGridViewTextBoxColumn.HeaderText = "SoDT";
-            this.soDTDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.soDTDataGridViewTextBoxColumn.Name = "soDTDataGridViewTextBoxColumn";
-            this.soDTDataGridViewTextBoxColumn.ReadOnly = true;
-            this.soDTDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // tinhTrangDataGridViewCheckBoxColumn
-            // 
-            this.tinhTrangDataGridViewCheckBoxColumn.DataPropertyName = "TinhTrang";
-            this.tinhTrangDataGridViewCheckBoxColumn.HeaderText = "TinhTrang";
-            this.tinhTrangDataGridViewCheckBoxColumn.MinimumWidth = 6;
-            this.tinhTrangDataGridViewCheckBoxColumn.Name = "tinhTrangDataGridViewCheckBoxColumn";
-            this.tinhTrangDataGridViewCheckBoxColumn.ReadOnly = true;
-            this.tinhTrangDataGridViewCheckBoxColumn.Width = 125;
-            // 
-            // ghiChuDataGridViewTextBoxColumn
-            // 
-            this.ghiChuDataGridViewTextBoxColumn.DataPropertyName = "GhiChu";
-            this.ghiChuDataGridViewTextBoxColumn.HeaderText = "GhiChu";
-            this.ghiChuDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ghiChuDataGridViewTextBoxColumn.Name = "ghiChuDataGridViewTextBoxColumn";
-            this.ghiChuDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ghiChuDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // imageDataGridViewImageColumn
-            // 
-            this.imageDataGridViewImageColumn.DataPropertyName = "Image";
-            this.imageDataGridViewImageColumn.HeaderText = "Image";
-            this.imageDataGridViewImageColumn.MinimumWidth = 6;
-            this.imageDataGridViewImageColumn.Name = "imageDataGridViewImageColumn";
-            this.imageDataGridViewImageColumn.ReadOnly = true;
-            this.imageDataGridViewImageColumn.Width = 125;
-            // 
-            // classNhanVienBindingSource
-            // 
-            this.classNhanVienBindingSource.DataSource = typeof(QuanLyQuanAo.DAO.ClassNhanVien);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(422, 209);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 17);
+            this.label3.TabIndex = 43;
+            this.label3.Text = "Dịa Chỉ";
             // 
             // ricChuThich
             // 
@@ -514,39 +292,262 @@
             this.lblMaSp.TabIndex = 26;
             this.lblMaSp.Text = "Mã Nhân Viên";
             // 
-            // txtSDT
+            // picAnh
             // 
-            this.txtSDT.Location = new System.Drawing.Point(573, 249);
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.ReadOnly = true;
-            this.txtSDT.Size = new System.Drawing.Size(138, 22);
-            this.txtSDT.TabIndex = 45;
+            this.picAnh.Dock = System.Windows.Forms.DockStyle.Right;
+            this.picAnh.Location = new System.Drawing.Point(826, 76);
+            this.picAnh.Name = "picAnh";
+            this.picAnh.Size = new System.Drawing.Size(375, 333);
+            this.picAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAnh.TabIndex = 5;
+            this.picAnh.TabStop = false;
             // 
-            // txtDiaChi
+            // pnlT_Top
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(573, 206);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.ReadOnly = true;
-            this.txtDiaChi.Size = new System.Drawing.Size(138, 22);
-            this.txtDiaChi.TabIndex = 46;
+            this.pnlT_Top.Controls.Add(this.lblSanPham);
+            this.pnlT_Top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlT_Top.Location = new System.Drawing.Point(0, 0);
+            this.pnlT_Top.Name = "pnlT_Top";
+            this.pnlT_Top.Size = new System.Drawing.Size(1201, 76);
+            this.pnlT_Top.TabIndex = 0;
             // 
-            // label2
+            // lblSanPham
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(422, 254);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 17);
-            this.label2.TabIndex = 44;
-            this.label2.Text = "SDT";
+            this.lblSanPham.BackColor = System.Drawing.Color.Chartreuse;
+            this.lblSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSanPham.ForeColor = System.Drawing.Color.Crimson;
+            this.lblSanPham.Location = new System.Drawing.Point(0, 0);
+            this.lblSanPham.Name = "lblSanPham";
+            this.lblSanPham.Size = new System.Drawing.Size(1201, 76);
+            this.lblSanPham.TabIndex = 2;
+            this.lblSanPham.Text = "Danh Mục Nhân Viên";
+            this.lblSanPham.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // label3
+            // pnlBottom
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(422, 209);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 17);
-            this.label3.TabIndex = 43;
-            this.label3.Text = "Dịa Chỉ";
+            this.pnlBottom.Controls.Add(this.btgNhomLenh);
+            this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlBottom.Location = new System.Drawing.Point(0, 607);
+            this.pnlBottom.Name = "pnlBottom";
+            this.pnlBottom.Size = new System.Drawing.Size(1201, 80);
+            this.pnlBottom.TabIndex = 1;
+            // 
+            // btgNhomLenh
+            // 
+            this.btgNhomLenh.AddEnabled = true;
+            this.btgNhomLenh.AutoNumber = false;
+            this.btgNhomLenh.CanDelete = true;
+            this.btgNhomLenh.CanSave = true;
+            this.btgNhomLenh.dgv = null;
+            this.btgNhomLenh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btgNhomLenh.EditEnabled = true;
+            this.btgNhomLenh.Extra2Enabled = true;
+            this.btgNhomLenh.Extra2Text = "Thêm Ảnh";
+            this.btgNhomLenh.Extra2Visible = true;
+            this.btgNhomLenh.ExtraEnabled = true;
+            this.btgNhomLenh.ExtraText = "Làm Mới";
+            this.btgNhomLenh.ExtraVisible = true;
+            this.btgNhomLenh.ListTimKiem = null;
+            this.btgNhomLenh.Location = new System.Drawing.Point(0, 0);
+            this.btgNhomLenh.MaTimKiem = "";
+            this.btgNhomLenh.Mode = 0;
+            this.btgNhomLenh.ModeADD = 0;
+            this.btgNhomLenh.ModeTimKiem = 1;
+            this.btgNhomLenh.MsMau = null;
+            this.btgNhomLenh.Name = "btgNhomLenh";
+            this.btgNhomLenh.Position = 0;
+            this.btgNhomLenh.Reccount = 0;
+            this.btgNhomLenh.Size = new System.Drawing.Size(1201, 80);
+            this.btgNhomLenh.TabIndex = 0;
+            this.btgNhomLenh.TenTimKiem = "";
+            this.btgNhomLenh.Display += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_Display);
+            this.btgNhomLenh.AddClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_AddClick);
+            this.btgNhomLenh.EditClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_EditClick);
+            this.btgNhomLenh.SaveClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_SaveClick);
+            this.btgNhomLenh.CancelClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_CancelClick);
+            this.btgNhomLenh.DeleteClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_DeleteClick);
+            this.btgNhomLenh.TimKiemClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_TimKiemClick);
+            this.btgNhomLenh.ExtraClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_ExtraClick);
+            this.btgNhomLenh.Extra2Click += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_Extra2Click);
+            this.btgNhomLenh.RadTimClick += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_RadTimClick);
+            this.btgNhomLenh.Load += new System.EventHandler(this.btgNhomLenh_Load);
+            // 
+            // pnlCenter
+            // 
+            this.pnlCenter.Controls.Add(this.dgvNhanVien);
+            this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlCenter.Location = new System.Drawing.Point(0, 409);
+            this.pnlCenter.Name = "pnlCenter";
+            this.pnlCenter.Size = new System.Drawing.Size(1201, 198);
+            this.pnlCenter.TabIndex = 2;
+            // 
+            // dgvNhanVien
+            // 
+            this.dgvNhanVien.AllowUserToAddRows = false;
+            this.dgvNhanVien.AllowUserToDeleteRows = false;
+            this.dgvNhanVien.AutoGenerateColumns = false;
+            this.dgvNhanVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maNhanVienDataGridViewTextBoxColumn,
+            this.tenNhanVienDataGridViewTextBoxColumn,
+            this.chucVuDataGridViewTextBoxColumn,
+            this.ngaySinhDataGridViewTextBoxColumn,
+            this.gioiTinhDataGridViewTextBoxColumn,
+            this.cMNDDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.ngayVaoLamDataGridViewTextBoxColumn,
+            this.ngayNghiLamDataGridViewTextBoxColumn,
+            this.diaChiDataGridViewTextBoxColumn,
+            this.soDTDataGridViewTextBoxColumn,
+            this.tinhTrangDataGridViewCheckBoxColumn,
+            this.ghiChuDataGridViewTextBoxColumn,
+            this.imageDataGridViewImageColumn});
+            this.dgvNhanVien.DataSource = this.classNhanVienBindingSource;
+            this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvNhanVien.Location = new System.Drawing.Point(0, 0);
+            this.dgvNhanVien.MultiSelect = false;
+            this.dgvNhanVien.Name = "dgvNhanVien";
+            this.dgvNhanVien.ReadOnly = true;
+            this.dgvNhanVien.RowHeadersVisible = false;
+            this.dgvNhanVien.RowHeadersWidth = 51;
+            this.dgvNhanVien.RowTemplate.Height = 24;
+            this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dgvNhanVien.Size = new System.Drawing.Size(1201, 198);
+            this.dgvNhanVien.TabIndex = 3;
+            this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellClick);
+            this.dgvNhanVien.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgvSanPham_EditingControlShowing);
+            // 
+            // maNhanVienDataGridViewTextBoxColumn
+            // 
+            this.maNhanVienDataGridViewTextBoxColumn.DataPropertyName = "MaNhanVien";
+            this.maNhanVienDataGridViewTextBoxColumn.HeaderText = "MaNhanVien";
+            this.maNhanVienDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.maNhanVienDataGridViewTextBoxColumn.Name = "maNhanVienDataGridViewTextBoxColumn";
+            this.maNhanVienDataGridViewTextBoxColumn.ReadOnly = true;
+            this.maNhanVienDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // tenNhanVienDataGridViewTextBoxColumn
+            // 
+            this.tenNhanVienDataGridViewTextBoxColumn.DataPropertyName = "TenNhanVien";
+            this.tenNhanVienDataGridViewTextBoxColumn.HeaderText = "TenNhanVien";
+            this.tenNhanVienDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tenNhanVienDataGridViewTextBoxColumn.Name = "tenNhanVienDataGridViewTextBoxColumn";
+            this.tenNhanVienDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tenNhanVienDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // chucVuDataGridViewTextBoxColumn
+            // 
+            this.chucVuDataGridViewTextBoxColumn.DataPropertyName = "ChucVu";
+            this.chucVuDataGridViewTextBoxColumn.HeaderText = "ChucVu";
+            this.chucVuDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.chucVuDataGridViewTextBoxColumn.Name = "chucVuDataGridViewTextBoxColumn";
+            this.chucVuDataGridViewTextBoxColumn.ReadOnly = true;
+            this.chucVuDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ngaySinhDataGridViewTextBoxColumn
+            // 
+            this.ngaySinhDataGridViewTextBoxColumn.DataPropertyName = "NgaySinh";
+            this.ngaySinhDataGridViewTextBoxColumn.HeaderText = "NgaySinh";
+            this.ngaySinhDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ngaySinhDataGridViewTextBoxColumn.Name = "ngaySinhDataGridViewTextBoxColumn";
+            this.ngaySinhDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ngaySinhDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // gioiTinhDataGridViewTextBoxColumn
+            // 
+            this.gioiTinhDataGridViewTextBoxColumn.DataPropertyName = "GioiTinh";
+            this.gioiTinhDataGridViewTextBoxColumn.HeaderText = "GioiTinh";
+            this.gioiTinhDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.gioiTinhDataGridViewTextBoxColumn.Name = "gioiTinhDataGridViewTextBoxColumn";
+            this.gioiTinhDataGridViewTextBoxColumn.ReadOnly = true;
+            this.gioiTinhDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // cMNDDataGridViewTextBoxColumn
+            // 
+            this.cMNDDataGridViewTextBoxColumn.DataPropertyName = "CMND";
+            this.cMNDDataGridViewTextBoxColumn.HeaderText = "CMND";
+            this.cMNDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cMNDDataGridViewTextBoxColumn.Name = "cMNDDataGridViewTextBoxColumn";
+            this.cMNDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cMNDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
+            this.emailDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ngayVaoLamDataGridViewTextBoxColumn
+            // 
+            this.ngayVaoLamDataGridViewTextBoxColumn.DataPropertyName = "NgayVaoLam";
+            this.ngayVaoLamDataGridViewTextBoxColumn.HeaderText = "NgayVaoLam";
+            this.ngayVaoLamDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ngayVaoLamDataGridViewTextBoxColumn.Name = "ngayVaoLamDataGridViewTextBoxColumn";
+            this.ngayVaoLamDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ngayVaoLamDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ngayNghiLamDataGridViewTextBoxColumn
+            // 
+            this.ngayNghiLamDataGridViewTextBoxColumn.DataPropertyName = "NgayNghiLam";
+            this.ngayNghiLamDataGridViewTextBoxColumn.HeaderText = "NgayNghiLam";
+            this.ngayNghiLamDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ngayNghiLamDataGridViewTextBoxColumn.Name = "ngayNghiLamDataGridViewTextBoxColumn";
+            this.ngayNghiLamDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ngayNghiLamDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // diaChiDataGridViewTextBoxColumn
+            // 
+            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
+            this.diaChiDataGridViewTextBoxColumn.HeaderText = "DiaChi";
+            this.diaChiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
+            this.diaChiDataGridViewTextBoxColumn.ReadOnly = true;
+            this.diaChiDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // soDTDataGridViewTextBoxColumn
+            // 
+            this.soDTDataGridViewTextBoxColumn.DataPropertyName = "SoDT";
+            this.soDTDataGridViewTextBoxColumn.HeaderText = "SoDT";
+            this.soDTDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.soDTDataGridViewTextBoxColumn.Name = "soDTDataGridViewTextBoxColumn";
+            this.soDTDataGridViewTextBoxColumn.ReadOnly = true;
+            this.soDTDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // tinhTrangDataGridViewCheckBoxColumn
+            // 
+            this.tinhTrangDataGridViewCheckBoxColumn.DataPropertyName = "TinhTrang";
+            this.tinhTrangDataGridViewCheckBoxColumn.HeaderText = "TinhTrang";
+            this.tinhTrangDataGridViewCheckBoxColumn.MinimumWidth = 6;
+            this.tinhTrangDataGridViewCheckBoxColumn.Name = "tinhTrangDataGridViewCheckBoxColumn";
+            this.tinhTrangDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.tinhTrangDataGridViewCheckBoxColumn.Width = 125;
+            // 
+            // ghiChuDataGridViewTextBoxColumn
+            // 
+            this.ghiChuDataGridViewTextBoxColumn.DataPropertyName = "GhiChu";
+            this.ghiChuDataGridViewTextBoxColumn.HeaderText = "GhiChu";
+            this.ghiChuDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ghiChuDataGridViewTextBoxColumn.Name = "ghiChuDataGridViewTextBoxColumn";
+            this.ghiChuDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ghiChuDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // imageDataGridViewImageColumn
+            // 
+            this.imageDataGridViewImageColumn.DataPropertyName = "Image";
+            this.imageDataGridViewImageColumn.HeaderText = "Image";
+            this.imageDataGridViewImageColumn.MinimumWidth = 6;
+            this.imageDataGridViewImageColumn.Name = "imageDataGridViewImageColumn";
+            this.imageDataGridViewImageColumn.ReadOnly = true;
+            this.imageDataGridViewImageColumn.Width = 125;
+            // 
+            // classNhanVienBindingSource
+            // 
+            this.classNhanVienBindingSource.DataSource = typeof(QuanLyQuanAo.DAO.ClassNhanVien);
             // 
             // frmQLNhanVien
             // 

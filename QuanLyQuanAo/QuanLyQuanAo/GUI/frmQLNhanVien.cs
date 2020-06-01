@@ -30,31 +30,65 @@ namespace QuanLyQuanAo.GUI
 
             // btgNhomLenh.ds = dsLoaiSanPham;
 
-            txtMaNV.DataBindings.Clear();
-            txtMaNV.DataBindings.Add("text", dgvNhanVien.DataSource, "MaNhanVien");
-            txtTenNV.DataBindings.Clear();
-            txtTenNV.DataBindings.Add("text", dgvNhanVien.DataSource, "TenNhanVien");
-            txtCMND.DataBindings.Clear();
-            txtCMND.DataBindings.Add("text", dgvNhanVien.DataSource, "CMND");
-            txtNgaySinh.DataBindings.Clear();
-            txtNgaySinh.DataBindings.Add("text", dgvNhanVien.DataSource, "NgaySinh");
-            txtGioiTinh.DataBindings.Clear();
-            txtGioiTinh.DataBindings.Add("text", dgvNhanVien.DataSource, "GioiTinh");
-            txtEmail.DataBindings.Clear();
-            txtEmail.DataBindings.Add("text", dgvNhanVien.DataSource, "Email");
-            txtChucVu.DataBindings.Clear();
-            txtChucVu.DataBindings.Add("text", dgvNhanVien.DataSource, "ChucVu");
-            txtDiaChi.DataBindings.Clear();
-            txtDiaChi.DataBindings.Add("text", dgvNhanVien.DataSource, "DiaChi");
-            txtSDT.DataBindings.Clear();
-            txtSDT.DataBindings.Add("text", dgvNhanVien.DataSource, "SoDT");
-            txtAnh.DataBindings.Clear();
-            txtAnh.DataBindings.Add("text", dgvNhanVien.DataSource, "Image");
-            ricChuThich.DataBindings.Clear();
-            ricChuThich.DataBindings.Add("text", dgvNhanVien.DataSource, "GhiChu");
+            
+            LoadAnh();
+            LoadDuLieu();
 
         }
-
+        private void LoadDuLieu()
+        {
+            if (btgNhomLenh.Reccount>0)
+            {
+                txtMaNV.DataBindings.Clear();
+                txtMaNV.DataBindings.Add("text", dgvNhanVien.DataSource, "MaNhanVien");
+                txtTenNV.DataBindings.Clear();
+                txtTenNV.DataBindings.Add("text", dgvNhanVien.DataSource, "TenNhanVien");
+                txtCMND.DataBindings.Clear();
+                txtCMND.DataBindings.Add("text", dgvNhanVien.DataSource, "CMND");
+                txtNgaySinh.DataBindings.Clear();
+                txtNgaySinh.DataBindings.Add("text", dgvNhanVien.DataSource, "NgaySinh");
+                txtGioiTinh.DataBindings.Clear();
+                txtGioiTinh.DataBindings.Add("text", dgvNhanVien.DataSource, "GioiTinh");
+                txtEmail.DataBindings.Clear();
+                txtEmail.DataBindings.Add("text", dgvNhanVien.DataSource, "Email");
+                txtChucVu.DataBindings.Clear();
+                txtChucVu.DataBindings.Add("text", dgvNhanVien.DataSource, "ChucVu");
+                txtDiaChi.DataBindings.Clear();
+                txtDiaChi.DataBindings.Add("text", dgvNhanVien.DataSource, "DiaChi");
+                txtSDT.DataBindings.Clear();
+                txtSDT.DataBindings.Add("text", dgvNhanVien.DataSource, "SoDT");
+                txtAnh.DataBindings.Clear();
+                txtAnh.DataBindings.Add("text", dgvNhanVien.DataSource, "Image");
+                ricChuThich.DataBindings.Clear();
+                ricChuThich.DataBindings.Add("text", dgvNhanVien.DataSource, "GhiChu");
+            }
+            else
+            {
+                txtMaNV.Text="";
+                //txtMaNV.DataBindings.Add("text", dgvNhanVien.DataSource, "MaNhanVien");
+                txtTenNV.Text = "";
+                //txtTenNV.DataBindings.Add("text", dgvNhanVien.DataSource, "TenNhanVien");
+                txtCMND.Text = "";
+                //txtCMND.DataBindings.Add("text", dgvNhanVien.DataSource, "CMND");
+                txtNgaySinh.Text = "";
+                //txtNgaySinh.DataBindings.Add("text", dgvNhanVien.DataSource, "NgaySinh");
+                txtGioiTinh.Text = "";
+                // txtGioiTinh.DataBindings.Add("text", dgvNhanVien.DataSource, "GioiTinh");
+                txtEmail.Text = "";
+                //txtEmail.DataBindings.Add("text", dgvNhanVien.DataSource, "Email");
+                txtChucVu.Text = "";
+                //txtChucVu.DataBindings.Add("text", dgvNhanVien.DataSource, "ChucVu");
+                txtDiaChi.Text = "";
+                //txtDiaChi.DataBindings.Add("text", dgvNhanVien.DataSource, "DiaChi");
+                txtSDT.Text = "";
+                // txtSDT.DataBindings.Add("text", dgvNhanVien.DataSource, "SoDT");
+                txtAnh.Text = "";
+                // txtAnh.DataBindings.Add("text", dgvNhanVien.DataSource, "Image");
+                ricChuThich.Text = "";
+                // ricChuThich.DataBindings.Add("text", dgvNhanVien.DataSource, "GhiChu");
+                picAnh.Image = null;
+            }
+        }
 
         private void DinhViLai(String m_TenNV)
         {
@@ -200,7 +234,7 @@ namespace QuanLyQuanAo.GUI
             for (int i = 0; i < 2; i++)
                 OldNhanVien[i] = dgvNhanVien.Rows[btgNhomLenh.Position].Cells[i].Value.ToString();
             btgNhomLenh.Extra2Enabled = false;
-
+            LoadDuLieu();
         }
 
         private void btgNhomLenh_SaveClick(object sender, ButtonGroupEventArgs e)
@@ -469,6 +503,7 @@ namespace QuanLyQuanAo.GUI
 
                 btgNhomLenh.Reccount = dgvNhanVien.RowCount;
                 btgNhomLenh.Position = 0;
+                LoadDuLieu();
 
             }
             else
@@ -479,6 +514,7 @@ namespace QuanLyQuanAo.GUI
 
                 btgNhomLenh.Reccount = dgvNhanVien.RowCount;
                 btgNhomLenh.Position = 0;
+                LoadDuLieu();
             }
 
         }
@@ -511,12 +547,7 @@ namespace QuanLyQuanAo.GUI
             frmAnhNV frm = new frmAnhNV();
 
             frm.MaNhanVien = dgvNhanVien.Rows[btgNhomLenh.Position].Cells[0].Value.ToString();
-
-
-            
-            
-            
-            
+       
             
 
             if (dgvNhanVien.Rows[btgNhomLenh.Position].Cells[8].Value == null)

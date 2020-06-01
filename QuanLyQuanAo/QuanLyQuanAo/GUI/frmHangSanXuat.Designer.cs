@@ -139,6 +139,7 @@
             this.dgvHangSanXuat.MultiSelect = false;
             this.dgvHangSanXuat.Name = "dgvHangSanXuat";
             this.dgvHangSanXuat.ReadOnly = true;
+            this.dgvHangSanXuat.RowHeadersVisible = false;
             this.dgvHangSanXuat.RowHeadersWidth = 51;
             this.dgvHangSanXuat.RowTemplate.Height = 24;
             this.dgvHangSanXuat.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;

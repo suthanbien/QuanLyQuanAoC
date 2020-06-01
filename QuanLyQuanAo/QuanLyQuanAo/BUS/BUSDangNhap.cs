@@ -60,22 +60,24 @@ namespace quanlyquanao
             if (DAODangNhap.Instance.KiemTraDangNhap(taiKhoan,matKhau,quyen).Count()>0)
             {
 
-                MessageBox.Show("Đăng Nhập thành công tài khoản: "
+               /* MessageBox.Show("Đăng Nhập thành công tài khoản: "
                     + DAODangNhap.Instance.KiemTraDangNhap(taiKhoan, matKhau, quyen).Count()+"\n"
                    + DAODangNhap.Instance.KiemTraDangNhap(taiKhoan, matKhau, quyen)[0].TenDangNhap.ToString() + "\n" +
-                   "Quyền: " + DAODangNhap.Instance.KiemTraDangNhap(taiKhoan, matKhau, quyen)[0].Quyen.ToString());
+                   "Quyền: " + DAODangNhap.Instance.KiemTraDangNhap(taiKhoan, matKhau, quyen)[0].Quyen.ToString());*/
 
 
-                /* frmMain.quyen = DAODangNhap.Instance.KiemTraDangNhap(taiKhoan,matKhau,quyen)[0].Quyen.ToString();
+                 frmMain.quyen = DAODangNhap.Instance.KiemTraDangNhap(taiKhoan,matKhau,quyen)[0].Quyen.ToString();
                  frmMain.taiKhoan = DAODangNhap.Instance.KiemTraDangNhap(taiKhoan,matKhau,quyen)[0].TenDangNhap.ToString();
-
-                 frm_Main.Show();
-                 frm_DangNhap.Visible=false;*/
+                frmMain.mSNhanVien=DAODangNhap.Instance.KiemTraDangNhap(taiKhoan, matKhau, quyen)[0].MaNhanVien.ToString();
+                frm_Main.Show();
+                 frm_DangNhap.Visible=false;
+                
+               // return DAODangNhap.Instance.KiemTraDangNhap(taiKhoan, matKhau, quyen)[0].MaNhanVien.ToString();
 
             }
             else
                 MessageBox.Show("Sai tên đăng nhập/mật khẩu\nHoặc TK đã khóa", "Mật khẩu");
-
+           // return "";
             // MessageBox.Show(DAODangNhap.Instance.KiemTraKetNoi()[1].MaNhanVien+"");
         }
 

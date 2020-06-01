@@ -35,6 +35,16 @@ namespace QuanLyQuanAo.GUI
 
             // btgNhomLenh.ds = dsLoaiSanPham;
 
+            LoadDuLieu();
+
+            lstLoaiHH.AddRange( BUSHangHoa.Instance.GetListLoaiHH());
+            cboLoaiHH.DataSource = lstLoaiHH;
+            LoadAnh();
+           
+
+        }
+        private void LoadDuLieu()
+        {
             txtMaHH.DataBindings.Clear();
             txtMaHH.DataBindings.Add("text", dgvSanPham.DataSource, "MaHangHoa");
             txtTenHH.DataBindings.Clear();
@@ -53,13 +63,7 @@ namespace QuanLyQuanAo.GUI
             txtAnh.DataBindings.Add("text", dgvSanPham.DataSource, "Image");
             ricChuThich.DataBindings.Clear();
             ricChuThich.DataBindings.Add("text", dgvSanPham.DataSource, "ChuThich");
-            lstLoaiHH.AddRange( BUSHangHoa.Instance.GetListLoaiHH());
-            cboLoaiHH.DataSource = lstLoaiHH;
-            LoadAnh();
-           
-
         }
-
 
         private void DinhViLai(String m_TenHH)
         {
@@ -74,7 +78,9 @@ namespace QuanLyQuanAo.GUI
         }
         private void LoadAnh()
         {
-            picAnh.Image = (Image)dgvSanPham.Rows[btgNhomLenh.Position].Cells[9].Value;
+                picAnh.Image = (Image)dgvSanPham.Rows[btgNhomLenh.Position].Cells[9].Value;
+            
+           
         }
         #endregion
         public frmHangHoa()
@@ -133,7 +139,7 @@ namespace QuanLyQuanAo.GUI
                 }
             }
             LoadAnh();
-
+            LoadDuLieu();
 
         }
 
@@ -178,6 +184,7 @@ namespace QuanLyQuanAo.GUI
                 dgvSanPham.CurrentCell = dgvSanPham.Rows[btgNhomLenh.Position].Cells[0];
                 m_TenHH = dgvSanPham.Rows[btgNhomLenh.Position].Cells[1].ToString();
                 LoadAnh();
+                LoadDuLieu();
             }
                
         }
@@ -428,7 +435,7 @@ namespace QuanLyQuanAo.GUI
                 btgNhomLenh.Reccount = dgvSanPham.RowCount;
                 // MessageBox.Show(btgNhomLenh.Reccount + "");
                 btgNhomLenh.Position = 0;
-                LoadAnh();
+                //LoadAnh();
             }
             
 
