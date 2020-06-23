@@ -19,7 +19,6 @@ namespace QuanLyQuanAo.GUI
         public static string taiKhoan = "";
         public static char TuCach = ' ';
         public static string mSThamChieu = "";
-        public static string mSNhanVien = "1";
 
         #endregion
 
@@ -61,7 +60,6 @@ namespace QuanLyQuanAo.GUI
                 return "";
             }
         }
-
         public void moMnuLoaiSanPham()
         {
             mnuLoaiSanPham.Enabled = true;
@@ -82,46 +80,27 @@ namespace QuanLyQuanAo.GUI
         {
             mnuQLNhanVien.Enabled = true;
         }
-        public void moMnuQLKhachHang(bool b)
-        {
-            mnuQLKhachHang.Enabled = b;
-        }
-        public void moMnuQLTaiKhoanNV()
-        {
-            mnuTKNhanVien.Enabled = true;
-        }
-        public void moMnuLapHoaDon()
-        {
-            mnuLapHoaDon.Enabled = true;
-        }
-        public void moMnuTimHoaDon()
-        {
-            mnuTimHoaDon.Enabled = true;
-        }
-        public void moMnuNhapHang()
-        {
-            mnuNhapHang.Enabled = true;
-        }
-
         public Form FormExist(String FormName)
         {
             foreach (Form frm in MdiChildren)
                 if (frm.Name == FormName) return frm;
             return null;
         }
-
         #endregion
 
         #region các xử lý
         private void frmMain_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
+
+
+        #endregion
 
         private void mnuLoaiSanPham_Click(object sender, EventArgs e)
         {
@@ -187,16 +166,7 @@ namespace QuanLyQuanAo.GUI
 
         private void mnuTKNhanVien_Click(object sender, EventArgs e)
         {
-            frmQLTaiKhoanNV frm = (frmQLTaiKhoanNV)FormExist("");
-            if (frm == null)
-            {
-                frm = new frmQLTaiKhoanNV();
-                frm.MdiParent = this;
-                frm.Show();
-            }
-            frm.Focus();
-
-            mnuTKNhanVien.Enabled = false;
+           
         }
 
         private void mnuQLNhanVien_Click(object sender, EventArgs e)
@@ -212,70 +182,5 @@ namespace QuanLyQuanAo.GUI
 
             mnuQLNhanVien.Enabled = false;
         }
-
-        private void mnuQLKhachHang_Click(object sender, EventArgs e)
-        {
-            frmKhachHang frm = (frmKhachHang)FormExist("");
-            if (frm == null)
-            {
-                frm = new frmKhachHang();
-                frm.MdiParent = this;
-                frm.Show();
-            }
-            frm.Focus();
-
-            mnuQLKhachHang.Enabled = false;
-        }
-
-        private void mnuLapHoaDon_Click(object sender, EventArgs e)
-        {
-            frmLapHoaDon.m_MaNhanVien = mSNhanVien;
-            frmLapHoaDon frm = (frmLapHoaDon)FormExist("");
-            if (frm == null)
-            {
-                frm = new frmLapHoaDon();
-                frm.MdiParent = this;
-                frm.Show();
-
-            }
-            frm.Focus();
-
-            mnuLapHoaDon.Enabled = false;
-        }
-
-        private void mnuTimHoaDon_Click(object sender, EventArgs e)
-        {
-            frmTimHoaDon frm = (frmTimHoaDon)FormExist("");
-            if (frm == null)
-            {
-                frm = new frmTimHoaDon();
-                frm.MdiParent = this;
-                frm.Show();
-
-            }
-            frm.Focus();
-
-            mnuTimHoaDon.Enabled = false;
-        }
-        
-         private void mnuNhapHang_Click(object sender, EventArgs e)
-        {
-            frmPhieuNhapHang.m_MaNhanVien = mSNhanVien;
-            frmPhieuNhapHang frm = (frmPhieuNhapHang)FormExist("");
-            if (frm == null)
-            {
-                frm = new frmPhieuNhapHang();
-                frm.MdiParent = this;
-                frm.Show();
-
-            }
-            frm.Focus();
-
-            mnuNhapHang.Enabled = false;
-        }
-
-        #endregion
-
-       
     }
 }
