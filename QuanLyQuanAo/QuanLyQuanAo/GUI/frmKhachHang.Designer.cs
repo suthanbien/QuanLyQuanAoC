@@ -48,6 +48,25 @@
             this.ghiChuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.classKhachHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.lblSDT = new System.Windows.Forms.Label();
+            this.lblDiaChi = new System.Windows.Forms.Label();
+            this.ricChuThich = new System.Windows.Forms.RichTextBox();
+            this.txtAnh = new System.Windows.Forms.TextBox();
+            this.txtGioiTinh = new System.Windows.Forms.TextBox();
+            this.txtLoaiKH = new System.Windows.Forms.TextBox();
+            this.txtNgaySinh = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtTenKH = new System.Windows.Forms.TextBox();
+            this.txtMaKH = new System.Windows.Forms.TextBox();
+            this.lblChuThuch = new System.Windows.Forms.Label();
+            this.lblGioiTinh = new System.Windows.Forms.Label();
+            this.lblLoaiKH = new System.Windows.Forms.Label();
+            this.lblNgaySinh = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblTenKH = new System.Windows.Forms.Label();
+            this.lblMaKH = new System.Windows.Forms.Label();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnh)).BeginInit();
             this.pnlT_Top.SuspendLayout();
@@ -59,6 +78,25 @@
             // 
             // pnlTop
             // 
+            this.pnlTop.Controls.Add(this.txtSDT);
+            this.pnlTop.Controls.Add(this.txtDiaChi);
+            this.pnlTop.Controls.Add(this.lblSDT);
+            this.pnlTop.Controls.Add(this.lblDiaChi);
+            this.pnlTop.Controls.Add(this.ricChuThich);
+            this.pnlTop.Controls.Add(this.txtAnh);
+            this.pnlTop.Controls.Add(this.txtGioiTinh);
+            this.pnlTop.Controls.Add(this.txtLoaiKH);
+            this.pnlTop.Controls.Add(this.txtNgaySinh);
+            this.pnlTop.Controls.Add(this.txtEmail);
+            this.pnlTop.Controls.Add(this.txtTenKH);
+            this.pnlTop.Controls.Add(this.txtMaKH);
+            this.pnlTop.Controls.Add(this.lblChuThuch);
+            this.pnlTop.Controls.Add(this.lblGioiTinh);
+            this.pnlTop.Controls.Add(this.lblLoaiKH);
+            this.pnlTop.Controls.Add(this.lblNgaySinh);
+            this.pnlTop.Controls.Add(this.lblEmail);
+            this.pnlTop.Controls.Add(this.lblTenKH);
+            this.pnlTop.Controls.Add(this.lblMaKH);
             this.pnlTop.Controls.Add(this.picAnh);
             this.pnlTop.Controls.Add(this.pnlT_Top);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -119,7 +157,7 @@
             this.btgNhomLenh.EditEnabled = true;
             this.btgNhomLenh.Extra2Enabled = true;
             this.btgNhomLenh.Extra2Text = "Thêm Ảnh";
-            this.btgNhomLenh.Extra2Visible = true;
+            this.btgNhomLenh.Extra2Visible = false;
             this.btgNhomLenh.ExtraEnabled = true;
             this.btgNhomLenh.ExtraText = "Làm Mới";
             this.btgNhomLenh.ExtraVisible = true;
@@ -283,6 +321,168 @@
             // 
             this.classKhachHangBindingSource.DataSource = typeof(QuanLyQuanAo.DAO.ClassKhachHang);
             // 
+            // txtSDT
+            // 
+            this.txtSDT.Location = new System.Drawing.Point(567, 145);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.ReadOnly = true;
+            this.txtSDT.Size = new System.Drawing.Size(138, 22);
+            this.txtSDT.TabIndex = 66;
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Location = new System.Drawing.Point(567, 100);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.ReadOnly = true;
+            this.txtDiaChi.Size = new System.Drawing.Size(138, 22);
+            this.txtDiaChi.TabIndex = 67;
+            // 
+            // lblSDT
+            // 
+            this.lblSDT.AutoSize = true;
+            this.lblSDT.Location = new System.Drawing.Point(399, 150);
+            this.lblSDT.Name = "lblSDT";
+            this.lblSDT.Size = new System.Drawing.Size(36, 17);
+            this.lblSDT.TabIndex = 65;
+            this.lblSDT.Text = "SDT";
+            // 
+            // lblDiaChi
+            // 
+            this.lblDiaChi.AutoSize = true;
+            this.lblDiaChi.Location = new System.Drawing.Point(399, 97);
+            this.lblDiaChi.Name = "lblDiaChi";
+            this.lblDiaChi.Size = new System.Drawing.Size(53, 17);
+            this.lblDiaChi.TabIndex = 64;
+            this.lblDiaChi.Text = "Dịa Chỉ";
+            // 
+            // ricChuThich
+            // 
+            this.ricChuThich.Location = new System.Drawing.Point(477, 291);
+            this.ricChuThich.Name = "ricChuThich";
+            this.ricChuThich.ReadOnly = true;
+            this.ricChuThich.Size = new System.Drawing.Size(228, 81);
+            this.ricChuThich.TabIndex = 63;
+            this.ricChuThich.Text = "";
+            // 
+            // txtAnh
+            // 
+            this.txtAnh.Location = new System.Drawing.Point(725, 350);
+            this.txtAnh.Name = "txtAnh";
+            this.txtAnh.ReadOnly = true;
+            this.txtAnh.Size = new System.Drawing.Size(74, 22);
+            this.txtAnh.TabIndex = 62;
+            // 
+            // txtGioiTinh
+            // 
+            this.txtGioiTinh.Location = new System.Drawing.Point(183, 240);
+            this.txtGioiTinh.Name = "txtGioiTinh";
+            this.txtGioiTinh.ReadOnly = true;
+            this.txtGioiTinh.Size = new System.Drawing.Size(138, 22);
+            this.txtGioiTinh.TabIndex = 56;
+            // 
+            // txtLoaiKH
+            // 
+            this.txtLoaiKH.Location = new System.Drawing.Point(567, 191);
+            this.txtLoaiKH.Name = "txtLoaiKH";
+            this.txtLoaiKH.ReadOnly = true;
+            this.txtLoaiKH.Size = new System.Drawing.Size(138, 22);
+            this.txtLoaiKH.TabIndex = 57;
+            // 
+            // txtNgaySinh
+            // 
+            this.txtNgaySinh.Location = new System.Drawing.Point(183, 191);
+            this.txtNgaySinh.Name = "txtNgaySinh";
+            this.txtNgaySinh.ReadOnly = true;
+            this.txtNgaySinh.Size = new System.Drawing.Size(138, 22);
+            this.txtNgaySinh.TabIndex = 58;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(183, 291);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.ReadOnly = true;
+            this.txtEmail.Size = new System.Drawing.Size(138, 22);
+            this.txtEmail.TabIndex = 59;
+            // 
+            // txtTenKH
+            // 
+            this.txtTenKH.Location = new System.Drawing.Point(183, 142);
+            this.txtTenKH.Name = "txtTenKH";
+            this.txtTenKH.ReadOnly = true;
+            this.txtTenKH.Size = new System.Drawing.Size(138, 22);
+            this.txtTenKH.TabIndex = 60;
+            // 
+            // txtMaKH
+            // 
+            this.txtMaKH.Location = new System.Drawing.Point(183, 97);
+            this.txtMaKH.Name = "txtMaKH";
+            this.txtMaKH.ReadOnly = true;
+            this.txtMaKH.Size = new System.Drawing.Size(138, 22);
+            this.txtMaKH.TabIndex = 61;
+            // 
+            // lblChuThuch
+            // 
+            this.lblChuThuch.AutoSize = true;
+            this.lblChuThuch.Location = new System.Drawing.Point(399, 291);
+            this.lblChuThuch.Name = "lblChuThuch";
+            this.lblChuThuch.Size = new System.Drawing.Size(72, 17);
+            this.lblChuThuch.TabIndex = 53;
+            this.lblChuThuch.Text = "Chú Thích";
+            // 
+            // lblGioiTinh
+            // 
+            this.lblGioiTinh.AutoSize = true;
+            this.lblGioiTinh.Location = new System.Drawing.Point(32, 245);
+            this.lblGioiTinh.Name = "lblGioiTinh";
+            this.lblGioiTinh.Size = new System.Drawing.Size(65, 17);
+            this.lblGioiTinh.TabIndex = 50;
+            this.lblGioiTinh.Text = "Giới Tính";
+            // 
+            // lblLoaiKH
+            // 
+            this.lblLoaiKH.AutoSize = true;
+            this.lblLoaiKH.Location = new System.Drawing.Point(399, 196);
+            this.lblLoaiKH.Name = "lblLoaiKH";
+            this.lblLoaiKH.Size = new System.Drawing.Size(117, 17);
+            this.lblLoaiKH.TabIndex = 51;
+            this.lblLoaiKH.Text = "Loại Khách Hàng";
+            // 
+            // lblNgaySinh
+            // 
+            this.lblNgaySinh.AutoSize = true;
+            this.lblNgaySinh.Location = new System.Drawing.Point(32, 191);
+            this.lblNgaySinh.Name = "lblNgaySinh";
+            this.lblNgaySinh.Size = new System.Drawing.Size(73, 17);
+            this.lblNgaySinh.TabIndex = 52;
+            this.lblNgaySinh.Text = "Ngày Sinh";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(32, 291);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(42, 17);
+            this.lblEmail.TabIndex = 49;
+            this.lblEmail.Text = "Email";
+            // 
+            // lblTenKH
+            // 
+            this.lblTenKH.AutoSize = true;
+            this.lblTenKH.Location = new System.Drawing.Point(32, 145);
+            this.lblTenKH.Name = "lblTenKH";
+            this.lblTenKH.Size = new System.Drawing.Size(115, 17);
+            this.lblTenKH.TabIndex = 48;
+            this.lblTenKH.Text = "Tên Khách Hàng";
+            // 
+            // lblMaKH
+            // 
+            this.lblMaKH.AutoSize = true;
+            this.lblMaKH.Location = new System.Drawing.Point(32, 100);
+            this.lblMaKH.Name = "lblMaKH";
+            this.lblMaKH.Size = new System.Drawing.Size(109, 17);
+            this.lblMaKH.TabIndex = 47;
+            this.lblMaKH.Text = "Mã Khách Hàng";
+            // 
             // frmKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -296,6 +496,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmKhachHang_FormClosed);
             this.Load += new System.EventHandler(this.frmKhachHang_Load);
             this.pnlTop.ResumeLayout(false);
+            this.pnlTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnh)).EndInit();
             this.pnlT_Top.ResumeLayout(false);
             this.pnlBottom.ResumeLayout(false);
@@ -327,5 +528,24 @@
         private System.Windows.Forms.DataGridViewImageColumn imageDataGridViewImageColumn;
         private System.Windows.Forms.BindingSource classKhachHangBindingSource;
         private ButtonGroup btgNhomLenh;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.Label lblSDT;
+        private System.Windows.Forms.Label lblDiaChi;
+        private System.Windows.Forms.RichTextBox ricChuThich;
+        private System.Windows.Forms.TextBox txtAnh;
+        private System.Windows.Forms.TextBox txtGioiTinh;
+        private System.Windows.Forms.TextBox txtLoaiKH;
+        private System.Windows.Forms.TextBox txtNgaySinh;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtTenKH;
+        private System.Windows.Forms.TextBox txtMaKH;
+        private System.Windows.Forms.Label lblChuThuch;
+        private System.Windows.Forms.Label lblGioiTinh;
+        private System.Windows.Forms.Label lblLoaiKH;
+        private System.Windows.Forms.Label lblNgaySinh;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblTenKH;
+        private System.Windows.Forms.Label lblMaKH;
     }
 }

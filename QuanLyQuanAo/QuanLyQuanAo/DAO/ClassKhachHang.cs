@@ -15,7 +15,7 @@ namespace QuanLyQuanAo.DAO
 
 		private System.DateTime _Ngaysinh;
 
-		private string _GioiTinh="";
+		private string _GioiTinh="nam";
 
 		private string _Email="";
 

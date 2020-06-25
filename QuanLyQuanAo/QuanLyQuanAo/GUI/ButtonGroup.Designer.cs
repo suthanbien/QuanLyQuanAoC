@@ -49,9 +49,10 @@
             // btnClose
             // 
             this.btnClose.BackColor = System.Drawing.Color.Aqua;
-            this.btnClose.Location = new System.Drawing.Point(1100, 14);
+            this.btnClose.Location = new System.Drawing.Point(1238, 18);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(70, 50);
+            this.btnClose.Size = new System.Drawing.Size(79, 62);
             this.btnClose.TabIndex = 14;
             this.btnClose.Text = "Đóng";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -60,9 +61,10 @@
             // btnEdit
             // 
             this.btnEdit.BackColor = System.Drawing.Color.Aqua;
-            this.btnEdit.Location = new System.Drawing.Point(387, 13);
+            this.btnEdit.Location = new System.Drawing.Point(435, 16);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(70, 50);
+            this.btnEdit.Size = new System.Drawing.Size(79, 62);
             this.btnEdit.TabIndex = 5;
             this.btnEdit.Text = "Sửa";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -71,9 +73,10 @@
             // btnExtra2
             // 
             this.btnExtra2.BackColor = System.Drawing.Color.Aqua;
-            this.btnExtra2.Location = new System.Drawing.Point(988, 13);
+            this.btnExtra2.Location = new System.Drawing.Point(1112, 16);
+            this.btnExtra2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExtra2.Name = "btnExtra2";
-            this.btnExtra2.Size = new System.Drawing.Size(97, 50);
+            this.btnExtra2.Size = new System.Drawing.Size(109, 62);
             this.btnExtra2.TabIndex = 13;
             this.btnExtra2.Text = "Phụ Trội 2";
             this.btnExtra2.UseVisualStyleBackColor = false;
@@ -83,9 +86,10 @@
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Aqua;
-            this.btnCancel.Location = new System.Drawing.Point(387, 14);
+            this.btnCancel.Location = new System.Drawing.Point(435, 18);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(70, 50);
+            this.btnCancel.Size = new System.Drawing.Size(79, 62);
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Hủy";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -94,9 +98,10 @@
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.Aqua;
-            this.btnDelete.Location = new System.Drawing.Point(463, 13);
+            this.btnDelete.Location = new System.Drawing.Point(521, 16);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(70, 50);
+            this.btnDelete.Size = new System.Drawing.Size(79, 62);
             this.btnDelete.TabIndex = 7;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -105,9 +110,10 @@
             // btnExtra
             // 
             this.btnExtra.BackColor = System.Drawing.Color.Aqua;
-            this.btnExtra.Location = new System.Drawing.Point(886, 13);
+            this.btnExtra.Location = new System.Drawing.Point(997, 16);
+            this.btnExtra.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExtra.Name = "btnExtra";
-            this.btnExtra.Size = new System.Drawing.Size(96, 51);
+            this.btnExtra.Size = new System.Drawing.Size(108, 64);
             this.btnExtra.TabIndex = 12;
             this.btnExtra.Text = "Phụ Trội";
             this.btnExtra.UseVisualStyleBackColor = false;
@@ -117,9 +123,10 @@
             // btnLast
             // 
             this.btnLast.BackColor = System.Drawing.Color.Aqua;
-            this.btnLast.Location = new System.Drawing.Point(230, 13);
+            this.btnLast.Location = new System.Drawing.Point(259, 16);
+            this.btnLast.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLast.Name = "btnLast";
-            this.btnLast.Size = new System.Drawing.Size(70, 50);
+            this.btnLast.Size = new System.Drawing.Size(79, 62);
             this.btnLast.TabIndex = 3;
             this.btnLast.Text = "=>|| ";
             this.btnLast.UseVisualStyleBackColor = false;
@@ -128,9 +135,10 @@
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.Aqua;
-            this.btnAdd.Location = new System.Drawing.Point(306, 14);
+            this.btnAdd.Location = new System.Drawing.Point(344, 18);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 50);
+            this.btnAdd.Size = new System.Drawing.Size(84, 62);
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -139,9 +147,10 @@
             // btnTim
             // 
             this.btnTim.BackColor = System.Drawing.Color.Aqua;
-            this.btnTim.Location = new System.Drawing.Point(801, 13);
+            this.btnTim.Location = new System.Drawing.Point(901, 16);
+            this.btnTim.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(70, 50);
+            this.btnTim.Size = new System.Drawing.Size(79, 62);
             this.btnTim.TabIndex = 11;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = false;
@@ -150,9 +159,10 @@
             // btnNext
             // 
             this.btnNext.BackColor = System.Drawing.Color.Aqua;
-            this.btnNext.Location = new System.Drawing.Point(154, 13);
+            this.btnNext.Location = new System.Drawing.Point(173, 16);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(70, 50);
+            this.btnNext.Size = new System.Drawing.Size(79, 62);
             this.btnNext.TabIndex = 2;
             this.btnNext.Text = "==>";
             this.btnNext.UseVisualStyleBackColor = false;
@@ -161,9 +171,10 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Aqua;
-            this.btnSave.Location = new System.Drawing.Point(306, 13);
+            this.btnSave.Location = new System.Drawing.Point(344, 16);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 50);
+            this.btnSave.Size = new System.Drawing.Size(84, 62);
             this.btnSave.TabIndex = 24;
             this.btnSave.Text = "Lưu";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -172,9 +183,10 @@
             // btnPrev
             // 
             this.btnPrev.BackColor = System.Drawing.Color.Aqua;
-            this.btnPrev.Location = new System.Drawing.Point(78, 13);
+            this.btnPrev.Location = new System.Drawing.Point(88, 16);
+            this.btnPrev.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(70, 50);
+            this.btnPrev.Size = new System.Drawing.Size(79, 62);
             this.btnPrev.TabIndex = 1;
             this.btnPrev.Text = "<==";
             this.btnPrev.UseVisualStyleBackColor = false;
@@ -184,9 +196,10 @@
             // 
             this.btnFirst.BackColor = System.Drawing.Color.Aqua;
             this.btnFirst.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnFirst.Location = new System.Drawing.Point(2, 13);
+            this.btnFirst.Location = new System.Drawing.Point(2, 16);
+            this.btnFirst.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnFirst.Name = "btnFirst";
-            this.btnFirst.Size = new System.Drawing.Size(70, 50);
+            this.btnFirst.Size = new System.Drawing.Size(79, 62);
             this.btnFirst.TabIndex = 0;
             this.btnFirst.Text = "||<=";
             this.btnFirst.UseVisualStyleBackColor = false;
@@ -195,9 +208,10 @@
             // radTimTheoMa
             // 
             this.radTimTheoMa.AutoSize = true;
-            this.radTimTheoMa.Location = new System.Drawing.Point(683, 43);
+            this.radTimTheoMa.Location = new System.Drawing.Point(768, 54);
+            this.radTimTheoMa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radTimTheoMa.Name = "radTimTheoMa";
-            this.radTimTheoMa.Size = new System.Drawing.Size(112, 21);
+            this.radTimTheoMa.Size = new System.Drawing.Size(125, 24);
             this.radTimTheoMa.TabIndex = 10;
             this.radTimTheoMa.Text = "Tìm Theo Mã";
             this.radTimTheoMa.UseVisualStyleBackColor = true;
@@ -207,9 +221,10 @@
             // 
             this.radTimTheoTen.AutoSize = true;
             this.radTimTheoTen.Checked = true;
-            this.radTimTheoTen.Location = new System.Drawing.Point(559, 42);
+            this.radTimTheoTen.Location = new System.Drawing.Point(629, 52);
+            this.radTimTheoTen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radTimTheoTen.Name = "radTimTheoTen";
-            this.radTimTheoTen.Size = new System.Drawing.Size(118, 21);
+            this.radTimTheoTen.Size = new System.Drawing.Size(130, 24);
             this.radTimTheoTen.TabIndex = 9;
             this.radTimTheoTen.TabStop = true;
             this.radTimTheoTen.Text = "Tìm Theo Tên";
@@ -220,15 +235,16 @@
             // 
             this.txtTimKiem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtTimKiem.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtTimKiem.Location = new System.Drawing.Point(591, 14);
+            this.txtTimKiem.Location = new System.Drawing.Point(665, 18);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(174, 22);
+            this.txtTimKiem.Size = new System.Drawing.Size(195, 26);
             this.txtTimKiem.TabIndex = 8;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
             // ButtonGroup
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.radTimTheoTen);
             this.Controls.Add(this.radTimTheoMa);
@@ -246,8 +262,9 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.btnFirst);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ButtonGroup";
-            this.Size = new System.Drawing.Size(1181, 75);
+            this.Size = new System.Drawing.Size(1329, 94);
             this.Load += new System.EventHandler(this.ButtonGroup_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
