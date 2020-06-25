@@ -38,20 +38,6 @@
             this.pnlT_Right = new System.Windows.Forms.Panel();
             this.pnlTR_Center = new System.Windows.Forms.Panel();
             this.dgvHangHoaAn = new System.Windows.Forms.DataGridView();
-            this.pnlTR_Top = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pnlT_Left = new System.Windows.Forms.Panel();
-            this.pnlTL_Center = new System.Windows.Forms.Panel();
-            this.dgvHangHoa = new System.Windows.Forms.DataGridView();
-            this.pnlTL_Top = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnlCenter = new System.Windows.Forms.Panel();
-            this.grbTimKiem = new System.Windows.Forms.GroupBox();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.btnTimKiem = new System.Windows.Forms.Button();
-            this.radTimTheoSL = new System.Windows.Forms.RadioButton();
-            this.radTimTheoTen = new System.Windows.Forms.RadioButton();
-            this.radTimTheoMa = new System.Windows.Forms.RadioButton();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,6 +49,11 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.classHangHoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pnlTR_Top = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pnlT_Left = new System.Windows.Forms.Panel();
+            this.pnlTL_Center = new System.Windows.Forms.Panel();
+            this.dgvHangHoa = new System.Windows.Forms.DataGridView();
             this.maHangHoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenHangHoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loaiHangHoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,11 +64,21 @@
             this.trangThaiDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.imageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.chuThichDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnlTL_Top = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnlCenter = new System.Windows.Forms.Panel();
+            this.grbTimKiem = new System.Windows.Forms.GroupBox();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.radTimTheoSL = new System.Windows.Forms.RadioButton();
+            this.radTimTheoTen = new System.Windows.Forms.RadioButton();
+            this.radTimTheoMa = new System.Windows.Forms.RadioButton();
             this.pnlTop.SuspendLayout();
             this.pnlT_Center.SuspendLayout();
             this.pnlT_Right.SuspendLayout();
             this.pnlTR_Center.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHangHoaAn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.classHangHoaBindingSource)).BeginInit();
             this.pnlTR_Top.SuspendLayout();
             this.pnlT_Left.SuspendLayout();
             this.pnlTL_Center.SuspendLayout();
@@ -85,7 +86,6 @@
             this.pnlTL_Top.SuspendLayout();
             this.pnlCenter.SuspendLayout();
             this.grbTimKiem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.classHangHoaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTop
@@ -190,175 +190,11 @@
             this.dgvHangHoaAn.Location = new System.Drawing.Point(0, 0);
             this.dgvHangHoaAn.Name = "dgvHangHoaAn";
             this.dgvHangHoaAn.ReadOnly = true;
-            this.dgvHangHoaAn.RowHeadersVisible = false;
             this.dgvHangHoaAn.RowHeadersWidth = 51;
             this.dgvHangHoaAn.RowTemplate.Height = 24;
             this.dgvHangHoaAn.Size = new System.Drawing.Size(500, 349);
             this.dgvHangHoaAn.TabIndex = 1;
             this.dgvHangHoaAn.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHangHoaAn_CellClick);
-            // 
-            // pnlTR_Top
-            // 
-            this.pnlTR_Top.Controls.Add(this.label2);
-            this.pnlTR_Top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTR_Top.Location = new System.Drawing.Point(0, 0);
-            this.pnlTR_Top.Name = "pnlTR_Top";
-            this.pnlTR_Top.Size = new System.Drawing.Size(500, 51);
-            this.pnlTR_Top.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(204, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Hàng Hóa Đã Ẩn";
-            // 
-            // pnlT_Left
-            // 
-            this.pnlT_Left.Controls.Add(this.pnlTL_Center);
-            this.pnlT_Left.Controls.Add(this.pnlTL_Top);
-            this.pnlT_Left.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlT_Left.Location = new System.Drawing.Point(0, 0);
-            this.pnlT_Left.MinimumSize = new System.Drawing.Size(500, 400);
-            this.pnlT_Left.Name = "pnlT_Left";
-            this.pnlT_Left.Size = new System.Drawing.Size(532, 400);
-            this.pnlT_Left.TabIndex = 0;
-            // 
-            // pnlTL_Center
-            // 
-            this.pnlTL_Center.Controls.Add(this.dgvHangHoa);
-            this.pnlTL_Center.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlTL_Center.Location = new System.Drawing.Point(0, 51);
-            this.pnlTL_Center.Name = "pnlTL_Center";
-            this.pnlTL_Center.Size = new System.Drawing.Size(532, 349);
-            this.pnlTL_Center.TabIndex = 1;
-            // 
-            // dgvHangHoa
-            // 
-            this.dgvHangHoa.AllowUserToAddRows = false;
-            this.dgvHangHoa.AutoGenerateColumns = false;
-            this.dgvHangHoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHangHoa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.maHangHoaDataGridViewTextBoxColumn,
-            this.tenHangHoaDataGridViewTextBoxColumn,
-            this.loaiHangHoaDataGridViewTextBoxColumn,
-            this.hangSanXuatDataGridViewTextBoxColumn,
-            this.giaNhapDataGridViewTextBoxColumn,
-            this.giaBanDataGridViewTextBoxColumn,
-            this.soLuongConDataGridViewTextBoxColumn,
-            this.trangThaiDataGridViewCheckBoxColumn,
-            this.imageDataGridViewImageColumn,
-            this.chuThichDataGridViewTextBoxColumn});
-            this.dgvHangHoa.DataSource = this.classHangHoaBindingSource;
-            this.dgvHangHoa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvHangHoa.Location = new System.Drawing.Point(0, 0);
-            this.dgvHangHoa.Name = "dgvHangHoa";
-            this.dgvHangHoa.ReadOnly = true;
-            this.dgvHangHoa.RowHeadersVisible = false;
-            this.dgvHangHoa.RowHeadersWidth = 51;
-            this.dgvHangHoa.RowTemplate.Height = 24;
-            this.dgvHangHoa.Size = new System.Drawing.Size(532, 349);
-            this.dgvHangHoa.TabIndex = 0;
-            this.dgvHangHoa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHangHoa_CellClick);
-            // 
-            // pnlTL_Top
-            // 
-            this.pnlTL_Top.Controls.Add(this.label1);
-            this.pnlTL_Top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTL_Top.Location = new System.Drawing.Point(0, 0);
-            this.pnlTL_Top.Name = "pnlTL_Top";
-            this.pnlTL_Top.Size = new System.Drawing.Size(532, 51);
-            this.pnlTL_Top.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(212, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Hàng Hóa";
-            // 
-            // pnlCenter
-            // 
-            this.pnlCenter.Controls.Add(this.grbTimKiem);
-            this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCenter.Location = new System.Drawing.Point(0, 400);
-            this.pnlCenter.Name = "pnlCenter";
-            this.pnlCenter.Size = new System.Drawing.Size(1169, 192);
-            this.pnlCenter.TabIndex = 1;
-            // 
-            // grbTimKiem
-            // 
-            this.grbTimKiem.Controls.Add(this.txtTimKiem);
-            this.grbTimKiem.Controls.Add(this.btnTimKiem);
-            this.grbTimKiem.Controls.Add(this.radTimTheoSL);
-            this.grbTimKiem.Controls.Add(this.radTimTheoTen);
-            this.grbTimKiem.Controls.Add(this.radTimTheoMa);
-            this.grbTimKiem.Location = new System.Drawing.Point(329, 6);
-            this.grbTimKiem.Name = "grbTimKiem";
-            this.grbTimKiem.Size = new System.Drawing.Size(543, 174);
-            this.grbTimKiem.TabIndex = 0;
-            this.grbTimKiem.TabStop = false;
-            this.grbTimKiem.Text = "Tìm Kiếm";
-            // 
-            // txtTimKiem
-            // 
-            this.txtTimKiem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtTimKiem.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtTimKiem.Location = new System.Drawing.Point(181, 21);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(174, 22);
-            this.txtTimKiem.TabIndex = 9;
-            this.txtTimKiem.Click += new System.EventHandler(this.txtTimKiem_Click);
-            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
-            this.txtTimKiem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTimKiem_KeyPress);
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.Location = new System.Drawing.Point(185, 118);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(170, 50);
-            this.btnTimKiem.TabIndex = 1;
-            this.btnTimKiem.Text = "Tìm Kiếm";
-            this.btnTimKiem.UseVisualStyleBackColor = true;
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
-            // 
-            // radTimTheoSL
-            // 
-            this.radTimTheoSL.AutoSize = true;
-            this.radTimTheoSL.Location = new System.Drawing.Point(374, 64);
-            this.radTimTheoSL.Name = "radTimTheoSL";
-            this.radTimTheoSL.Size = new System.Drawing.Size(154, 21);
-            this.radTimTheoSL.TabIndex = 0;
-            this.radTimTheoSL.Text = "Tìm Theo Số Lượng";
-            this.radTimTheoSL.UseVisualStyleBackColor = true;
-            this.radTimTheoSL.CheckedChanged += new System.EventHandler(this.radTimKiemHHAn_CheckedChanged);
-            // 
-            // radTimTheoTen
-            // 
-            this.radTimTheoTen.AutoSize = true;
-            this.radTimTheoTen.Checked = true;
-            this.radTimTheoTen.Location = new System.Drawing.Point(204, 64);
-            this.radTimTheoTen.Name = "radTimTheoTen";
-            this.radTimTheoTen.Size = new System.Drawing.Size(118, 21);
-            this.radTimTheoTen.TabIndex = 0;
-            this.radTimTheoTen.TabStop = true;
-            this.radTimTheoTen.Text = "Tìm Theo Tên";
-            this.radTimTheoTen.UseVisualStyleBackColor = true;
-            // 
-            // radTimTheoMa
-            // 
-            this.radTimTheoMa.AutoSize = true;
-            this.radTimTheoMa.Location = new System.Drawing.Point(30, 64);
-            this.radTimTheoMa.Name = "radTimTheoMa";
-            this.radTimTheoMa.Size = new System.Drawing.Size(112, 21);
-            this.radTimTheoMa.TabIndex = 0;
-            this.radTimTheoMa.Text = "Tìm Theo Mã";
-            this.radTimTheoMa.UseVisualStyleBackColor = true;
-            this.radTimTheoMa.CheckedChanged += new System.EventHandler(this.radTimKiemHHAn_CheckedChanged);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -461,6 +297,71 @@
             // 
             this.classHangHoaBindingSource.DataSource = typeof(QuanLyQuanAo.DAO.ClassHangHoa);
             // 
+            // pnlTR_Top
+            // 
+            this.pnlTR_Top.Controls.Add(this.label2);
+            this.pnlTR_Top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTR_Top.Location = new System.Drawing.Point(0, 0);
+            this.pnlTR_Top.Name = "pnlTR_Top";
+            this.pnlTR_Top.Size = new System.Drawing.Size(500, 51);
+            this.pnlTR_Top.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(204, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(115, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Hàng Hóa Đã Ẩn";
+            // 
+            // pnlT_Left
+            // 
+            this.pnlT_Left.Controls.Add(this.pnlTL_Center);
+            this.pnlT_Left.Controls.Add(this.pnlTL_Top);
+            this.pnlT_Left.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlT_Left.Location = new System.Drawing.Point(0, 0);
+            this.pnlT_Left.MinimumSize = new System.Drawing.Size(500, 400);
+            this.pnlT_Left.Name = "pnlT_Left";
+            this.pnlT_Left.Size = new System.Drawing.Size(532, 400);
+            this.pnlT_Left.TabIndex = 0;
+            // 
+            // pnlTL_Center
+            // 
+            this.pnlTL_Center.Controls.Add(this.dgvHangHoa);
+            this.pnlTL_Center.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlTL_Center.Location = new System.Drawing.Point(0, 51);
+            this.pnlTL_Center.Name = "pnlTL_Center";
+            this.pnlTL_Center.Size = new System.Drawing.Size(532, 349);
+            this.pnlTL_Center.TabIndex = 1;
+            // 
+            // dgvHangHoa
+            // 
+            this.dgvHangHoa.AllowUserToAddRows = false;
+            this.dgvHangHoa.AutoGenerateColumns = false;
+            this.dgvHangHoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHangHoa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maHangHoaDataGridViewTextBoxColumn,
+            this.tenHangHoaDataGridViewTextBoxColumn,
+            this.loaiHangHoaDataGridViewTextBoxColumn,
+            this.hangSanXuatDataGridViewTextBoxColumn,
+            this.giaNhapDataGridViewTextBoxColumn,
+            this.giaBanDataGridViewTextBoxColumn,
+            this.soLuongConDataGridViewTextBoxColumn,
+            this.trangThaiDataGridViewCheckBoxColumn,
+            this.imageDataGridViewImageColumn,
+            this.chuThichDataGridViewTextBoxColumn});
+            this.dgvHangHoa.DataSource = this.classHangHoaBindingSource;
+            this.dgvHangHoa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvHangHoa.Location = new System.Drawing.Point(0, 0);
+            this.dgvHangHoa.Name = "dgvHangHoa";
+            this.dgvHangHoa.ReadOnly = true;
+            this.dgvHangHoa.RowHeadersWidth = 51;
+            this.dgvHangHoa.RowTemplate.Height = 24;
+            this.dgvHangHoa.Size = new System.Drawing.Size(532, 349);
+            this.dgvHangHoa.TabIndex = 0;
+            this.dgvHangHoa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHangHoa_CellClick);
+            // 
             // maHangHoaDataGridViewTextBoxColumn
             // 
             this.maHangHoaDataGridViewTextBoxColumn.DataPropertyName = "MaHangHoa";
@@ -558,6 +459,103 @@
             this.chuThichDataGridViewTextBoxColumn.Visible = false;
             this.chuThichDataGridViewTextBoxColumn.Width = 125;
             // 
+            // pnlTL_Top
+            // 
+            this.pnlTL_Top.Controls.Add(this.label1);
+            this.pnlTL_Top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTL_Top.Location = new System.Drawing.Point(0, 0);
+            this.pnlTL_Top.Name = "pnlTL_Top";
+            this.pnlTL_Top.Size = new System.Drawing.Size(532, 51);
+            this.pnlTL_Top.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(212, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Hàng Hóa";
+            // 
+            // pnlCenter
+            // 
+            this.pnlCenter.Controls.Add(this.grbTimKiem);
+            this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlCenter.Location = new System.Drawing.Point(0, 400);
+            this.pnlCenter.Name = "pnlCenter";
+            this.pnlCenter.Size = new System.Drawing.Size(1169, 192);
+            this.pnlCenter.TabIndex = 1;
+            // 
+            // grbTimKiem
+            // 
+            this.grbTimKiem.Controls.Add(this.txtTimKiem);
+            this.grbTimKiem.Controls.Add(this.btnTimKiem);
+            this.grbTimKiem.Controls.Add(this.radTimTheoSL);
+            this.grbTimKiem.Controls.Add(this.radTimTheoTen);
+            this.grbTimKiem.Controls.Add(this.radTimTheoMa);
+            this.grbTimKiem.Location = new System.Drawing.Point(329, 6);
+            this.grbTimKiem.Name = "grbTimKiem";
+            this.grbTimKiem.Size = new System.Drawing.Size(543, 174);
+            this.grbTimKiem.TabIndex = 0;
+            this.grbTimKiem.TabStop = false;
+            this.grbTimKiem.Text = "Tìm Kiếm";
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtTimKiem.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.txtTimKiem.Location = new System.Drawing.Point(181, 21);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(174, 22);
+            this.txtTimKiem.TabIndex = 9;
+            this.txtTimKiem.Click += new System.EventHandler(this.txtTimKiem_Click);
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
+            this.txtTimKiem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTimKiem_KeyPress);
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Location = new System.Drawing.Point(185, 118);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(170, 50);
+            this.btnTimKiem.TabIndex = 1;
+            this.btnTimKiem.Text = "Tìm Kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // radTimTheoSL
+            // 
+            this.radTimTheoSL.AutoSize = true;
+            this.radTimTheoSL.Location = new System.Drawing.Point(374, 64);
+            this.radTimTheoSL.Name = "radTimTheoSL";
+            this.radTimTheoSL.Size = new System.Drawing.Size(154, 21);
+            this.radTimTheoSL.TabIndex = 0;
+            this.radTimTheoSL.Text = "Tìm Theo Số Lượng";
+            this.radTimTheoSL.UseVisualStyleBackColor = true;
+            this.radTimTheoSL.CheckedChanged += new System.EventHandler(this.radTimKiemHHAn_CheckedChanged);
+            // 
+            // radTimTheoTen
+            // 
+            this.radTimTheoTen.AutoSize = true;
+            this.radTimTheoTen.Checked = true;
+            this.radTimTheoTen.Location = new System.Drawing.Point(204, 64);
+            this.radTimTheoTen.Name = "radTimTheoTen";
+            this.radTimTheoTen.Size = new System.Drawing.Size(118, 21);
+            this.radTimTheoTen.TabIndex = 0;
+            this.radTimTheoTen.TabStop = true;
+            this.radTimTheoTen.Text = "Tìm Theo Tên";
+            this.radTimTheoTen.UseVisualStyleBackColor = true;
+            // 
+            // radTimTheoMa
+            // 
+            this.radTimTheoMa.AutoSize = true;
+            this.radTimTheoMa.Location = new System.Drawing.Point(30, 64);
+            this.radTimTheoMa.Name = "radTimTheoMa";
+            this.radTimTheoMa.Size = new System.Drawing.Size(112, 21);
+            this.radTimTheoMa.TabIndex = 0;
+            this.radTimTheoMa.Text = "Tìm Theo Mã";
+            this.radTimTheoMa.UseVisualStyleBackColor = true;
+            this.radTimTheoMa.CheckedChanged += new System.EventHandler(this.radTimKiemHHAn_CheckedChanged);
+            // 
             // frmAnHangHoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -577,6 +575,7 @@
             this.pnlT_Right.ResumeLayout(false);
             this.pnlTR_Center.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHangHoaAn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.classHangHoaBindingSource)).EndInit();
             this.pnlTR_Top.ResumeLayout(false);
             this.pnlTR_Top.PerformLayout();
             this.pnlT_Left.ResumeLayout(false);
@@ -587,7 +586,6 @@
             this.pnlCenter.ResumeLayout(false);
             this.grbTimKiem.ResumeLayout(false);
             this.grbTimKiem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.classHangHoaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

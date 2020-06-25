@@ -25,9 +25,9 @@ namespace QuanLyQuanAo.GUI
             BUSLoaiSanPham.Instance.LayLoaiSanPham(dgvLoaiSanPham);
 
             btgNhomLenh.Reccount = dgvLoaiSanPham.RowCount;
-            // MessageBox.Show(""+ dgvLoaiSanPham.RowCount);
+           // MessageBox.Show(""+ dgvLoaiSanPham.RowCount);
 
-            // btgNhomLenh.ds = dsLoaiSanPham;
+           // btgNhomLenh.ds = dsLoaiSanPham;
         }
         private void DinhViLai(String m_MLSP)
         {

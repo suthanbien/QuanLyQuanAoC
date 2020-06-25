@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace QuanLyQuanAo.DAO
 {
@@ -51,12 +50,10 @@ namespace QuanLyQuanAo.DAO
             using (CSDLQuanLyQuanAoDataContext db=new CSDLQuanLyQuanAoDataContext())
             {
                 LoaiSanPham loaiSP = new LoaiSanPham();
-                //loaiSP.MaLoaiSanPham = maLSP;
+                loaiSP.MaLoaiSanPham = maLSP;
                 loaiSP.TenLoaiSanPham = tenLSP;
                 db.LoaiSanPhams.InsertOnSubmit(loaiSP);
                 db.SubmitChanges();
-                //MessageBox.Show( loaiSP.MaLoaiSanPham.ToString());
-
             }
         }
 
