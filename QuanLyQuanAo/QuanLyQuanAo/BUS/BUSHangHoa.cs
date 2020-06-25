@@ -157,7 +157,8 @@ namespace QuanLyQuanAo.BUS
                 lstHangHoa = DAOHangHoa.Instance.GetHangHoa();
                 dgvHangHoa.DataSource = lstHangHoa;
             }
-        }public int TimTheoMa(string maHH, DataGridView dgvHangHoa)
+        }
+        public int TimTheoMa(string maHH, DataGridView dgvHangHoa)
         {
             try
             {

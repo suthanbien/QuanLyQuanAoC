@@ -12,7 +12,7 @@ namespace QuanLyQuanAo.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.6.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.5.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -75,28 +75,6 @@ namespace QuanLyQuanAo.Properties {
         public string QuanLySanPhamConnectionString2 {
             get {
                 return ((string)(this["QuanLySanPhamConnectionString2"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=HUYENTRAN\\HUYEN;Initial Catalog=QuanLySanPham;Persist Security Info=T" +
-            "rue;User ID=sa;Password=123")]
-        public string QuanLySanPhamConnectionString3 {
-            get {
-                return ((string)(this["QuanLySanPhamConnectionString3"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=34.87.7.251;Initial Catalog=QuanLySanPham;Persist Security Info=True;" +
-            "User ID=sqlserver;Password=113114115")]
-        public string QuanLySanPhamConnectionString4 {
-            get {
-                return ((string)(this["QuanLySanPhamConnectionString4"]));
             }
         }
     }

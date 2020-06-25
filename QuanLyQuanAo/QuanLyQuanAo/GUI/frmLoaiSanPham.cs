@@ -25,9 +25,9 @@ namespace QuanLyQuanAo.GUI
             BUSLoaiSanPham.Instance.LayLoaiSanPham(dgvLoaiSanPham);
 
             btgNhomLenh.Reccount = dgvLoaiSanPham.RowCount;
-           // MessageBox.Show(""+ dgvLoaiSanPham.RowCount);
+            // MessageBox.Show(""+ dgvLoaiSanPham.RowCount);
 
-           // btgNhomLenh.ds = dsLoaiSanPham;
+            // btgNhomLenh.ds = dsLoaiSanPham;
         }
         private void DinhViLai(String m_MLSP)
         {
@@ -42,6 +42,9 @@ namespace QuanLyQuanAo.GUI
         }
 
         #endregion
+
+
+        #region Các Xử Lý
         public frmLoaiSanPham()
         {
             InitializeComponent();
@@ -80,9 +83,6 @@ namespace QuanLyQuanAo.GUI
             btgNhomLenh.ExtraVisible = true;
             btgNhomLenh.ExtraText = "Làm Mới";
         }
-
-        #region Các Xử Lý
-
         private void btgNhomLenh_Load(object sender, EventArgs e)
         {
             btgNhomLenh.dgv = dgvLoaiSanPham;

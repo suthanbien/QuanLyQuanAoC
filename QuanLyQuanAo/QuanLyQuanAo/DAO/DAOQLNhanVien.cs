@@ -121,9 +121,6 @@ namespace QuanLyQuanAo.DAO
             }
         }
 
-        
-
-
         public List<string> GetListChucVu()
         {
             using (CSDLQuanLyQuanAoDataContext db = new CSDLQuanLyQuanAoDataContext())
@@ -134,7 +131,6 @@ namespace QuanLyQuanAo.DAO
                 return lstCV;
             }
         }
-
 
 
         public bool Them(int maNV,string tenNV,string chucVu,DateTime ngaySinh,string gioiTinh,int cmnd,

@@ -10,6 +10,7 @@ namespace QuanLyQuanAo.DAO
 {
     class ClassHangHoa
     {
+		private int _ID;
 		private int _MaHangHoa;
 
 		private string _TenHangHoa;
@@ -40,8 +41,8 @@ namespace QuanLyQuanAo.DAO
 		public bool TrangThai { get => _TrangThai; set => _TrangThai = value; }
 		public Image Image { get => _Image; set => _Image = value; }
 		public string ChuThich { get => _ChuThich; set => _ChuThich = value; }
-		
-		
+		public int ID { get => _ID; set => _ID = value; }
+
 		public ClassHangHoa()
 		{
 		}
