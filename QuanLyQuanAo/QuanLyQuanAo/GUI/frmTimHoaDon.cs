@@ -73,11 +73,17 @@ namespace QuanLyQuanAo.GUI
 
         private void dgvHoaDon_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int maHD;
-            position = dgvHoaDon.CurrentRow.Index;
-            maHD = Convert.ToInt32( dgvHoaDon.Rows[position].Cells[0].Value.ToString());
-            //MessageBox.Show(maHD.ToString());
-            GetChiTietHD(maHD);
+            try{
+                int maHD;
+                position = dgvHoaDon.CurrentRow.Index;
+                maHD = Convert.ToInt32(dgvHoaDon.Rows[position].Cells[0].Value.ToString());
+                //MessageBox.Show(maHD.ToString());
+                GetChiTietHD(maHD);
+            }
+            catch
+            {
+                GetAllHoaDon();
+            }
         }
 
         private void btnLamMoi_Click(object sender, EventArgs e)
@@ -107,12 +113,19 @@ namespace QuanLyQuanAo.GUI
         {
             if (mode==1)
             {
-                int maHD = Convert.ToInt32(txtTimKiem.Text.Trim());
-                BUSTimHoaDon.Instance.TimTheoMa(dgvHoaDon,maHD);
-                if (dgvHoaDon.RowCount>=1)
+                try
                 {
-                   
-                    GetChiTietHD(maHD);
+                    int maHD = Convert.ToInt32(txtTimKiem.Text.Trim());
+                    BUSTimHoaDon.Instance.TimTheoMa(dgvHoaDon, maHD);
+                    if (dgvHoaDon.RowCount >= 1)
+                    {
+
+                        GetChiTietHD(maHD);
+                    }
+                }
+                catch
+                {
+                    dgvChiTiet.DataSource = null;
                 }
             }
             else if (mode == 2)

@@ -126,27 +126,38 @@ namespace QuanLyQuanAo.BUS
         {
             return DAONhapHang.Instance.ListTimTheoNV();
         }
-        public void TimTheoMa(DataGridView dgv, DataGridView dgv2, int maHD)
+        public void TimTheoMa(DataGridView dgv, DataGridView dgv2, string maHD)
         {
-            dgv.DataSource = null;
-            dgv2.DataSource = null;
-
-            lstPhieuNhap.Clear();
-            lstPhieuNhap2.Clear();
-            lstPhieuNhapTong = DAONhapHang.Instance.TimTheoMa(maHD);
-            for (int i=0;i< lstPhieuNhapTong.Count;i++)
-            {
-                if (lstPhieuNhapTong[i].TinhTrang==true)
-                {
-                    lstPhieuNhap.Add(lstPhieuNhapTong[i]);
-                }else if (lstPhieuNhapTong[i].TinhTrang == false)
-                {
-                    lstPhieuNhap2.Add(lstPhieuNhapTong[i]);
-                }
-            }
             
-            dgv.DataSource = lstPhieuNhap;
-            dgv2.DataSource = lstPhieuNhap2;
+            try
+            {
+                dgv.DataSource = null;
+                dgv2.DataSource = null;
+                int maHD2 = Convert.ToInt32(maHD);
+                lstPhieuNhap.Clear();
+                lstPhieuNhap2.Clear();
+                lstPhieuNhapTong = DAONhapHang.Instance.TimTheoMa(maHD2);
+                for (int i = 0; i < lstPhieuNhapTong.Count; i++)
+                {
+                    if (lstPhieuNhapTong[i].TinhTrang == true)
+                    {
+                        lstPhieuNhap.Add(lstPhieuNhapTong[i]);
+                    }
+                    else if (lstPhieuNhapTong[i].TinhTrang == false)
+                    {
+                        lstPhieuNhap2.Add(lstPhieuNhapTong[i]);
+                    }
+                }
+
+                dgv.DataSource = lstPhieuNhap;
+                dgv2.DataSource = lstPhieuNhap2;
+            }
+            catch
+            {
+                dgv.DataSource = null;
+                lstPhieuNhap = DAONhapHang.Instance.GetAllPhieuNhapChuaXN();
+                dgv.DataSource = lstPhieuNhap;
+            }
         }
         public void TimTheoNV(DataGridView dgv, DataGridView dgv2, string keyTim)
         {

@@ -158,8 +158,17 @@ namespace QuanLyQuanAo.GUI
         {
             if (timKiem == 1)
             {
-                int maTimKiem = Convert.ToInt32(txtTimKiem.Text);
-                TimTheoMa(maTimKiem);
+                try
+                {
+                    int maTimKiem = Convert.ToInt32(txtTimKiem.Text);
+                    TimTheoMa(maTimKiem);
+                }
+                catch
+                {
+
+                    int maTimKiem =0;
+                    TimTheoMa(maTimKiem);
+                }
             }else if (timKiem == 2)
             {
                 string tenTimKiem = txtTimKiem.Text;

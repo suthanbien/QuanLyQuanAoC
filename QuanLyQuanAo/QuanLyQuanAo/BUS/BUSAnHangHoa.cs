@@ -103,7 +103,6 @@ namespace QuanLyQuanAo.BUS
                         lstHHAn.Add(lstTimKiem[i]);
                     }
                 }
-
                 dgv.DataSource = lstHH;
                 dgvAn.DataSource = lstHHAn;
             }
@@ -131,12 +130,9 @@ namespace QuanLyQuanAo.BUS
                         lstHHAn.Add(lstTimKiem[i]);
                     }
                 }
-
                 dgv.DataSource = lstHH;
                 dgvAn.DataSource = lstHHAn;
             }
-
-
         }
 
         public void An(int maHH)

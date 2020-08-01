@@ -365,11 +365,20 @@ namespace QuanLyQuanAo.GUI
         {
             if (modeTim == 1)
             {
-                int maPN = Convert.ToInt32(txtTimKiem.Text.Trim());
-                BUSNhapHang.Instance.TimTheoMa(dgvPhieuNhapChuaXN,dgvPhieuNhapDaXN, maPN);
-                if (dgvPhieuNhapChuaXN.RowCount >= 1||dgvPhieuNhapDaXN.RowCount >= 1)
+                string maPN2 =""+ txtTimKiem.Text.Trim();
+                BUSNhapHang.Instance.TimTheoMa(dgvPhieuNhapChuaXN,dgvPhieuNhapDaXN, maPN2);
+
+                if (dgvPhieuNhapChuaXN.RowCount >= 1 || dgvPhieuNhapDaXN.RowCount >= 1 && !maPN2.Trim().Equals(""))
                 {
-                    GetChiTietPN(maPN);
+                    try
+                    {
+                        int maPN = Convert.ToInt32(maPN2.ToString());
+                        GetChiTietPN(maPN);
+                    }
+                    catch
+                    {
+
+                    }
                 }
                 else 
                 {

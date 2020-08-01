@@ -1,4 +1,5 @@
-﻿using System;
+﻿using quanlyquanao;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -160,7 +161,18 @@ namespace QuanLyQuanAo.GUI
         {
 
         }
+        private void mnuKetThuc_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
+        private void mnuDangXuat_Click(object sender, EventArgs e)
+        {
+            frmDangNhap frm = new frmDangNhap();
+            frm.Show();
+            this.Visible = false;
+
+        }
         private void mnuHangSanXuat_Click(object sender, EventArgs e)
         {
             frmHangSanXuat frm = (frmHangSanXuat)FormExist("");
@@ -293,8 +305,9 @@ namespace QuanLyQuanAo.GUI
 
             mnuNhapHang.Enabled = false;
         }
+
         #endregion
 
-
+      
     }
 }

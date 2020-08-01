@@ -679,6 +679,8 @@
             this.Controls.Add(this.pnlCenter);
             this.Controls.Add(this.pnlBottom);
             this.Controls.Add(this.pnlTop);
+            this.MaximumSize = new System.Drawing.Size(870, 800);
+            this.MinimumSize = new System.Drawing.Size(870, 800);
             this.Name = "frmLapHoaDon";
             this.Text = "Lập Hóa Đơn";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmLapHoaDon_FormClosed);

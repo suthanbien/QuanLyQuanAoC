@@ -13,7 +13,7 @@ namespace QuanLyQuanAo.DAO
 
 		private string _TenKhachHang="";
 
-		private System.DateTime _Ngaysinh;
+		private DateTime? _Ngaysinh;
 
 		private string _GioiTinh="nam";
 
@@ -31,7 +31,7 @@ namespace QuanLyQuanAo.DAO
 
 		public int MaKhachHang { get => _MaKhachHang; set => _MaKhachHang = value; }
 		public string TenKhachHang { get => _TenKhachHang; set => _TenKhachHang = value; }
-		public DateTime Ngaysinh { get => _Ngaysinh; set => _Ngaysinh = value; }
+		public DateTime? Ngaysinh { get => _Ngaysinh; set => _Ngaysinh = value; }
 		public string GioiTinh { get => _GioiTinh; set => _GioiTinh = value; }
 		public string Email { get => _Email; set => _Email = value; }
 		public string DiaChi { get => _DiaChi; set => _DiaChi = value; }
