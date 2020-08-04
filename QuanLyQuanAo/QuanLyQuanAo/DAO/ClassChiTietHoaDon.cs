@@ -36,5 +36,17 @@ namespace QuanLyQuanAo.DAO
 		public ClassChiTietHoaDon()
 		{
 		}
+
+		public ClassChiTietHoaDon(int maHoaDon, int maHangHoa, string tenHH, int sLConLai, int giaTien, int soLuong, int tongTien, string ghiChu)
+		{
+			_MaHoaDon = maHoaDon;
+			_MaHangHoa = maHangHoa;
+			_TenHH = tenHH;
+			_SLConLai = sLConLai;
+			_GiaTien = giaTien;
+			_SoLuong = soLuong;
+			_TongTien = tongTien;
+			_GhiChu = ghiChu;
+		}
 	}
 }

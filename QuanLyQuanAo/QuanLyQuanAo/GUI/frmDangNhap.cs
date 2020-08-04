@@ -98,13 +98,13 @@ namespace quanlyquanao
           
 
         }
-
-
-        #endregion
-
         private void frmDangNhap_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
+
+        #endregion
+
+
     }
 }

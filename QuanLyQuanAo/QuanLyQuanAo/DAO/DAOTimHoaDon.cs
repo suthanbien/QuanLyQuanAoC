@@ -71,7 +71,45 @@ namespace QuanLyQuanAo.DAO
                 return lstHD;
             }
         }
+        public ClassHoaDon GetHoaDonTheoMa(int maHD)
+        {
+            using (CSDLQuanLyQuanAoDataContext db = new CSDLQuanLyQuanAoDataContext())
+            {
+                ClassHoaDon hoaDonNew = new ClassHoaDon();
+                db.DeferredLoadingEnabled = false;
+                var ttHD = from h in db.HoaDons
+                           join n in db.NhanViens on h.MaNhanVien equals n.MaNhanVien
+                           join k in db.KhachHangs on h.MaKhachHang equals k.MaKhachHang
+                           join lkh in db.LoaiKhachHangs on k.LoaiKhachHang equals lkh.MaLoaiKhachHang
+                           where h.MaHoaDon == maHD
+                           select new
+                           {
+                               HoaDon = h,
+                               NhanVien = n,
+                               LoaiKhachHang=lkh,
+                               KhachHang = k
 
+                           };
+
+
+                foreach (var i in ttHD)
+                {
+                    hoaDonNew.MaHoaDon = i.HoaDon.MaHoaDon;
+                    hoaDonNew.MaNhanVien = i.NhanVien.MaNhanVien.ToString();
+                    hoaDonNew.TenNhanVien = i.NhanVien.TenNhanVien;
+                    hoaDonNew.MaKhachHang = i.KhachHang.MaKhachHang.ToString();
+                    hoaDonNew.TenKhachHang = i.KhachHang.TenKhachHang;
+                    hoaDonNew.DiaChi = i.KhachHang.DiaChi;
+                    hoaDonNew.DienThoai = i.KhachHang.SDT;
+                    hoaDonNew.LoaiKH = "Khách hàng: "+i.LoaiKhachHang.TenLoaiKhachHang+" Giảm "+i.LoaiKhachHang.HeSoGiam.ToString()+"%";
+                    hoaDonNew.TongTien = i.HoaDon.TongTien;
+                    hoaDonNew.NgayLapHoaDon = i.HoaDon.NgayLapHoaDon;
+                    hoaDonNew.GhiChu = i.HoaDon.GhiChu;
+                }
+
+                return hoaDonNew;
+            }
+        }
         public List<ClassHoaDon> TimTheoMa(int maHD)
         {
             using (CSDLQuanLyQuanAoDataContext db = new CSDLQuanLyQuanAoDataContext())
@@ -180,7 +218,7 @@ namespace QuanLyQuanAo.DAO
 
                     chiTietNew.MaHangHoa = i.ChiTietHoaDon.MaHangHoa;
                     chiTietNew.TenHH = i.HangHoa.TenHangHoa;
-                    chiTietNew.GiaTien = i.HangHoa.GiaBan;
+                    chiTietNew.GiaTien = i.ChiTietHoaDon.GiaNhap;
                     chiTietNew.SoLuong = i.ChiTietHoaDon.SoLuong;
                     chiTietNew.TongTien = i.ChiTietHoaDon.TongTien;
                     chiTietNew.GhiChu = i.ChiTietHoaDon.GhiChu;
