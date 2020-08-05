@@ -1,5 +1,4 @@
 ﻿using QuanLyQuanAo.DAO;
-using QuanLyQuanAo.GUI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +14,6 @@ namespace QuanLyQuanAo.BUS
         private static BUSLapHoaDon instance;
         List<ClassKhachHang> lstKH = new List<ClassKhachHang>();
         List<ClassChiTietHoaDon> lstCTHD = new List<ClassChiTietHoaDon>();
-        List<ClassChiTietHoaDon> lstCTHDPrint = new List<ClassChiTietHoaDon>();
         List<ClassHangHoa> lstHangHoa = new List<ClassHangHoa>();
         ClassHangHoa hangHoaChon;
         #endregion
@@ -77,7 +75,6 @@ namespace QuanLyQuanAo.BUS
             ClassChiTietHoaDon chiTietNew = new ClassChiTietHoaDon();
             lstCTHD.Add(chiTietNew);
             dgv.DataSource = lstCTHD;
-            lstCTHDPrint = lstCTHD;
         }
         public void SuDungMaGiamGia(string maGiamGia,Label lblHeSoGiam,Label lblThongBaoGG)
         {
@@ -102,7 +99,6 @@ namespace QuanLyQuanAo.BUS
         public void HuyHoaDon(DataGridView dgv)
         {
             dgv.DataSource = null;
-            lstCTHDPrint = lstCTHD;
             lstCTHD.Clear();
             dgv.DataSource = lstCTHD;
         }
@@ -114,33 +110,6 @@ namespace QuanLyQuanAo.BUS
         {
             DAOLapHoaDon.Instance.LapChiTietHoaDon(maHD, maHangHoa, soLuongMua, tTien, ghiChu);
         }
-
-        public void InHoaDon(int maHD,  frmPrintThongKe frm)
-        {
-            ClassHoaDon hoaDonNew = new ClassHoaDon();
-            List<ClassChiTietHoaDon> lstCTHD = new List<ClassChiTietHoaDon>();
-            hoaDonNew = DAOLapHoaDon.Instance.GetHoaDonTheoMa(maHD);
-            lstCTHD= DAOLapHoaDon.Instance.GetChiTietHD(maHD);
-
-            frmPrintThongKe.mauIn = 1;
-            frmPrintThongKe.maHD = hoaDonNew.MaHoaDon.ToString();
-            frmPrintThongKe.maNV = hoaDonNew.MaNhanVien.ToString();
-            frmPrintThongKe.tenNV = hoaDonNew.TenNhanVien.ToString();
-            frmPrintThongKe.ngayBan = hoaDonNew.NgayLapHoaDon.ToString();
-            frmPrintThongKe.maKH = hoaDonNew.MaKhachHang.ToString();
-            frmPrintThongKe.tenKH = hoaDonNew.TenKhachHang.ToString();
-            frmPrintThongKe.diaChiKH = hoaDonNew.DiaChi.ToString();
-            frmPrintThongKe.dienThoai = hoaDonNew.DienThoai.ToString();
-            frmPrintThongKe.loaiKH = hoaDonNew.LoaiKH.ToString();
-            //frmPrintThongKe.tongTien = hoaDonNew.TongTien.ToString(); 
-            frmPrintThongKe.ghiChu = hoaDonNew.GhiChu.ToString();
-            frmPrintThongKe.conLai = hoaDonNew.TongTien.ToString();
-            frmPrintThongKe.lstChiTietHoaDon = lstCTHD;
-
-            frm.ShowDialog();
-        }
-
-
         #endregion
     }
 }

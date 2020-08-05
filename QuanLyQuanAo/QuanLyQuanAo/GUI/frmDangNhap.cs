@@ -40,31 +40,7 @@ namespace quanlyquanao
                 quyen = 3;
             }
             return quyen;
-        }
-        private string MaHoaBuocNhay(string chuoiKyTu, int buocNhay)
-        {
-            char[] mangKT = chuoiKyTu.ToArray();
-            for (int i = 0; i < mangKT.Length; i++)
-            {
-                char kyTu = mangKT[i];
-                kyTu = (char)(kyTu + buocNhay);
-
-                if (kyTu > 'Z')
-                {
-                    kyTu = (char)(kyTu - 26);
-                }
-                else if (kyTu < 'a')
-                {
-                    kyTu = (char)(kyTu + 26);
-                }
-
-                mangKT[i] = kyTu;
-            }
-
-            return new string(mangKT);
-
-        }
-
+        }   
 
         #endregion
 
@@ -122,13 +98,13 @@ namespace quanlyquanao
           
 
         }
+
+
+        #endregion
+
         private void frmDangNhap_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
-
-        #endregion
-
-
     }
 }

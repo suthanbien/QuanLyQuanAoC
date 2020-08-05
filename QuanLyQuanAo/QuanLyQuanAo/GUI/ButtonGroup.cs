@@ -161,12 +161,12 @@ namespace QuanLyQuanAo.GUI
             btnNext.Enabled = b && m_Reccount > 0 && m_Position < m_Reccount - 1;
             btnLast.Enabled = b && m_Reccount > 0 && m_Position < m_Reccount - 1;
 
-            btnAdd.Enabled = b && frmMain.quyen.Equals("1")|| b && frmMain.quyen.Equals("2"); // Add
+            btnAdd.Enabled = b && frmMain.QuyenNguoiSuDung(frmMain.TuCach, m_MsMau, 'A'); // Add
             btnAdd.Visible = b;
 
 
             btnEdit.Enabled = b && m_Reccount > 0
-            && frmMain.quyen.Equals("1") || b && frmMain.quyen.Equals("2"); // Edit
+            && frmMain.QuyenNguoiSuDung(frmMain.TuCach, m_MsMau, 'E'); // Edit
             btnEdit.Visible = b;
             btnSave.Enabled = !b;
             btnSave.Visible = !b;
@@ -175,10 +175,11 @@ namespace QuanLyQuanAo.GUI
             btnTim.Enabled = b;
             txtTimKiem.Enabled = b;
             btnDelete.Enabled = b && m_Reccount > 0
-            && frmMain.quyen.Equals("1") || b && frmMain.quyen.Equals("2"); // Delete
+            && frmMain.QuyenNguoiSuDung(frmMain.TuCach, m_MsMau, 'D'); // Delete
             //btnADMin.Enabled = b && m_Reccount > 0
            // && frmMain.QuyenNguoiSuDung(frmMain.TuCach, m_MsMau, 'P');
-          btnExtra2.Enabled = b && (frmMain.quyen.Equals("1") || b && frmMain.quyen.Equals("2"));
+          btnExtra.Enabled = b && (frmMain.QuyenNguoiSuDung(frmMain.TuCach, m_MsMau, 'A')
+            || frmMain.QuyenNguoiSuDung(frmMain.TuCach, m_MsMau, 'E'));
         }
         public void EnableAddButton(bool b)
         {

@@ -8,36 +8,27 @@ namespace QuanLyQuanAo.DAO
 {
     class ClassHoaDon
     {
-		private int _MaHoaDon=0;
-		private string _MaNhanVien="";
-		private string _TenNhanVien="";
+		private int _MaHoaDon;
 
-		private string _MaKhachHang="";
-		private string _TenKhachHang="";
-		private string _DiaChi="";
-		private string _DienThoai="";
-		private string _LoaiKH="";
+		private string _TenKhachHang;
+
+		private string _TenNhanVien;
 
 		private System.DateTime _NgayLapHoaDon;
 
-		private int _TongTien=0;
-		private string _GhiChu="";
+		private int _TongTien;
 
+		private string _GhiChu;
+
+		public int MaHoaDon { get => _MaHoaDon; set => _MaHoaDon = value; }
+		public string TenKhachHang { get => _TenKhachHang; set => _TenKhachHang = value; }
+		public string TenNhanVien { get => _TenNhanVien; set => _TenNhanVien = value; }
+		public DateTime NgayLapHoaDon { get => _NgayLapHoaDon; set => _NgayLapHoaDon = value; }
+		public int TongTien { get => _TongTien; set => _TongTien = value; }
+		public string GhiChu { get => _GhiChu; set => _GhiChu = value; }
 
 		public ClassHoaDon()
 		{
 		}
-
-		public int MaHoaDon { get => _MaHoaDon; set => _MaHoaDon = value; }
-		public string MaNhanVien { get => _MaNhanVien; set => _MaNhanVien = value; }
-		public string TenNhanVien { get => _TenNhanVien; set => _TenNhanVien = value; }
-		public string MaKhachHang { get => _MaKhachHang; set => _MaKhachHang = value; }
-		public string TenKhachHang { get => _TenKhachHang; set => _TenKhachHang = value; }
-		public string DiaChi { get => _DiaChi; set => _DiaChi = value; }
-		public string DienThoai { get => _DienThoai; set => _DienThoai = value; }
-		public string LoaiKH { get => _LoaiKH; set => _LoaiKH = value; }
-		public DateTime NgayLapHoaDon { get => _NgayLapHoaDon; set => _NgayLapHoaDon = value; }
-		public int TongTien { get => _TongTien; set => _TongTien = value; }
-		public string GhiChu { get => _GhiChu; set => _GhiChu = value; }
 	}
 }

@@ -151,16 +151,5 @@ namespace QuanLyQuanAo.GUI
             }
         }
         #endregion
-
-        private void btnIn_Click(object sender, EventArgs e)
-        {
-
-                frmPrintThongKe frm = new frmPrintThongKe();
-                int maHD;
-                position = dgvHoaDon.CurrentRow.Index;
-                maHD = Convert.ToInt32(dgvHoaDon.Rows[position].Cells[0].Value.ToString());
-                BUSTimHoaDon.Instance.InHoaDon(maHD, frm);
- 
-        }
     }
 }

@@ -29,25 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmKhachHang));
             this.pnlTop = new System.Windows.Forms.Panel();
-            this.picAnh = new System.Windows.Forms.PictureBox();
-            this.pnlT_Top = new System.Windows.Forms.Panel();
-            this.lblSanPham = new System.Windows.Forms.Label();
-            this.pnlBottom = new System.Windows.Forms.Panel();
-            this.btgNhomLenh = new QuanLyQuanAo.GUI.ButtonGroup();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dgvNhanVien = new System.Windows.Forms.DataGridView();
-            this.maKhachHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenKhachHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaysinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gioiTinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sDTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaiKhachHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ghiChuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.imageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.classKhachHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.lblSDT = new System.Windows.Forms.Label();
@@ -67,6 +50,24 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblTenKH = new System.Windows.Forms.Label();
             this.lblMaKH = new System.Windows.Forms.Label();
+            this.picAnh = new System.Windows.Forms.PictureBox();
+            this.pnlT_Top = new System.Windows.Forms.Panel();
+            this.lblSanPham = new System.Windows.Forms.Label();
+            this.pnlBottom = new System.Windows.Forms.Panel();
+            this.btgNhomLenh = new QuanLyQuanAo.GUI.ButtonGroup();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvNhanVien = new System.Windows.Forms.DataGridView();
+            this.classKhachHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.maKhachHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenKhachHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaysinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioiTinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sDTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiKhachHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghiChuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnh)).BeginInit();
             this.pnlT_Top.SuspendLayout();
@@ -78,6 +79,7 @@
             // 
             // pnlTop
             // 
+            this.pnlTop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlTop.Controls.Add(this.txtSDT);
             this.pnlTop.Controls.Add(this.txtDiaChi);
             this.pnlTop.Controls.Add(this.lblSDT);
@@ -101,16 +103,191 @@
             this.pnlTop.Controls.Add(this.pnlT_Top);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
+            this.pnlTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(1201, 409);
+            this.pnlTop.Size = new System.Drawing.Size(1328, 511);
             this.pnlTop.TabIndex = 0;
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.Location = new System.Drawing.Point(565, 220);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.ReadOnly = true;
+            this.txtSDT.Size = new System.Drawing.Size(155, 26);
+            this.txtSDT.TabIndex = 66;
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Location = new System.Drawing.Point(565, 150);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.ReadOnly = true;
+            this.txtDiaChi.Size = new System.Drawing.Size(155, 26);
+            this.txtDiaChi.TabIndex = 67;
+            // 
+            // lblSDT
+            // 
+            this.lblSDT.AutoSize = true;
+            this.lblSDT.Location = new System.Drawing.Point(425, 220);
+            this.lblSDT.Name = "lblSDT";
+            this.lblSDT.Size = new System.Drawing.Size(45, 20);
+            this.lblSDT.TabIndex = 65;
+            this.lblSDT.Text = "SDT:";
+            // 
+            // lblDiaChi
+            // 
+            this.lblDiaChi.AutoSize = true;
+            this.lblDiaChi.Location = new System.Drawing.Point(425, 150);
+            this.lblDiaChi.Name = "lblDiaChi";
+            this.lblDiaChi.Size = new System.Drawing.Size(64, 20);
+            this.lblDiaChi.TabIndex = 64;
+            this.lblDiaChi.Text = "Địa Chỉ:";
+            // 
+            // ricChuThich
+            // 
+            this.ricChuThich.Location = new System.Drawing.Point(511, 365);
+            this.ricChuThich.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ricChuThich.Name = "ricChuThich";
+            this.ricChuThich.ReadOnly = true;
+            this.ricChuThich.Size = new System.Drawing.Size(209, 101);
+            this.ricChuThich.TabIndex = 63;
+            this.ricChuThich.Text = "";
+            // 
+            // txtAnh
+            // 
+            this.txtAnh.Location = new System.Drawing.Point(726, 440);
+            this.txtAnh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAnh.Name = "txtAnh";
+            this.txtAnh.ReadOnly = true;
+            this.txtAnh.Size = new System.Drawing.Size(26, 26);
+            this.txtAnh.TabIndex = 62;
+            // 
+            // txtGioiTinh
+            // 
+            this.txtGioiTinh.Location = new System.Drawing.Point(180, 365);
+            this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtGioiTinh.Name = "txtGioiTinh";
+            this.txtGioiTinh.ReadOnly = true;
+            this.txtGioiTinh.Size = new System.Drawing.Size(155, 26);
+            this.txtGioiTinh.TabIndex = 56;
+            // 
+            // txtLoaiKH
+            // 
+            this.txtLoaiKH.Location = new System.Drawing.Point(565, 295);
+            this.txtLoaiKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtLoaiKH.Name = "txtLoaiKH";
+            this.txtLoaiKH.ReadOnly = true;
+            this.txtLoaiKH.Size = new System.Drawing.Size(155, 26);
+            this.txtLoaiKH.TabIndex = 57;
+            // 
+            // txtNgaySinh
+            // 
+            this.txtNgaySinh.Location = new System.Drawing.Point(180, 295);
+            this.txtNgaySinh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNgaySinh.Name = "txtNgaySinh";
+            this.txtNgaySinh.ReadOnly = true;
+            this.txtNgaySinh.Size = new System.Drawing.Size(155, 26);
+            this.txtNgaySinh.TabIndex = 58;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(180, 440);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.ReadOnly = true;
+            this.txtEmail.Size = new System.Drawing.Size(155, 26);
+            this.txtEmail.TabIndex = 59;
+            // 
+            // txtTenKH
+            // 
+            this.txtTenKH.Location = new System.Drawing.Point(180, 220);
+            this.txtTenKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTenKH.Name = "txtTenKH";
+            this.txtTenKH.ReadOnly = true;
+            this.txtTenKH.Size = new System.Drawing.Size(155, 26);
+            this.txtTenKH.TabIndex = 60;
+            // 
+            // txtMaKH
+            // 
+            this.txtMaKH.Location = new System.Drawing.Point(180, 150);
+            this.txtMaKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtMaKH.Name = "txtMaKH";
+            this.txtMaKH.ReadOnly = true;
+            this.txtMaKH.Size = new System.Drawing.Size(155, 26);
+            this.txtMaKH.TabIndex = 61;
+            // 
+            // lblChuThuch
+            // 
+            this.lblChuThuch.AutoSize = true;
+            this.lblChuThuch.Location = new System.Drawing.Point(425, 365);
+            this.lblChuThuch.Name = "lblChuThuch";
+            this.lblChuThuch.Size = new System.Drawing.Size(84, 20);
+            this.lblChuThuch.TabIndex = 53;
+            this.lblChuThuch.Text = "Chú Thích:";
+            // 
+            // lblGioiTinh
+            // 
+            this.lblGioiTinh.AutoSize = true;
+            this.lblGioiTinh.Location = new System.Drawing.Point(35, 365);
+            this.lblGioiTinh.Name = "lblGioiTinh";
+            this.lblGioiTinh.Size = new System.Drawing.Size(75, 20);
+            this.lblGioiTinh.TabIndex = 50;
+            this.lblGioiTinh.Text = "Giới Tính:";
+            // 
+            // lblLoaiKH
+            // 
+            this.lblLoaiKH.AutoSize = true;
+            this.lblLoaiKH.Location = new System.Drawing.Point(425, 295);
+            this.lblLoaiKH.Name = "lblLoaiKH";
+            this.lblLoaiKH.Size = new System.Drawing.Size(135, 20);
+            this.lblLoaiKH.TabIndex = 51;
+            this.lblLoaiKH.Text = "Loại Khách Hàng:";
+            // 
+            // lblNgaySinh
+            // 
+            this.lblNgaySinh.AutoSize = true;
+            this.lblNgaySinh.Location = new System.Drawing.Point(35, 295);
+            this.lblNgaySinh.Name = "lblNgaySinh";
+            this.lblNgaySinh.Size = new System.Drawing.Size(85, 20);
+            this.lblNgaySinh.TabIndex = 52;
+            this.lblNgaySinh.Text = "Ngày Sinh:";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(35, 440);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(52, 20);
+            this.lblEmail.TabIndex = 49;
+            this.lblEmail.Text = "Email:";
+            // 
+            // lblTenKH
+            // 
+            this.lblTenKH.AutoSize = true;
+            this.lblTenKH.Location = new System.Drawing.Point(35, 220);
+            this.lblTenKH.Name = "lblTenKH";
+            this.lblTenKH.Size = new System.Drawing.Size(132, 20);
+            this.lblTenKH.TabIndex = 48;
+            this.lblTenKH.Text = "Tên Khách Hàng:";
+            // 
+            // lblMaKH
+            // 
+            this.lblMaKH.AutoSize = true;
+            this.lblMaKH.Location = new System.Drawing.Point(35, 150);
+            this.lblMaKH.Name = "lblMaKH";
+            this.lblMaKH.Size = new System.Drawing.Size(127, 20);
+            this.lblMaKH.TabIndex = 47;
+            this.lblMaKH.Text = "Mã Khách Hàng:";
             // 
             // picAnh
             // 
+            this.picAnh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picAnh.Dock = System.Windows.Forms.DockStyle.Right;
-            this.picAnh.Location = new System.Drawing.Point(826, 76);
+            this.picAnh.Location = new System.Drawing.Point(904, 95);
+            this.picAnh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.picAnh.Name = "picAnh";
-            this.picAnh.Size = new System.Drawing.Size(375, 333);
+            this.picAnh.Size = new System.Drawing.Size(422, 414);
             this.picAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picAnh.TabIndex = 6;
             this.picAnh.TabStop = false;
@@ -120,36 +297,42 @@
             this.pnlT_Top.Controls.Add(this.lblSanPham);
             this.pnlT_Top.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlT_Top.Location = new System.Drawing.Point(0, 0);
+            this.pnlT_Top.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlT_Top.Name = "pnlT_Top";
-            this.pnlT_Top.Size = new System.Drawing.Size(1201, 76);
+            this.pnlT_Top.Size = new System.Drawing.Size(1326, 95);
             this.pnlT_Top.TabIndex = 0;
             // 
             // lblSanPham
             // 
-            this.lblSanPham.BackColor = System.Drawing.Color.Chartreuse;
+            this.lblSanPham.BackColor = System.Drawing.Color.LightGreen;
+            this.lblSanPham.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSanPham.ForeColor = System.Drawing.Color.Crimson;
+            this.lblSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSanPham.ForeColor = System.Drawing.Color.Black;
+            this.lblSanPham.Image = global::QuanLyQuanAo.Properties.Resources.reception_40px2;
+            this.lblSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblSanPham.Location = new System.Drawing.Point(0, 0);
             this.lblSanPham.Name = "lblSanPham";
-            this.lblSanPham.Size = new System.Drawing.Size(1201, 76);
+            this.lblSanPham.Size = new System.Drawing.Size(1326, 95);
             this.lblSanPham.TabIndex = 3;
-            this.lblSanPham.Text = "Danh Mục Khách Hàng";
-            this.lblSanPham.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblSanPham.Text = "DANH MỤC KHÁCH HÀNG";
+            this.lblSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlBottom
             // 
             this.pnlBottom.Controls.Add(this.btgNhomLenh);
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottom.Location = new System.Drawing.Point(0, 607);
+            this.pnlBottom.Location = new System.Drawing.Point(0, 744);
+            this.pnlBottom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.Size = new System.Drawing.Size(1201, 80);
+            this.pnlBottom.Size = new System.Drawing.Size(1328, 100);
             this.pnlBottom.TabIndex = 1;
             // 
             // btgNhomLenh
             // 
             this.btgNhomLenh.AddEnabled = true;
             this.btgNhomLenh.AutoNumber = false;
+            this.btgNhomLenh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btgNhomLenh.CanDelete = true;
             this.btgNhomLenh.CanSave = true;
             this.btgNhomLenh.dgv = null;
@@ -163,6 +346,7 @@
             this.btgNhomLenh.ExtraVisible = true;
             this.btgNhomLenh.ListTimKiem = null;
             this.btgNhomLenh.Location = new System.Drawing.Point(0, 0);
+            this.btgNhomLenh.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btgNhomLenh.MaTimKiem = "";
             this.btgNhomLenh.Mode = 0;
             this.btgNhomLenh.ModeADD = 0;
@@ -171,7 +355,7 @@
             this.btgNhomLenh.Name = "btgNhomLenh";
             this.btgNhomLenh.Position = 0;
             this.btgNhomLenh.Reccount = 0;
-            this.btgNhomLenh.Size = new System.Drawing.Size(1201, 80);
+            this.btgNhomLenh.Size = new System.Drawing.Size(1328, 100);
             this.btgNhomLenh.TabIndex = 1;
             this.btgNhomLenh.TenTimKiem = "";
             this.btgNhomLenh.Display += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_Display);
@@ -190,9 +374,10 @@
             // 
             this.panel1.Controls.Add(this.dgvNhanVien);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 409);
+            this.panel1.Location = new System.Drawing.Point(0, 511);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1201, 198);
+            this.panel1.Size = new System.Drawing.Size(1328, 233);
             this.panel1.TabIndex = 2;
             // 
             // dgvNhanVien
@@ -200,6 +385,7 @@
             this.dgvNhanVien.AllowUserToAddRows = false;
             this.dgvNhanVien.AllowUserToDeleteRows = false;
             this.dgvNhanVien.AutoGenerateColumns = false;
+            this.dgvNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvNhanVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -216,6 +402,7 @@
             this.dgvNhanVien.DataSource = this.classKhachHangBindingSource;
             this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvNhanVien.Location = new System.Drawing.Point(0, 0);
+            this.dgvNhanVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvNhanVien.MultiSelect = false;
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.ReadOnly = true;
@@ -223,45 +410,45 @@
             this.dgvNhanVien.RowHeadersWidth = 51;
             this.dgvNhanVien.RowTemplate.Height = 24;
             this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgvNhanVien.Size = new System.Drawing.Size(1201, 198);
+            this.dgvNhanVien.Size = new System.Drawing.Size(1328, 233);
             this.dgvNhanVien.TabIndex = 4;
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
+            // 
+            // classKhachHangBindingSource
+            // 
+            this.classKhachHangBindingSource.DataSource = typeof(QuanLyQuanAo.DAO.ClassKhachHang);
             // 
             // maKhachHangDataGridViewTextBoxColumn
             // 
             this.maKhachHangDataGridViewTextBoxColumn.DataPropertyName = "MaKhachHang";
-            this.maKhachHangDataGridViewTextBoxColumn.HeaderText = "MaKhachHang";
+            this.maKhachHangDataGridViewTextBoxColumn.HeaderText = "Mã Khách Hàng";
             this.maKhachHangDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.maKhachHangDataGridViewTextBoxColumn.Name = "maKhachHangDataGridViewTextBoxColumn";
             this.maKhachHangDataGridViewTextBoxColumn.ReadOnly = true;
-            this.maKhachHangDataGridViewTextBoxColumn.Width = 125;
             // 
             // tenKhachHangDataGridViewTextBoxColumn
             // 
             this.tenKhachHangDataGridViewTextBoxColumn.DataPropertyName = "TenKhachHang";
-            this.tenKhachHangDataGridViewTextBoxColumn.HeaderText = "TenKhachHang";
+            this.tenKhachHangDataGridViewTextBoxColumn.HeaderText = "Tên Khách Hàng";
             this.tenKhachHangDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.tenKhachHangDataGridViewTextBoxColumn.Name = "tenKhachHangDataGridViewTextBoxColumn";
             this.tenKhachHangDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tenKhachHangDataGridViewTextBoxColumn.Width = 125;
             // 
             // ngaysinhDataGridViewTextBoxColumn
             // 
             this.ngaysinhDataGridViewTextBoxColumn.DataPropertyName = "Ngaysinh";
-            this.ngaysinhDataGridViewTextBoxColumn.HeaderText = "Ngaysinh";
+            this.ngaysinhDataGridViewTextBoxColumn.HeaderText = "Ngày Sinh";
             this.ngaysinhDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.ngaysinhDataGridViewTextBoxColumn.Name = "ngaysinhDataGridViewTextBoxColumn";
             this.ngaysinhDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ngaysinhDataGridViewTextBoxColumn.Width = 125;
             // 
             // gioiTinhDataGridViewTextBoxColumn
             // 
             this.gioiTinhDataGridViewTextBoxColumn.DataPropertyName = "GioiTinh";
-            this.gioiTinhDataGridViewTextBoxColumn.HeaderText = "GioiTinh";
+            this.gioiTinhDataGridViewTextBoxColumn.HeaderText = "Giới Tính";
             this.gioiTinhDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.gioiTinhDataGridViewTextBoxColumn.Name = "gioiTinhDataGridViewTextBoxColumn";
             this.gioiTinhDataGridViewTextBoxColumn.ReadOnly = true;
-            this.gioiTinhDataGridViewTextBoxColumn.Width = 125;
             // 
             // emailDataGridViewTextBoxColumn
             // 
@@ -270,43 +457,38 @@
             this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             this.emailDataGridViewTextBoxColumn.ReadOnly = true;
-            this.emailDataGridViewTextBoxColumn.Width = 125;
             // 
             // diaChiDataGridViewTextBoxColumn
             // 
             this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
-            this.diaChiDataGridViewTextBoxColumn.HeaderText = "DiaChi";
+            this.diaChiDataGridViewTextBoxColumn.HeaderText = "Địa Chỉ";
             this.diaChiDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
             this.diaChiDataGridViewTextBoxColumn.ReadOnly = true;
-            this.diaChiDataGridViewTextBoxColumn.Width = 125;
             // 
             // sDTDataGridViewTextBoxColumn
             // 
             this.sDTDataGridViewTextBoxColumn.DataPropertyName = "SDT";
-            this.sDTDataGridViewTextBoxColumn.HeaderText = "SDT";
+            this.sDTDataGridViewTextBoxColumn.HeaderText = "Số Điện Thoại";
             this.sDTDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.sDTDataGridViewTextBoxColumn.Name = "sDTDataGridViewTextBoxColumn";
             this.sDTDataGridViewTextBoxColumn.ReadOnly = true;
-            this.sDTDataGridViewTextBoxColumn.Width = 125;
             // 
             // loaiKhachHangDataGridViewTextBoxColumn
             // 
             this.loaiKhachHangDataGridViewTextBoxColumn.DataPropertyName = "LoaiKhachHang";
-            this.loaiKhachHangDataGridViewTextBoxColumn.HeaderText = "LoaiKhachHang";
+            this.loaiKhachHangDataGridViewTextBoxColumn.HeaderText = "Loại Khách Hàng";
             this.loaiKhachHangDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.loaiKhachHangDataGridViewTextBoxColumn.Name = "loaiKhachHangDataGridViewTextBoxColumn";
             this.loaiKhachHangDataGridViewTextBoxColumn.ReadOnly = true;
-            this.loaiKhachHangDataGridViewTextBoxColumn.Width = 125;
             // 
             // ghiChuDataGridViewTextBoxColumn
             // 
             this.ghiChuDataGridViewTextBoxColumn.DataPropertyName = "GhiChu";
-            this.ghiChuDataGridViewTextBoxColumn.HeaderText = "GhiChu";
+            this.ghiChuDataGridViewTextBoxColumn.HeaderText = "Ghi Chú";
             this.ghiChuDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.ghiChuDataGridViewTextBoxColumn.Name = "ghiChuDataGridViewTextBoxColumn";
             this.ghiChuDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ghiChuDataGridViewTextBoxColumn.Width = 125;
             // 
             // imageDataGridViewImageColumn
             // 
@@ -315,184 +497,21 @@
             this.imageDataGridViewImageColumn.MinimumWidth = 6;
             this.imageDataGridViewImageColumn.Name = "imageDataGridViewImageColumn";
             this.imageDataGridViewImageColumn.ReadOnly = true;
-            this.imageDataGridViewImageColumn.Width = 125;
-            // 
-            // classKhachHangBindingSource
-            // 
-            this.classKhachHangBindingSource.DataSource = typeof(QuanLyQuanAo.DAO.ClassKhachHang);
-            // 
-            // txtSDT
-            // 
-            this.txtSDT.Location = new System.Drawing.Point(567, 145);
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.ReadOnly = true;
-            this.txtSDT.Size = new System.Drawing.Size(138, 22);
-            this.txtSDT.TabIndex = 66;
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Location = new System.Drawing.Point(567, 100);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.ReadOnly = true;
-            this.txtDiaChi.Size = new System.Drawing.Size(138, 22);
-            this.txtDiaChi.TabIndex = 67;
-            // 
-            // lblSDT
-            // 
-            this.lblSDT.AutoSize = true;
-            this.lblSDT.Location = new System.Drawing.Point(399, 150);
-            this.lblSDT.Name = "lblSDT";
-            this.lblSDT.Size = new System.Drawing.Size(36, 17);
-            this.lblSDT.TabIndex = 65;
-            this.lblSDT.Text = "SDT";
-            // 
-            // lblDiaChi
-            // 
-            this.lblDiaChi.AutoSize = true;
-            this.lblDiaChi.Location = new System.Drawing.Point(399, 97);
-            this.lblDiaChi.Name = "lblDiaChi";
-            this.lblDiaChi.Size = new System.Drawing.Size(53, 17);
-            this.lblDiaChi.TabIndex = 64;
-            this.lblDiaChi.Text = "Dịa Chỉ";
-            // 
-            // ricChuThich
-            // 
-            this.ricChuThich.Location = new System.Drawing.Point(477, 291);
-            this.ricChuThich.Name = "ricChuThich";
-            this.ricChuThich.ReadOnly = true;
-            this.ricChuThich.Size = new System.Drawing.Size(228, 81);
-            this.ricChuThich.TabIndex = 63;
-            this.ricChuThich.Text = "";
-            // 
-            // txtAnh
-            // 
-            this.txtAnh.Location = new System.Drawing.Point(725, 350);
-            this.txtAnh.Name = "txtAnh";
-            this.txtAnh.ReadOnly = true;
-            this.txtAnh.Size = new System.Drawing.Size(74, 22);
-            this.txtAnh.TabIndex = 62;
-            // 
-            // txtGioiTinh
-            // 
-            this.txtGioiTinh.Location = new System.Drawing.Point(183, 240);
-            this.txtGioiTinh.Name = "txtGioiTinh";
-            this.txtGioiTinh.ReadOnly = true;
-            this.txtGioiTinh.Size = new System.Drawing.Size(138, 22);
-            this.txtGioiTinh.TabIndex = 56;
-            // 
-            // txtLoaiKH
-            // 
-            this.txtLoaiKH.Location = new System.Drawing.Point(567, 191);
-            this.txtLoaiKH.Name = "txtLoaiKH";
-            this.txtLoaiKH.ReadOnly = true;
-            this.txtLoaiKH.Size = new System.Drawing.Size(138, 22);
-            this.txtLoaiKH.TabIndex = 57;
-            // 
-            // txtNgaySinh
-            // 
-            this.txtNgaySinh.Location = new System.Drawing.Point(183, 191);
-            this.txtNgaySinh.Name = "txtNgaySinh";
-            this.txtNgaySinh.ReadOnly = true;
-            this.txtNgaySinh.Size = new System.Drawing.Size(138, 22);
-            this.txtNgaySinh.TabIndex = 58;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(183, 291);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.ReadOnly = true;
-            this.txtEmail.Size = new System.Drawing.Size(138, 22);
-            this.txtEmail.TabIndex = 59;
-            // 
-            // txtTenKH
-            // 
-            this.txtTenKH.Location = new System.Drawing.Point(183, 142);
-            this.txtTenKH.Name = "txtTenKH";
-            this.txtTenKH.ReadOnly = true;
-            this.txtTenKH.Size = new System.Drawing.Size(138, 22);
-            this.txtTenKH.TabIndex = 60;
-            // 
-            // txtMaKH
-            // 
-            this.txtMaKH.Location = new System.Drawing.Point(183, 97);
-            this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.ReadOnly = true;
-            this.txtMaKH.Size = new System.Drawing.Size(138, 22);
-            this.txtMaKH.TabIndex = 61;
-            // 
-            // lblChuThuch
-            // 
-            this.lblChuThuch.AutoSize = true;
-            this.lblChuThuch.Location = new System.Drawing.Point(399, 291);
-            this.lblChuThuch.Name = "lblChuThuch";
-            this.lblChuThuch.Size = new System.Drawing.Size(72, 17);
-            this.lblChuThuch.TabIndex = 53;
-            this.lblChuThuch.Text = "Chú Thích";
-            // 
-            // lblGioiTinh
-            // 
-            this.lblGioiTinh.AutoSize = true;
-            this.lblGioiTinh.Location = new System.Drawing.Point(32, 245);
-            this.lblGioiTinh.Name = "lblGioiTinh";
-            this.lblGioiTinh.Size = new System.Drawing.Size(65, 17);
-            this.lblGioiTinh.TabIndex = 50;
-            this.lblGioiTinh.Text = "Giới Tính";
-            // 
-            // lblLoaiKH
-            // 
-            this.lblLoaiKH.AutoSize = true;
-            this.lblLoaiKH.Location = new System.Drawing.Point(399, 196);
-            this.lblLoaiKH.Name = "lblLoaiKH";
-            this.lblLoaiKH.Size = new System.Drawing.Size(117, 17);
-            this.lblLoaiKH.TabIndex = 51;
-            this.lblLoaiKH.Text = "Loại Khách Hàng";
-            // 
-            // lblNgaySinh
-            // 
-            this.lblNgaySinh.AutoSize = true;
-            this.lblNgaySinh.Location = new System.Drawing.Point(32, 191);
-            this.lblNgaySinh.Name = "lblNgaySinh";
-            this.lblNgaySinh.Size = new System.Drawing.Size(73, 17);
-            this.lblNgaySinh.TabIndex = 52;
-            this.lblNgaySinh.Text = "Ngày Sinh";
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(32, 291);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(42, 17);
-            this.lblEmail.TabIndex = 49;
-            this.lblEmail.Text = "Email";
-            // 
-            // lblTenKH
-            // 
-            this.lblTenKH.AutoSize = true;
-            this.lblTenKH.Location = new System.Drawing.Point(32, 145);
-            this.lblTenKH.Name = "lblTenKH";
-            this.lblTenKH.Size = new System.Drawing.Size(115, 17);
-            this.lblTenKH.TabIndex = 48;
-            this.lblTenKH.Text = "Tên Khách Hàng";
-            // 
-            // lblMaKH
-            // 
-            this.lblMaKH.AutoSize = true;
-            this.lblMaKH.Location = new System.Drawing.Point(32, 100);
-            this.lblMaKH.Name = "lblMaKH";
-            this.lblMaKH.Size = new System.Drawing.Size(109, 17);
-            this.lblMaKH.TabIndex = 47;
-            this.lblMaKH.Text = "Mã Khách Hàng";
             // 
             // frmKhachHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1201, 687);
+            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.ClientSize = new System.Drawing.Size(1328, 844);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlBottom);
             this.Controls.Add(this.pnlTop);
+            this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmKhachHang";
-            this.Text = "Danh Mục Khách Hàng";
+            this.Text = "Danh mục khách hàng";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmKhachHang_FormClosed);
             this.Load += new System.EventHandler(this.frmKhachHang_Load);
             this.pnlTop.ResumeLayout(false);
@@ -516,16 +535,6 @@
         private System.Windows.Forms.Panel pnlT_Top;
         private System.Windows.Forms.Label lblSanPham;
         private System.Windows.Forms.PictureBox picAnh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maKhachHangDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenKhachHangDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngaysinhDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gioiTinhDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sDTDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn loaiKhachHangDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ghiChuDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewImageColumn imageDataGridViewImageColumn;
         private System.Windows.Forms.BindingSource classKhachHangBindingSource;
         private ButtonGroup btgNhomLenh;
         private System.Windows.Forms.TextBox txtSDT;
@@ -547,5 +556,15 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblTenKH;
         private System.Windows.Forms.Label lblMaKH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maKhachHangDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenKhachHangDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaysinhDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gioiTinhDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sDTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loaiKhachHangDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ghiChuDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn imageDataGridViewImageColumn;
     }
 }

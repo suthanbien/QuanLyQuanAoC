@@ -117,7 +117,7 @@ namespace QuanLyQuanAo.GUI
         {
             if (isDialog==false)
             {
-              //  ((frmMain)(this.MdiParent)).moMnuQLKhachHang(true);
+                ((frmMain)(this.MdiParent)).moMnuQLKhachHang(true);
             }
 
         }

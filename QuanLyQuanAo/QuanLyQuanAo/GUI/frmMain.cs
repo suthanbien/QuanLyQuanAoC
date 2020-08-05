@@ -63,8 +63,6 @@ namespace QuanLyQuanAo.GUI
             }
         }
 
-
-
         public void moMnuLoaiSanPham()
         {
             mnuLoaiSanPham.Enabled = true;
@@ -109,10 +107,7 @@ namespace QuanLyQuanAo.GUI
         {
             mnuNhapHang.Enabled = true;
         }
-        public void moMnuMatHangBanChay()
-        {
-            mnuMatHangBanChay.Enabled = true;
-        }
+
         public Form FormExist(String FormName)
         {
             foreach (Form frm in MdiChildren)
@@ -125,18 +120,7 @@ namespace QuanLyQuanAo.GUI
         #region các xử lý
         private void frmMain_Load(object sender, EventArgs e)
         {
-            if (quyen.Equals("3")|| quyen.Equals("2"))
-            {
-                mnuTKNhanVien.Enabled = false;
-            }
-            if (quyen.Equals("3"))
-            {
-               mnuNhanVien.Enabled = false;
-                mnuHangHoaDaAn.Enabled = false;
-                mnuPhieuNhapHang.Enabled = false;
-                mnuNhapHang.Enabled = false;
-                mnuThongKe.Enabled = false;
-            }
+            
         }
 
         private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
@@ -256,7 +240,7 @@ namespace QuanLyQuanAo.GUI
             }
             frm.Focus();
 
-           // mnuQLKhachHang.Enabled = false;
+            mnuQLKhachHang.Enabled = false;
         }
 
         private void mnuLapHoaDon_Click(object sender, EventArgs e)
@@ -321,24 +305,9 @@ namespace QuanLyQuanAo.GUI
 
             mnuNhapHang.Enabled = false;
         }
-        private void mnuMatHangBanChay_Click(object sender, EventArgs e)
-        {
-
-            frmThongKe frm = (frmThongKe)FormExist("");
-            if (frm == null)
-            {
-                frm = new frmThongKe();
-                frm.MdiParent = this;
-                frm.Show();
-
-            }
-            frm.Focus();
-
-            mnuMatHangBanChay.Enabled = false;
-        }
 
         #endregion
 
-
+      
     }
 }

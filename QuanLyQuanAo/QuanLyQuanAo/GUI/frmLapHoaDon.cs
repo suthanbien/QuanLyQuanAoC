@@ -16,7 +16,7 @@ namespace QuanLyQuanAo.GUI
         #region Khai báo biến
         public static string m_MaNhanVien = "";
         private int position;
-        private int mode = 0, maHDTong;
+        private int mode = 0;
         #endregion
 
         #region Các phương thức
@@ -103,7 +103,7 @@ namespace QuanLyQuanAo.GUI
          
         private void LuuHD()
         {
-            int  maKH, maNV, TongTien;
+            int maHD, maKH, maNV, TongTien;
             DateTime ngayLapHD;
             string ghiChuHD;
             maKH = Convert.ToInt32(cboMKH.Text);
@@ -111,7 +111,7 @@ namespace QuanLyQuanAo.GUI
             TongTien = Convert.ToInt32(txtConLai.Text);
             ngayLapHD = datePic.Value;
             ghiChuHD = "Tổng tiền: " + txtTongTien.Text.ToString() + ". Giảm Giá: " + txtGiamGia.Text.ToString();
-            maHDTong= BUSLapHoaDon.Instance.LapHoaDon(maKH, maNV, TongTien, ngayLapHD, ghiChuHD);
+            maHD= BUSLapHoaDon.Instance.LapHoaDon(maKH, maNV, TongTien, ngayLapHD, ghiChuHD);
             //MessageBox.Show(maHD + "");
 
             for (int i = 0; i < dgvHoaDon.RowCount; i++)
@@ -122,12 +122,8 @@ namespace QuanLyQuanAo.GUI
                 soLuongMua = Convert.ToInt32(dgvHoaDon.Rows[i].Cells[4].Value.ToString().Trim());
                 tTien = Convert.ToInt32(dgvHoaDon.Rows[i].Cells[5].Value.ToString().Trim());
                 ghiChu = dgvHoaDon.Rows[i].Cells[6].Value.ToString().Trim();
-                BUSLapHoaDon.Instance.LapChiTietHoaDon(maHDTong, maHangHoa, soLuongMua, tTien, ghiChu);
+                BUSLapHoaDon.Instance.LapChiTietHoaDon(maHD, maHangHoa, soLuongMua, tTien, ghiChu);
             }
-
-        }
-        private void ResetHD()
-        {
 
             BUSLapHoaDon.Instance.HuyHoaDon(dgvHoaDon);
             txtTongTien.Text = "0";
@@ -143,11 +139,7 @@ namespace QuanLyQuanAo.GUI
             lblHeSoGiam.Text = "";
             lblThongBaoGG.Text = "";
         }
-        private void InHD()
-        {
-            frmPrintThongKe frm = new frmPrintThongKe();
-            BUSTimHoaDon.Instance.InHoaDon(maHDTong, frm);
-        }
+
         public void TinhTien()
         {
             string maGiamGia = txtMaGiamGia.Text.Trim();
@@ -475,19 +467,8 @@ namespace QuanLyQuanAo.GUI
                 "Lưu Hóa Đơn", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 LuuHD();
-               MessageBox.Show("Đã lưu Hóa đơn");
-                ResetHD();
-
-                if (MessageBox.Show("bạn có muốn in Hóa Đơn không?",
-             "In Hóa Đơn", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    InHD();
-                }
+                MessageBox.Show("Đã lưu Hóa đơn");
             }
-
-          
-
-
         }
     }
 }
