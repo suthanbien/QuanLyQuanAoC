@@ -314,5 +314,158 @@
   <ItemGroup>
     <None Include="Resources\unnamed.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clothes_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_hide_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_hide_161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forester_shirt_128px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forester_shirt_128px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark_26px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_30px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_30px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_30px3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team_40px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_200px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_200px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\handshake_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reception_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reception_40px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reception_40px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\replay_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swim_suit_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forester_shirt_128px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-pattern-brick-wallpaper-2304x768-13301_103.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_support_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_account_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_graph_report_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system_diagnostic_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_48px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_48px3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\replay_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\replay_48px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_50px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\replay_48px3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_50px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_bills_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_profile_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_100px1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
