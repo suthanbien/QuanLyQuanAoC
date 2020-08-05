@@ -321,9 +321,13 @@ namespace QuanLyQuanAo.GUI
 
             mnuNhapHang.Enabled = false;
         }
-        private void mnuMatHangBanChay_Click(object sender, EventArgs e)
-        {
+   
 
+
+        #endregion
+
+        private void mnuMHBC_Click(object sender, EventArgs e)
+        {
             frmThongKe frm = (frmThongKe)FormExist("");
             if (frm == null)
             {
@@ -336,9 +340,5 @@ namespace QuanLyQuanAo.GUI
 
             mnuMatHangBanChay.Enabled = false;
         }
-
-        #endregion
-
-
     }
 }
