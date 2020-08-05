@@ -46,11 +46,11 @@
             this.mnuTKNhanVien = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuKhachHang = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuQLKhachHang = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuTaiKhoanKH = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuThongKe = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHeThong = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuDangXuat = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuKetThuc = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMatHangBanChay = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -205,6 +205,7 @@
             // 
             this.mnuKhachHang.BackColor = System.Drawing.SystemColors.Window;
             this.mnuKhachHang.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuQLKhachHang});
             this.mnuQLKhachHang,
             this.mnuTaiKhoanKH});
             this.mnuKhachHang.Image = global::QuanLyQuanAo.Properties.Resources.user_account_30px;
@@ -217,6 +218,7 @@
             // mnuQLKhachHang
             // 
             this.mnuQLKhachHang.Name = "mnuQLKhachHang";
+            this.mnuQLKhachHang.Size = new System.Drawing.Size(228, 26);
             this.mnuQLKhachHang.Size = new System.Drawing.Size(327, 34);
             this.mnuQLKhachHang.Text = "Quản Lý Khách Hàng";
             this.mnuQLKhachHang.Click += new System.EventHandler(this.mnuQLKhachHang_Click);
@@ -229,6 +231,8 @@
             // 
             // mnuThongKe
             // 
+            this.mnuThongKe.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuMatHangBanChay});
             this.mnuThongKe.BackColor = System.Drawing.SystemColors.Window;
             this.mnuThongKe.Image = global::QuanLyQuanAo.Properties.Resources.edit_graph_report_50px;
             this.mnuThongKe.Margin = new System.Windows.Forms.Padding(2);
@@ -263,6 +267,13 @@
             this.mnuKetThuc.Size = new System.Drawing.Size(270, 34);
             this.mnuKetThuc.Text = "Kết Thúc";
             this.mnuKetThuc.Click += new System.EventHandler(this.mnuKetThuc_Click);
+            // 
+            // mnuMatHangBanChay
+            // 
+            this.mnuMatHangBanChay.Name = "mnuMatHangBanChay";
+            this.mnuMatHangBanChay.Size = new System.Drawing.Size(267, 26);
+            this.mnuMatHangBanChay.Text = "Những mặt hàng bán chạy";
+            this.mnuMatHangBanChay.Click += new System.EventHandler(this.mnuMatHangBanChay_Click);
             // 
             // frmMain
             // 
@@ -304,12 +315,12 @@
         private System.Windows.Forms.ToolStripMenuItem mnuQLNhanVien;
         private System.Windows.Forms.ToolStripMenuItem mnuTKNhanVien;
         private System.Windows.Forms.ToolStripMenuItem mnuQLKhachHang;
-        private System.Windows.Forms.ToolStripMenuItem mnuTaiKhoanKH;
         private System.Windows.Forms.ToolStripMenuItem mnuLapHoaDon;
         private System.Windows.Forms.ToolStripMenuItem mnuTimHoaDon;
         private System.Windows.Forms.ToolStripMenuItem mnuNhapHang;
         private System.Windows.Forms.ToolStripMenuItem mnuHeThong;
         private System.Windows.Forms.ToolStripMenuItem mnuDangXuat;
         private System.Windows.Forms.ToolStripMenuItem mnuKetThuc;
+        private System.Windows.Forms.ToolStripMenuItem mnuMatHangBanChay;
     }
 }

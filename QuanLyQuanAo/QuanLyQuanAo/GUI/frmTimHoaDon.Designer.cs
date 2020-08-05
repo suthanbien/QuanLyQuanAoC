@@ -114,6 +114,8 @@
             this.btnIn.Size = new System.Drawing.Size(140, 51);
             this.btnIn.TabIndex = 1;
             this.btnIn.Text = "In";
+            this.btnIn.UseVisualStyleBackColor = true;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
             this.btnIn.UseVisualStyleBackColor = false;
             // 
             // grbTimHoaDon
