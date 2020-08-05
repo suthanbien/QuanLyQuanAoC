@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHangSanXuat));
             this.pnlTop = new System.Windows.Forms.Panel();
             this.blbLoaiSanPham = new System.Windows.Forms.Label();
             this.pnlBottom = new System.Windows.Forms.Panel();
@@ -51,42 +50,36 @@
             this.pnlTop.Controls.Add(this.blbLoaiSanPham);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
-            this.pnlTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(1328, 106);
+            this.pnlTop.Size = new System.Drawing.Size(1174, 100);
             this.pnlTop.TabIndex = 0;
             // 
             // blbLoaiSanPham
             // 
-            this.blbLoaiSanPham.BackColor = System.Drawing.Color.DarkOrange;
-            this.blbLoaiSanPham.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.blbLoaiSanPham.BackColor = System.Drawing.Color.Bisque;
             this.blbLoaiSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.blbLoaiSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blbLoaiSanPham.ForeColor = System.Drawing.Color.White;
-            this.blbLoaiSanPham.Image = global::QuanLyQuanAo.Properties.Resources.handshake_100px;
-            this.blbLoaiSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.blbLoaiSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.blbLoaiSanPham.ForeColor = System.Drawing.Color.DodgerBlue;
             this.blbLoaiSanPham.Location = new System.Drawing.Point(0, 0);
             this.blbLoaiSanPham.Name = "blbLoaiSanPham";
-            this.blbLoaiSanPham.Size = new System.Drawing.Size(1328, 106);
+            this.blbLoaiSanPham.Size = new System.Drawing.Size(1174, 100);
             this.blbLoaiSanPham.TabIndex = 2;
-            this.blbLoaiSanPham.Text = "CÁC HÃNG SẢN XUẤT";
+            this.blbLoaiSanPham.Text = "Hãng Sản Xuất";
             this.blbLoaiSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlBottom
             // 
             this.pnlBottom.Controls.Add(this.btgNhomLenh);
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottom.Location = new System.Drawing.Point(0, 588);
-            this.pnlBottom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnlBottom.Location = new System.Drawing.Point(0, 466);
             this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.Size = new System.Drawing.Size(1328, 106);
+            this.pnlBottom.Size = new System.Drawing.Size(1174, 85);
             this.pnlBottom.TabIndex = 1;
             // 
             // btgNhomLenh
             // 
             this.btgNhomLenh.AddEnabled = true;
             this.btgNhomLenh.AutoNumber = false;
-            this.btgNhomLenh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btgNhomLenh.CanDelete = true;
             this.btgNhomLenh.CanSave = true;
             this.btgNhomLenh.dgv = null;
@@ -100,7 +93,6 @@
             this.btgNhomLenh.ExtraVisible = false;
             this.btgNhomLenh.ListTimKiem = null;
             this.btgNhomLenh.Location = new System.Drawing.Point(0, 0);
-            this.btgNhomLenh.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btgNhomLenh.MaTimKiem = "";
             this.btgNhomLenh.Mode = 0;
             this.btgNhomLenh.ModeADD = 0;
@@ -109,7 +101,7 @@
             this.btgNhomLenh.Name = "btgNhomLenh";
             this.btgNhomLenh.Position = 0;
             this.btgNhomLenh.Reccount = 0;
-            this.btgNhomLenh.Size = new System.Drawing.Size(1328, 106);
+            this.btgNhomLenh.Size = new System.Drawing.Size(1174, 85);
             this.btgNhomLenh.TabIndex = 0;
             this.btgNhomLenh.TenTimKiem = "";
             this.btgNhomLenh.Display += new QuanLyQuanAo.GUI.ButtonGroupEventHandler(this.btgNhomLenh_Display);
@@ -126,10 +118,9 @@
             // 
             this.pnlCenter.Controls.Add(this.dgvHangSanXuat);
             this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCenter.Location = new System.Drawing.Point(0, 106);
-            this.pnlCenter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnlCenter.Location = new System.Drawing.Point(0, 100);
             this.pnlCenter.Name = "pnlCenter";
-            this.pnlCenter.Size = new System.Drawing.Size(1328, 482);
+            this.pnlCenter.Size = new System.Drawing.Size(1174, 366);
             this.pnlCenter.TabIndex = 2;
             // 
             // dgvHangSanXuat
@@ -137,7 +128,6 @@
             this.dgvHangSanXuat.AllowUserToAddRows = false;
             this.dgvHangSanXuat.AllowUserToDeleteRows = false;
             this.dgvHangSanXuat.AutoGenerateColumns = false;
-            this.dgvHangSanXuat.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvHangSanXuat.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.dgvHangSanXuat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHangSanXuat.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -146,7 +136,6 @@
             this.dgvHangSanXuat.DataSource = this.hangSanXuatBindingSource;
             this.dgvHangSanXuat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvHangSanXuat.Location = new System.Drawing.Point(0, 0);
-            this.dgvHangSanXuat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvHangSanXuat.MultiSelect = false;
             this.dgvHangSanXuat.Name = "dgvHangSanXuat";
             this.dgvHangSanXuat.ReadOnly = true;
@@ -154,7 +143,7 @@
             this.dgvHangSanXuat.RowHeadersWidth = 51;
             this.dgvHangSanXuat.RowTemplate.Height = 24;
             this.dgvHangSanXuat.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgvHangSanXuat.Size = new System.Drawing.Size(1328, 482);
+            this.dgvHangSanXuat.Size = new System.Drawing.Size(1174, 366);
             this.dgvHangSanXuat.TabIndex = 2;
             this.dgvHangSanXuat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHangSanXuat_CellClick);
             // 
@@ -165,6 +154,7 @@
             this.maHangSanXuatDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.maHangSanXuatDataGridViewTextBoxColumn.Name = "maHangSanXuatDataGridViewTextBoxColumn";
             this.maHangSanXuatDataGridViewTextBoxColumn.ReadOnly = true;
+            this.maHangSanXuatDataGridViewTextBoxColumn.Width = 200;
             // 
             // tenHangSanXuatDataGridViewTextBoxColumn
             // 
@@ -173,6 +163,7 @@
             this.tenHangSanXuatDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.tenHangSanXuatDataGridViewTextBoxColumn.Name = "tenHangSanXuatDataGridViewTextBoxColumn";
             this.tenHangSanXuatDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tenHangSanXuatDataGridViewTextBoxColumn.Width = 500;
             // 
             // hangSanXuatBindingSource
             // 
@@ -180,17 +171,14 @@
             // 
             // frmHangSanXuat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(1328, 694);
+            this.ClientSize = new System.Drawing.Size(1174, 551);
             this.Controls.Add(this.pnlCenter);
             this.Controls.Add(this.pnlBottom);
             this.Controls.Add(this.pnlTop);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmHangSanXuat";
-            this.Text = "Hãng sản xuất";
+            this.Text = "frmHangSanXuat";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmHangSanXuat_FormClosed);
             this.Load += new System.EventHandler(this.frmHangSanXuat_Load);
             this.pnlTop.ResumeLayout(false);

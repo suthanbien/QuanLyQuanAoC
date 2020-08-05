@@ -33,9 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,12 +68,14 @@
     <Compile Include="BUS\BUSQuenMatKhau.cs" />
     <Compile Include="BUS\BUSTaiKhoanNV.cs" />
     <Compile Include="BUS\BUSPhieuNhap.cs" />
+    <Compile Include="BUS\BUSThongKe.cs" />
     <Compile Include="BUS\BUSTimHoaDon.cs" />
     <Compile Include="DAO\ClassChiTietHoaDon.cs" />
     <Compile Include="DAO\ClassChiTietPhieuNhap.cs" />
     <Compile Include="DAO\ClassHangHoa.cs" />
     <Compile Include="DAO\ClassHoaDon.cs" />
     <Compile Include="DAO\ClassKhachHang.cs" />
+    <Compile Include="DAO\ClassMHBanChay.cs" />
     <Compile Include="DAO\ClassNhanVien.cs" />
     <Compile Include="DAO\ClassPhieuNhap.cs" />
     <Compile Include="DAO\ClassTaiKhoanNV.cs" />
@@ -87,6 +97,7 @@
     <Compile Include="DAO\DAOQuenMatKhau.cs" />
     <Compile Include="DAO\DAOTaiKhoanNV.cs" />
     <Compile Include="DAO\DAOPhieuNhap.cs" />
+    <Compile Include="DAO\DAOThongKe.cs" />
     <Compile Include="DAO\DAOTimHoaDon.cs" />
     <Compile Include="GUI\ButtonGroup.cs">
       <SubType>UserControl</SubType>
@@ -95,6 +106,18 @@
       <DependentUpon>ButtonGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\ButtonGroupEventArgs.cs" />
+    <Compile Include="GUI\CrystalReport_HoaDon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport_HoaDon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\CrystalReport_MatHangBanChay.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport_MatHangBanChay.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="GUI\frmAnHangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +184,12 @@
     <Compile Include="GUI\frmNhapHang.Designer.cs">
       <DependentUpon>frmNhapHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmPrintThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmPrintThongKe.Designer.cs">
+      <DependentUpon>frmPrintThongKe.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmQLNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +220,12 @@
     <Compile Include="GUI\frmPhieuNhapHang.Designer.cs">
       <DependentUpon>frmPhieuNhapHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmThongKe.Designer.cs">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmTimHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +236,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\ButtonGroup.resx">
       <DependentUpon>ButtonGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\CrystalReport_HoaDon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport_HoaDon.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\CrystalReport_MatHangBanChay.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport_MatHangBanChay.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmAnHangHoa.resx">
       <DependentUpon>frmAnHangHoa.cs</DependentUpon>
@@ -235,6 +278,9 @@
     <EmbeddedResource Include="GUI\frmNhapHang.resx">
       <DependentUpon>frmNhapHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmPrintThongKe.resx">
+      <DependentUpon>frmPrintThongKe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmQLNhanVien.resx">
       <DependentUpon>frmQLNhanVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmPhieuNhapHang.resx">
       <DependentUpon>frmPhieuNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmThongKe.resx">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmTimHoaDon.resx">
       <DependentUpon>frmTimHoaDon.cs</DependentUpon>
@@ -278,6 +327,7 @@
     <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ClassHangHoa.datasource" />
     <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ClassHoaDon.datasource" />
     <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ClassKhachHang.datasource" />
+    <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ClassMHBanChay.datasource" />
     <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ClassNhanVien.datasource" />
     <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ClassPhieuNhap.datasource" />
     <None Include="Properties\DataSources\QuanLyQuanAo.DAO.ClassTaiKhoanNV.datasource" />
@@ -301,6 +351,7 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images.png" />
@@ -313,159 +364,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\unnamed.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\search_32px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clothes_30px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_hide_16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_hide_161.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\forester_shirt_128px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\forester_shirt_128px1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\checkmark_26px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\delete_30px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\checkmark_26px1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\delete_30px1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\delete_30px2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\delete_30px3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\team_40px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\team_40px1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\list_200px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\list_200px1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\handshake_100px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\reception_40px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\reception_40px1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\reception_40px2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bill_100px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\add_48px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\replay_48px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\save_50px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\swim_suit_48px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\forester_shirt_128px2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blue-pattern-brick-wallpaper-2304x768-13301_103.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\home_24px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bill_24px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\warehouse_24px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\customer_support_24px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user_account_30px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\edit_graph_report_50px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\system_diagnostic_24px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\add_48px1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\add_48px2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\add_48px3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\replay_48px1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\replay_48px2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\save_50px1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cancel_24px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\import_100px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\replay_48px3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\search_32px1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\edit_24px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\save_50px2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\checked_24px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\folder_bills_100px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\people_40px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\edit_profile_40px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bill_100px1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
